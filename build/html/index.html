@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to CCI’s xG Testbed documentation! &mdash; CCI_TESTBED_DOCS 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=38369d6f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Overview to CCI xG testbed" href="ccixg.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+
+          
+          
+          <a href="#">
+            
+              <img src="_static/xG-rev-4c-01.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ccixg.html">Overview to CCI xG testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policies.html"><strong>CCI xG Testbed User Policy</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">More about the Commonwealth Cyber Initiative (CCI) xG Testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenSAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Opensas.html">OpenSAS Architecture</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html">OpenStack Instance Launch Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Network Plan</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html">Adding a Cloud-Config Script to OpenStack Server(VM) Creation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#finding-usrp-devices-with-uhd-find-devices">Finding USRP Devices with uhd_find_devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#testing-srsepc-and-deploying-srsue">Testing srsEPC and Deploying srsUE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-changes-using-netplan">Network Configuration Changes using Netplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-and-testing-with-netplan-and-srsran">Network Configuration and Testing with Netplan and srsRAN</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OTIC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html">Open Testing and Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html#physical-layout-and-architecture-of-the-lab-s">Physical Layout and Architecture of the Lab(s)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">UHD Config</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uhd.html">UHD Installation Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Setup</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g_prerequisite.html">Installation Script Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html">4G Deployment Experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html#running-the-experiment">Running the Experiment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">5G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="5g-deployment.html">5G Deployment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creek Testbed</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CREEK_TESTBED_SITE.html">CCI xG Testbed: Outdoor Experimentation and Testing Environment(CBRS Testbed Site)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ORAN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="oran.html">ORAN (Open Radio Access Network)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html">CCI xG Testbed Team Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#director">Director</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#doctoral-student-phd"><strong>Doctoral Student(PhD)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#master-s-researchers">Master’s Researchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#postdoc-researcher">Postdoc Researcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#interns"><strong>Interns</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#research-faculty"><strong>Research Faculty</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#alumni-and-former-students">Alumni and Former Students</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="research_area.html">Research Areas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Get in Touch with the CCI xG Testbed Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: black" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CCI_TESTBED_DOCS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to CCI’s xG Testbed documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-cci-s-xg-testbed-documentation">
+<h1>Welcome to CCI’s xG Testbed documentation!<a class="headerlink" href="#welcome-to-cci-s-xg-testbed-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ccixg.html">Overview to CCI xG testbed</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policies.html"><strong>CCI xG Testbed User Policy</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="policies.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html#user-definitions">User Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html#internal-users">Internal Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html#external-users">External Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html#internal-user-policies">Internal User Policies</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">More about the Commonwealth Cyber Initiative (CCI) xG Testbed</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#the-cci-xg-testbed-a-collaborative-platform">The CCI xG Testbed: A Collaborative Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#advanced-infrastructure-and-o-ran-experimentation">Advanced Infrastructure and O-RAN Experimentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#research-initiatives-and-principles">Research Initiatives and Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#core-principles-openness-accessibility-programmability-interoperability-modularity">Core Principles: <strong>Openness</strong>, <strong>Accessibility</strong>, <strong>Programmability</strong>, <strong>Interoperability</strong>, <strong>&amp;</strong> <strong>Modularity</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#the-north-american-open-testing-and-integration-center-otic">The North American Open Testing and Integration Center (OTIC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">OpenSAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Opensas.html">OpenSAS Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Opensas.html#core-components">Core Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Opensas.html#vuejs-webserver">VueJS Webserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Opensas.html#core">Core</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Opensas.html#interfaces">Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Opensas.html#web-interface">Web Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Opensas.html#external-sensor-connections">External Sensor Connections</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Opensas.html#detailed-workflow">Detailed Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Opensas.html#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html">OpenStack Instance Launch Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#understanding-storage-options-in-openstack">Understanding Storage Options in OpenStack</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#instance-store">Instance Store</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#block-storage-cinder">Block Storage (Cinder)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#creating-an-instance-using-the-openstack-dashboard">Creating an Instance Using the OpenStack Dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#creating-a-volume">Creating a Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#creating-a-compute-instance">Creating a Compute Instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#creating-a-gpu-instance">Creating a GPU Instance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#transferring-volumes-to-other-users">Transferring Volumes to Other Users</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#transferring-a-volume-you-no-longer-need">Transferring a Volume You No Longer Need</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#sharing-a-volume-while-retaining-access">Sharing a Volume While Retaining Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#creating-instances-via-the-command-line-interface-cli">Creating Instances via the Command-Line Interface (CLI)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#cli-instructions-for-radio-instances">CLI Instructions for Radio Instances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#configuring-the-network-interface-inside-the-instance">Configuring the Network Interface Inside the Instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="openstack.html#configuring-network-interfaces-for-radio-instances">Configuring Network Interfaces for Radio Instances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#create-openstack-network">Create OpenStack Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#verifying-security-groups-in-openstack">Verifying Security Groups in OpenStack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#creating-and-associating-a-floating-ip-in-openstack">Creating and Associating a Floating IP in OpenStack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#important-notes-and-best-practices">Important Notes and Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#conclusion">Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="openstack.html#contact-information">Contact Information</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Network Plan</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html">Adding a Cloud-Config Script to OpenStack Server(VM) Creation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#create-a-cloud-config-file">1. Create a Cloud-Config File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#modify-the-openstack-server-creation-command">2. Modify the OpenStack Server Creation Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#output">Output:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#run-the-modified-command">3. Run the Modified Command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#finding-usrp-devices-with-uhd-find-devices">Finding USRP Devices with uhd_find_devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#running-uhd-find-devices">Running <cite>uhd_find_devices</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#sample-output">Sample Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#interpreting-the-output">Interpreting the Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#testing-srsepc-and-deploying-srsue">Testing srsEPC and Deploying srsUE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#installing-srsepc">Installing srsEPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#testing-srsepc">Testing srsEPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#deploying-srsue-on-another-vm">Deploying srsUE on Another VM</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-changes-using-netplan">Network Configuration Changes using Netplan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#cloud-init-yaml-before-changes">50-cloud-init.yaml (Before Changes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#cloud-init-yaml-after-changes">50-cloud-init.yaml (After Changes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#explanation-of-changes">Explanation of Changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-and-testing-with-netplan-and-srsran">Network Configuration and Testing with Netplan and srsRAN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#netplan-configuration">Netplan Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#srsran-testing">srsRAN Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="net_plan_config.html#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">OTIC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html">Open Testing and Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#commonwealth-cyber-initiative-cci-xg-testbed">Commonwealth Cyber Initiative (CCI) xG Testbed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#testbed-capabilities"><strong>Testbed Capabilities</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html#physical-layout-and-architecture-of-the-lab-s">Physical Layout and Architecture of the Lab(s)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#location-of-the-otic-facility"><strong>Location of the OTIC Facility</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#human-and-agricultural-biosciences-building"><strong>Human and Agricultural Biosciences Building</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#hahn-hall-north-rooftop"><strong>Hahn Hall North Rooftop</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#animal-husbandry-barn"><strong>Animal Husbandry Barn</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#security-and-access"><strong>Security and Access</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#software-packages"><strong>Software Packages</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#testbed-introduction"><strong>Testbed Introduction</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#testbed-configuration"><strong>Testbed Configuration</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#key-hardware-components"><strong>Key hardware components</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#id1"><strong>Software Packages</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="otic_documents.html#id2"><strong>Testbed Introduction</strong></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">UHD Config</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uhd.html">UHD Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="uhd.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uhd.html#installation-steps">Installation Steps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uhd.html#clone-the-uhd-repository">Clone the UHD Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uhd.html#change-directory-to-the-cloned-repository">Change Directory to the Cloned Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uhd.html#checkout-the-specified-version">Checkout the Specified Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uhd.html#change-directory-to-host-and-prepare-for-building">Change Directory to Host and Prepare for Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uhd.html#configure-build-and-install-uhd">Configure, Build, and Install UHD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">4G Setup</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g_prerequisite.html">Installation Script Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#update-and-upgrade-system">Update and Upgrade System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-mongodb-and-prerequisites">Install MongoDB and Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-open5gs-dependencies">Install Open5GS Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-uhd-dependencies">Install UHD Dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="4g_prerequisite.html#configure-uhd">Configure UHD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-srsran-dependencies">Install srsRAN Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-missing-libraries-for-srsran">Install Missing Libraries for srsRAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g_prerequisite.html#install-iperf3">Install iPerf3</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">4G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html">4G Deployment Experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#setting-up-uhd">Setting up UHD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#installing-srsran-4g-suite">Installing srsRAN 4G Suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#configuring-srsran-ue">Configuring srsRAN UE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#configuring-srsran-enb">Configuring srsRAN eNB</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html#running-the-experiment">Running the Experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#generating-traffic-with-iperf">Generating Traffic with iPerf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4g-deployment.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">5G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="5g-deployment.html">5G Deployment</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Creek Testbed</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CREEK_TESTBED_SITE.html">CCI xG Testbed: Outdoor Experimentation and Testing Environment(CBRS Testbed Site)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#cbrs-overview">CBRS Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#stroubles-creek-outdoor-testbed">Stroubles Creek Outdoor Testbed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#experimental-cbsd-5g-nr-standalone-network-in-cbrs-band">Experimental CBSD (5G NR Standalone Network in CBRS Band)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#outdoor-enclosure-components">Outdoor Enclosure Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#implementation-of-cbrs-hardware">Implementation of CBRS Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CREEK_TESTBED_SITE.html#virginia-tech-priority-access-license-pal">Virginia Tech Priority Access License (PAL)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">ORAN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="oran.html">ORAN (Open Radio Access Network)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#overview-of-oran">Overview of ORAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#importance-and-benefits">Importance and Benefits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#oran-architecture">ORAN Architecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#functional-splits">Functional Splits</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#key-components-of-oran">Key Components of ORAN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#radio-unit-ru"><strong>Radio Unit (RU)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#distributed-unit-du"><strong>Distributed Unit (DU)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#centralized-unit-cu"><strong>Centralized Unit (CU)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#ran-intelligent-controller-ric"><strong>RAN Intelligent Controller (RIC)</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#oran-interfaces"><strong>ORAN Interfaces</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#front-haul"><strong>Front-haul</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#mid-haul"><strong>Mid-haul</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#back-haul"><strong>Back-haul</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#oran-software-and-hardware"><strong>ORAN Software and Hardware</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#hardware-requirements">Hardware Requirements**</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#software-stack"><strong>Software Stack</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#deployment-models"><strong>Deployment Models</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#cloud-native-deployments"><strong>Cloud-Native Deployments</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#edge-deployments"><strong>Edge Deployments</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#use-cases-and-applications"><strong>Use Cases and Applications</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#massive-machine-type-communications-mmtc"><strong>Massive Machine Type Communications (mMTC)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#ultra-reliable-low-latency-communications-urllc"><strong>Ultra-Reliable Low Latency Communications (URLLC)</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#challenges-and-considerations"><strong>Challenges and Considerations</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#interoperability"><strong>Interoperability</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#security"><strong>Security</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="oran.html#performance-optimization"><strong>Performance Optimization</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="oran.html#future-of-oran"><strong>Future of ORAN</strong></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Team</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html">CCI xG Testbed Team Summary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#leadership">Leadership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#team-composition">Team Composition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#director">Director</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id1">Aloizio P. DaSilva</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#doctoral-student-phd"><strong>Doctoral Student(PhD)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#md-habibur-rahman"><strong>Md. Habibur Rahman</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id3">Aditya Sathish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id5">Asheesh Tripathi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#master-s-researchers">Master’s Researchers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#abida-sultana"><strong>Abida Sultana</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#fahim-bashar"><strong>Fahim Bashar</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#postdoc-researcher">Postdoc Researcher</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id7">Mayukh Roy Chowdhury</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#interns"><strong>Interns</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#harshit-sai-teja-doddi"><strong>Harshit Sai Teja Doddi</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#kshitij-narvekar"><strong>Kshitij Narvekar</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#rajat-nagar"><strong>Rajat Nagar</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#research-faculty"><strong>Research Faculty</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id9">Jacek Kibilda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team_info.html#id11">Joao Santos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#alumni-and-former-students">Alumni and Former Students</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Research</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="research_area.html">Research Areas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="research_area.html#fair-consensus-in-blockchain">Fair Consensus in Blockchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="research_area.html#o-ran-control-loop-for-resource-allocation">O-RAN Control Loop for Resource Allocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="research_area.html#cbrs-experimentation-with-opensas">CBRS Experimentation with OpenSAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="research_area.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Get in Touch with the CCI xG Testbed Team</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ccixg.html" class="btn btn-neutral float-right" title="Overview to CCI xG testbed" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, TEAM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+         .wy-nav-content { max-width: none;}
+  </style>
+
+
+
+</body>
+</html>

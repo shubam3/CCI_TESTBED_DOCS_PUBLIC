@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding a Cloud-Config Script to OpenStack Server(VM) Creation &mdash; CCI_TESTBED_DOCS 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=38369d6f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Open Testing and Integration" href="otic_documents.html" />
+    <link rel="prev" title="Launching OpenStack Instances" href="openstack.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/xG-rev-4c-01.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ccixg.html">Overview to CCI xG testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policies.html"><strong>CCI xG Testbed User Policy</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">More about the Commonwealth Cyber Initiative (CCI) xG Testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenSAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Opensas.html">OpenSAS Architecture</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html">Launching OpenStack Instances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#create-an-instance-with-usrp-access">Create an Instance with USRP Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#configure-the-usrp-network-interface-inside-the-instance">Configure the USRP Network Interface Inside the Instance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#create-openstack-network">Create OpenStack Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#verifying-security-groups-in-openstack">Verifying Security Groups in OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#creating-and-associating-a-floating-ip-in-openstack">Creating and Associating a Floating IP in OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#dashboard-instructions-for-compute-vm-access">Dashboard Instructions for Compute VM Access</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Network Plan</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding a Cloud-Config Script to OpenStack Server(VM) Creation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-cloud-config-file">1. Create a Cloud-Config File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modify-the-openstack-server-creation-command">2. Modify the OpenStack Server Creation Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output">Output:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-modified-command">3. Run the Modified Command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#finding-usrp-devices-with-uhd-find-devices">Finding USRP Devices with uhd_find_devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#running-uhd-find-devices">Running <cite>uhd_find_devices</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-output">Sample Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interpreting-the-output">Interpreting the Output</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#testing-srsepc-and-deploying-srsue">Testing srsEPC and Deploying srsUE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installing-srsepc">Installing srsEPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-srsepc">Testing srsEPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deploying-srsue-on-another-vm">Deploying srsUE on Another VM</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#network-configuration-changes-using-netplan">Network Configuration Changes using Netplan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cloud-init-yaml-before-changes">50-cloud-init.yaml (Before Changes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cloud-init-yaml-after-changes">50-cloud-init.yaml (After Changes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explanation-of-changes">Explanation of Changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#network-configuration-and-testing-with-netplan-and-srsran">Network Configuration and Testing with Netplan and srsRAN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#netplan-configuration">Netplan Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#srsran-testing">srsRAN Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OTIC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html">Open Testing and Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html#physical-layout-and-architecture-of-the-lab-s">Physical Layout and Architecture of the Lab(s)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">UHD Config</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uhd.html">UHD Installation Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Setup</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g_prerequisite.html">Installation Script Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html">4G Deployment Experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4g-deployment.html#running-the-experiment">Running the Experiment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">5G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="5g-deployment.html">5G Deployment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creek Testbed</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CREEK_TESTBED_SITE.html">CCI xG Testbed: Outdoor Experimentation and Testing Environment(CBRS Testbed Site)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ORAN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="oran.html">ORAN (Open Radio Access Network)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html">CCI xG Testbed Team Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#director">Director</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#doctoral-student-phd"><strong>Doctoral Student(PhD)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#master-s-researchers">Master’s Researchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#postdoc-researcher">Postdoc Researcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#interns"><strong>Interns</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#research-faculty"><strong>Research Faculty</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#alumni-and-former-students">Alumni and Former Students</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="research_area.html">Research Areas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Get in Touch with the CCI xG Testbed Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: black" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CCI_TESTBED_DOCS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Adding a Cloud-Config Script to OpenStack Server(VM) Creation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/net_plan_config.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adding-a-cloud-config-script-to-openstack-server-vm-creation">
+<h1>Adding a Cloud-Config Script to OpenStack Server(VM) Creation<a class="headerlink" href="#adding-a-cloud-config-script-to-openstack-server-vm-creation" title="Link to this heading"></a></h1>
+<p>When creating an OpenStack server instance, you can provide a cloud-config script to customize the instance’s configuration during the initialization process. This allows you to automate tasks such as setting passwords, configuring SSH access, and more.</p>
+<p>To add a cloud-config script to your OpenStack server creation command, follow these steps:</p>
+<section id="create-a-cloud-config-file">
+<h2>1. Create a Cloud-Config File<a class="headerlink" href="#create-a-cloud-config-file" title="Link to this heading"></a></h2>
+<p>First, create a file named <code class="docutils literal notranslate"><span class="pre">cloud-config.yml</span></code> (or any other desired name) in the same directory where you will run the OpenStack server creation command. Add your cloud-config script to the file using the YAML format. Here’s an example cloud-config script that sets a password, disables password expiration, and enables SSH password authentication:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1">#cloud-config</span>
+
+<span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;password&gt;</span>
+<span class="nt">chpasswd</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">expire</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">False</span>
+<span class="nt">ssh_pwauth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;password&gt;</span></code> with the desired password for the instance.
+Make sure to create the <code class="docutils literal notranslate"><span class="pre">cloud-config.yml</span></code> file in the same directory where you will run the OpenStack server creation command. Alternatively, you can provide the appropriate path to the file in the command.</p>
+</div>
+<p>The YAML file structure for the cloud-config script is as follows:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1">#cloud-config</span>
+
+<span class="nt">key1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">value1</span>
+<span class="nt">key2</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">subkey1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">value2</span>
+<span class="w">  </span><span class="nt">subkey2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">value3</span>
+<span class="nt">key3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">value4</span>
+</pre></div>
+</div>
+<p>In this structure, <code class="docutils literal notranslate"><span class="pre">#cloud-config</span></code> is a special comment that indicates the start of the cloud-config script. The rest of the file contains key-value pairs and nested mappings that define the desired configurations.</p>
+</section>
+<section id="modify-the-openstack-server-creation-command">
+<h2>2. Modify the OpenStack Server Creation Command<a class="headerlink" href="#modify-the-openstack-server-creation-command" title="Link to this heading"></a></h2>
+<p>Next, modify your OpenStack server creation command to include the <code class="docutils literal notranslate"><span class="pre">--user-data</span></code> flag followed by the path to your <code class="docutils literal notranslate"><span class="pre">cloud-config.yml</span></code> file. Here’s an example command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openstack<span class="w"> </span>--insecure<span class="w"> </span>server<span class="w"> </span>create<span class="w"> </span>--flavor<span class="w"> </span>8cpu-8ram-32disk<span class="w"> </span>--image<span class="w"> </span>Ubuntu-20.04-ServerImage<span class="w"> </span>--nic<span class="w"> </span>port-id<span class="o">=</span><span class="sb">`</span>openstack<span class="w"> </span>--insecure<span class="w"> </span>port<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>USRP-121<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span><span class="w"> </span>--nic<span class="w"> </span>net-id<span class="o">=</span>ff409397-4e45-4af9-afbe-00a979369aea<span class="w"> </span>--user-data<span class="w"> </span>cloud-config.yml<span class="w"> </span>--availability-zone<span class="w"> </span>radio<span class="w"> </span>USRP-121-UE
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h2>Output:<a class="headerlink" href="#output" title="Link to this heading"></a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/121_output.png"><img alt="CBRS Hardware" src="_images/121_output.png" style="width: 1150px; height: 700px;" />
+</a>
+</figure>
+<p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">USRP-120</span></code> and <code class="docutils literal notranslate"><span class="pre">ff409397-4e45-4af9-afbe-00a979369aea</span></code> with the appropriate values for your environment.</p>
+</section>
+<section id="run-the-modified-command">
+<h2>3. Run the Modified Command<a class="headerlink" href="#run-the-modified-command" title="Link to this heading"></a></h2>
+<p>Execute the modified OpenStack server creation command. OpenStack will pass the cloud-config script to the instance during the creation process.</p>
+<p>The cloud-config script will be applied during the instance’s initialization, and the specified configurations will take effect. In this example, the password will be set to “coolpass”, password expiration will be disabled, and SSH password authentication will be enabled.</p>
+<p>By leveraging cloud-config scripts, you can automate and customize the configuration of your OpenStack server instances, saving time and ensuring consistent setups across multiple instances.</p>
+</section>
+</section>
+<section id="finding-usrp-devices-with-uhd-find-devices">
+<h1>Finding USRP Devices with uhd_find_devices<a class="headerlink" href="#finding-usrp-devices-with-uhd-find-devices" title="Link to this heading"></a></h1>
+<p>The <cite>uhd_find_devices</cite> command is a utility provided by the USRP Hardware Driver (UHD) software suite. It is used to discover and display information about connected USRP devices.</p>
+<section id="running-uhd-find-devices">
+<h2>Running <cite>uhd_find_devices</cite><a class="headerlink" href="#running-uhd-find-devices" title="Link to this heading"></a></h2>
+<p>To find the specific IP address for your USRP device, run the following command in the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uhd_find_devices
+</pre></div>
+</div>
+</section>
+<section id="sample-output">
+<h2>Sample Output<a class="headerlink" href="#sample-output" title="Link to this heading"></a></h2>
+<p>Here’s an example output of running <cite>uhd_find_devices</cite>:</p>
+<figure class="align-center">
+<img alt="CBRS Hardware" src="_images/find_devices.png" />
+</figure>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>ubuntu@usrp-120-gnb:~$ uhd_find_devices
+[INFO] [UHD] linux; GNU C++ version 9.2.1 20200304; Boost_107100; UHD_3.15.0.0-2build6
+-- UHD Device 0
+-------------------------------
+Device Address:
+    serial: 320D123
+    addr: 192.168.107.2
+    addr: 192.168.108.2
+    addr: 192.168.109.2
+    addr: 192.168.110.2
+    addr: 192.168.111.2
+    addr: 192.168.112.2
+    addr: 192.168.121.2
+    addr: 192.168.124.2
+    addr: 192.168.131.2
+    addr: 192.168.132.2
+    addr: 192.168.133.2
+    addr: 192.168.134.2
+    addr: 192.168.135.2
+    addr: 192.168.136.2
+    addr: 192.168.143.2
+    addr: 192.168.144.2
+    addr: 192.168.145.2
+    addr: 192.168.146.2
+    addr: 192.168.156.2
+    addr: 192.168.157.2
+    addr: 192.168.158.2
+    addr: 192.168.159.2
+    addr: 192.168.160.2
+name:
+type: x300
+
+-- UHD Device 1
+-------------------------------
+Device Address:
+    serial: 320EC17
+    addr: 192.168.120.2
+fpga: HG
+name:
+product: X310
+name: X300
+</pre></div>
+</div>
+</section>
+<section id="interpreting-the-output">
+<h2>Interpreting the Output<a class="headerlink" href="#interpreting-the-output" title="Link to this heading"></a></h2>
+<p>In this example, the <cite>uhd_find_devices</cite> command discovers one UHD device, which is the associated USRP with IP address 192.168.120.2.</p>
+<p>The output provides the following information about the USRP device:
+- Device Address: The serial number and IP address(es) associated with the device.
+- FPGA: The FPGA image loaded on the device (e.g., HG for a high-performance image).
+- Product: The specific USRP model (e.g., X310).
+- Name: The name of the USRP device (e.g., X300).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In most cases, the USRP IP address will have <cite>.2</cite> at the end, indicating the default IP address assigned to the device.</p>
+</div>
+</section>
+</section>
+<section id="testing-srsepc-and-deploying-srsue">
+<h1>Testing srsEPC and Deploying srsUE<a class="headerlink" href="#testing-srsepc-and-deploying-srsue" title="Link to this heading"></a></h1>
+<p>After completing the 4G installation process using CMake and other necessary steps, you can proceed with testing the srsEPC (srsRAN EPC) and deploying the srsUE (srsRAN User Equipment) on another virtual machine (VM).</p>
+<section id="installing-srsepc">
+<h2>Installing srsEPC<a class="headerlink" href="#installing-srsepc" title="Link to this heading"></a></h2>
+<p>To install srsEPC, follow these steps:</p>
+<ol class="arabic">
+<li><p>Run the following command to install the built files:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>make<span class="w"> </span>install
+</pre></div>
+</div>
+</li>
+<li><p>Run the following command to install the configuration files:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>srsran_install_configs.sh<span class="w"> </span>user
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="testing-srsepc">
+<h2>Testing srsEPC<a class="headerlink" href="#testing-srsepc" title="Link to this heading"></a></h2>
+<p>Once the installation is complete, you can test the srsEPC by running the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>srsepc
+</pre></div>
+</div>
+<p>If srsEPC starts without any errors, it indicates that the installation and configuration are successful.</p>
+</section>
+<section id="deploying-srsue-on-another-vm">
+<h2>Deploying srsUE on Another VM<a class="headerlink" href="#deploying-srsue-on-another-vm" title="Link to this heading"></a></h2>
+<p>Since srsEPC is working correctly, you can now move on to deploying the srsUE on another virtual machine. The process for deploying the VM with USRP access is the same as before.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please refer to the previous screenshots and instructions for deploying the VM with USRP access to ensure a clear understanding of the process.</p>
+</div>
+<p>Follow these steps to deploy the srsUE on the new VM:</p>
+<ol class="arabic simple">
+<li><p>Create a new virtual machine with the necessary specifications and resources.</p></li>
+<li><p>Configure the VM to have access to the USRP device.</p></li>
+<li><p>Install the required dependencies and libraries for srsUE on the new VM.</p></li>
+<li><p>Build and install srsUE using the same CMake process as used for srsEPC.</p></li>
+<li><p>Configure the srsUE with the appropriate settings and parameters.</p></li>
+<li><p>Test the srsUE by running the necessary commands and verifying its functionality.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to refer to the srsRAN documentation and guides for detailed instructions on building, installing, and configuring srsUE on the new VM.</p>
+</div>
+</section>
+</section>
+<section id="network-configuration-changes-using-netplan">
+<h1>Network Configuration Changes using Netplan<a class="headerlink" href="#network-configuration-changes-using-netplan" title="Link to this heading"></a></h1>
+<p>The file tree for the <cite>/etc/netplan/</cite> directory is as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>/etc/netplan/
+├── 50-cloud-init.yaml
+</pre></div>
+</div>
+<p>The provided images showcase the modifications made to the network configuration files using Netplan, a network configuration tool in Ubuntu.</p>
+<section id="cloud-init-yaml-before-changes">
+<h2>50-cloud-init.yaml (Before Changes)<a class="headerlink" href="#cloud-init-yaml-before-changes" title="Link to this heading"></a></h2>
+<p>In the second image, the modified <code class="docutils literal notranslate"><span class="pre">50-cloud-init.yaml</span></code> file is shown with the following changes:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/after_edit.png"><img alt="CBRS Hardware" src="_images/after_edit.png" style="width: 1150px; height: 700px;" />
+</a>
+</figure>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">network</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">  </span><span class="nt">ethernets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">ens3</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">match</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">macaddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fa:16:3e:9f:4B:85</span>
+<span class="w">      </span><span class="nt">set-name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ens3</span>
+<span class="w">    </span><span class="nt">ens5</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">addresses</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">192.168.121.6/24</span>
+<span class="w">      </span><span class="nt">mtu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9000</span>
+<span class="w">      </span><span class="c1">#dhcp4: true</span>
+<span class="w">      </span><span class="c1">#match:</span>
+<span class="w">      </span><span class="c1">#macaddress: fa:16:3e:3f:ff:75</span>
+<span class="w">      </span><span class="c1">#set-name: ens5</span>
+</pre></div>
+</div>
+<p>The changes made to the configuration are as follows:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ens3</span></code>:
+- The MAC address has been updated to <code class="docutils literal notranslate"><span class="pre">fa:16:3e:9f:4B:85</span></code>.
+- The interface continues to use DHCP to obtain an IP address.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ens5</span></code>:
+- The <code class="docutils literal notranslate"><span class="pre">dhcp4</span></code> parameter has been commented out, indicating that DHCP is disabled for this interface.
+- The <code class="docutils literal notranslate"><span class="pre">match</span></code> and <code class="docutils literal notranslate"><span class="pre">macaddress</span></code> parameters have been commented out, suggesting that the MAC address matching is not being used for <code class="docutils literal notranslate"><span class="pre">ens5</span></code>.
+- The <code class="docutils literal notranslate"><span class="pre">addresses</span></code> parameter has been added, assigning a static IP address <code class="docutils literal notranslate"><span class="pre">192.168.121.6</span></code> with a subnet mask of <code class="docutils literal notranslate"><span class="pre">/24</span></code> (255.255.255.0) to <code class="docutils literal notranslate"><span class="pre">ens5</span></code>.
+- The <code class="docutils literal notranslate"><span class="pre">mtu</span></code> (Maximum Transmission Unit) parameter has been set to <code class="docutils literal notranslate"><span class="pre">9000</span></code>, indicating a larger packet size for <code class="docutils literal notranslate"><span class="pre">ens5</span></code>. This allows for improved network performance by enabling jumbo frames.</p></li>
+</ol>
+</section>
+<section id="cloud-init-yaml-after-changes">
+<h2>50-cloud-init.yaml (After Changes)<a class="headerlink" href="#cloud-init-yaml-after-changes" title="Link to this heading"></a></h2>
+<p>In the first image, the <code class="docutils literal notranslate"><span class="pre">50-cloud-init.yaml</span></code> file is displayed, which is a network configuration file generated by cloud-init. The file contains the following configuration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/orignal_yaml_file.png"><img alt="CBRS Hardware" src="_images/orignal_yaml_file.png" style="width: 1150px; height: 700px;" />
+</a>
+</figure>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">network</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">  </span><span class="nt">ethernets</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">ens3</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">match</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">macaddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fa:16:3e:50:9c:c1</span>
+<span class="w">      </span><span class="nt">set-name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ens3</span>
+<span class="w">    </span><span class="nt">ens5</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">match</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">macaddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fa:16:3e:76:4c:11</span>
+<span class="w">      </span><span class="nt">set-name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ens5</span>
+</pre></div>
+</div>
+<p>This configuration defines two network interfaces:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ens3</span></code>:
+- Configured to obtain an IP address via DHCP (Dynamic Host Configuration Protocol).
+- The <code class="docutils literal notranslate"><span class="pre">match</span></code> section specifies the MAC address <code class="docutils literal notranslate"><span class="pre">fa:16:3e:50:9c:c1</span></code> to identify the interface.
+- The <code class="docutils literal notranslate"><span class="pre">set-name</span></code> parameter sets the interface name to <code class="docutils literal notranslate"><span class="pre">ens3</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ens5</span></code>:
+- Configured to obtain an IP address via DHCP.
+- The <code class="docutils literal notranslate"><span class="pre">match</span></code> section specifies the MAC address <code class="docutils literal notranslate"><span class="pre">fa:16:3e:76:4c:11</span></code> to identify the interface.
+- The <code class="docutils literal notranslate"><span class="pre">set-name</span></code> parameter sets the interface name to <code class="docutils literal notranslate"><span class="pre">ens5</span></code>.</p></li>
+</ol>
+</section>
+<section id="explanation-of-changes">
+<h2>Explanation of Changes<a class="headerlink" href="#explanation-of-changes" title="Link to this heading"></a></h2>
+<p>The modifications in the <code class="docutils literal notranslate"><span class="pre">50-cloud-init.yaml</span></code> file alter the network settings for the <code class="docutils literal notranslate"><span class="pre">ens3</span></code> and <code class="docutils literal notranslate"><span class="pre">ens5</span></code> interfaces:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ens3</span></code> continues to use DHCP for IP address assignment, but the MAC address has been updated to <code class="docutils literal notranslate"><span class="pre">fa:16:3e:9f:4B:85</span></code>. This change ensures that the correct physical interface is identified based on its MAC address.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ens5</span></code> has been reconfigured to use a static IP address instead of DHCP. The <code class="docutils literal notranslate"><span class="pre">addresses</span></code> parameter assigns the IP address <code class="docutils literal notranslate"><span class="pre">192.168.121.6</span></code> with a subnet mask of <code class="docutils literal notranslate"><span class="pre">/24</span></code>. This means that <code class="docutils literal notranslate"><span class="pre">ens5</span></code> will always have the specified IP address, providing a consistent and predictable network configuration.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">mtu</span></code> parameter for <code class="docutils literal notranslate"><span class="pre">ens5</span></code> has been set to <code class="docutils literal notranslate"><span class="pre">9000</span></code>, enabling jumbo frames. Jumbo frames allow for larger packet sizes, reducing overhead and improving network efficiency. However, it’s important to ensure that all devices on the network support and are configured for jumbo frames.</p></li>
+</ul>
+<p>By modifying the Netplan configuration file, you can customize the network settings according to your specific requirements. This includes assigning static IP addresses, configuring subnet masks, enabling or disabling DHCP, and adjusting MTU sizes for optimal network performance.</p>
+<p>It’s crucial to carefully review and test the network configuration changes before applying them to avoid any network connectivity issues or conflicts.</p>
+</section>
+</section>
+<section id="network-configuration-and-testing-with-netplan-and-srsran">
+<h1>Network Configuration and Testing with Netplan and srsRAN<a class="headerlink" href="#network-configuration-and-testing-with-netplan-and-srsran" title="Link to this heading"></a></h1>
+<p>This document outlines the steps involved in configuring the network using Netplan and testing the srsRAN software suite, specifically the srsEPC (Evolved Packet Core) and srsUE (User Equipment), in an Ubuntu environment.</p>
+<section id="netplan-configuration">
+<h2>Netplan Configuration<a class="headerlink" href="#netplan-configuration" title="Link to this heading"></a></h2>
+<p>The network configuration was modified using Netplan, a powerful network configuration tool in Ubuntu. The changes were made to the <code class="docutils literal notranslate"><span class="pre">50-cloud-init.yaml</span></code> file, which is a YAML-formatted configuration file used by cloud-init.</p>
+<p>The modifications included:</p>
+<ol class="arabic simple">
+<li><p>Updating the MAC address for the <code class="docutils literal notranslate"><span class="pre">ens3</span></code> interface to <code class="docutils literal notranslate"><span class="pre">fa:16:3e:9f:4B:85</span></code>.</p></li>
+<li><p>Disabling DHCP and assigning a static IP address <code class="docutils literal notranslate"><span class="pre">192.168.121.6/24</span></code> to the <code class="docutils literal notranslate"><span class="pre">ens5</span></code> interface.</p></li>
+<li><p>Configuring a larger MTU value of <code class="docutils literal notranslate"><span class="pre">9000</span></code> for the <code class="docutils literal notranslate"><span class="pre">ens5</span></code> interface to enable jumbo frames.</p></li>
+</ol>
+<p>These changes were made to customize the network settings according to the specific requirements of the system and to optimize network performance.</p>
+</section>
+<section id="srsran-testing">
+<h2>srsRAN Testing<a class="headerlink" href="#srsran-testing" title="Link to this heading"></a></h2>
+<p>After configuring the network, the focus shifted to testing the srsRAN software suite. The srsRAN project provides an open-source implementation of the 4G/5G Radio Access Network (RAN) and Core Network (CN) functionalities.</p>
+<p>The testing process involved the following steps:</p>
+<ol class="arabic simple">
+<li><p>Installing the srsEPC component using the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">make</span> <span class="pre">install</span></code> command.</p></li>
+<li><p>Installing the configuration files for srsEPC using the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">srsran_install_configs.sh</span> <span class="pre">user</span></code> command.</p></li>
+<li><p>Testing the srsEPC by running the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">srsepc</span></code> command and verifying its functionality.</p></li>
+</ol>
+<p>Upon successful testing of srsEPC, the next step was to deploy the srsUE component on another virtual machine (VM). The process for deploying the VM with USRP (Universal Software Radio Peripheral) access remained the same as before.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h2>
+<p>The network configuration and testing process demonstrated the power and flexibility of Netplan in managing network settings in an Ubuntu environment. By modifying the <code class="docutils literal notranslate"><span class="pre">50-cloud-init.yaml</span></code> file, it was possible to customize the network interfaces, assign static IP addresses, and enable jumbo frames for improved performance.</p>
+<p>The successful installation and testing of the srsEPC component of the srsRAN software suite laid the foundation for further exploration and deployment of the srsUE component on a separate virtual machine. The ability to configure and test these components independently allows for a modular and scalable approach to building and experimenting with 4G/5G networks.</p>
+<p>Overall, the combination of Netplan for network configuration and srsRAN for radio access and core network functionalities provides a powerful toolset for researchers, developers, and network engineers working in the field of wireless communications. The steps outlined in this document serve as a starting point for further exploration, optimization, and integration of these technologies in various network scenarios.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="openstack.html" class="btn btn-neutral float-left" title="Launching OpenStack Instances" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="otic_documents.html" class="btn btn-neutral float-right" title="Open Testing and Integration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, TEAM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+         .wy-nav-content { max-width: none;}
+  </style>
+
+
+
+</body>
+</html>

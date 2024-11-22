@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4G Deployment Experiment &mdash; CCI_TESTBED_DOCS 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/width.css?v=38369d6f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5G Deployment" href="5g-deployment.html" />
+    <link rel="prev" title="Installation Script Documentation" href="4g_prerequisite.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/xG-rev-4c-01.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ccixg.html">Overview to CCI xG testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="policies.html"><strong>CCI xG Testbed User Policy</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">More about the Commonwealth Cyber Initiative (CCI) xG Testbed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenSAS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Opensas.html">OpenSAS Architecture</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html">Launching OpenStack Instances</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#create-an-instance-with-usrp-access">Create an Instance with USRP Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#configure-the-usrp-network-interface-inside-the-instance">Configure the USRP Network Interface Inside the Instance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#create-openstack-network">Create OpenStack Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#verifying-security-groups-in-openstack">Verifying Security Groups in OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#creating-and-associating-a-floating-ip-in-openstack">Creating and Associating a Floating IP in OpenStack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openstack.html#dashboard-instructions-for-compute-vm-access">Dashboard Instructions for Compute VM Access</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Network Plan</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html">Adding a Cloud-Config Script to OpenStack Server(VM) Creation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#finding-usrp-devices-with-uhd-find-devices">Finding USRP Devices with uhd_find_devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#testing-srsepc-and-deploying-srsue">Testing srsEPC and Deploying srsUE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-changes-using-netplan">Network Configuration Changes using Netplan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="net_plan_config.html#network-configuration-and-testing-with-netplan-and-srsran">Network Configuration and Testing with Netplan and srsRAN</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OTIC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html">Open Testing and Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="otic_documents.html#physical-layout-and-architecture-of-the-lab-s">Physical Layout and Architecture of the Lab(s)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">UHD Config</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uhd.html">UHD Installation Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Setup</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="4g_prerequisite.html">Installation Script Documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">4G Deployment</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4G Deployment Experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-uhd">Setting up UHD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-srsran-4g-suite">Installing srsRAN 4G Suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-srsran-ue">Configuring srsRAN UE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-srsran-enb">Configuring srsRAN eNB</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#running-the-experiment">Running the Experiment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#generating-traffic-with-iperf">Generating Traffic with iPerf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">5G Deployment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="5g-deployment.html">5G Deployment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Creek Testbed</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CREEK_TESTBED_SITE.html">CCI xG Testbed: Outdoor Experimentation and Testing Environment(CBRS Testbed Site)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ORAN</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="oran.html">ORAN (Open Radio Access Network)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html">CCI xG Testbed Team Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#director">Director</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#doctoral-student-phd"><strong>Doctoral Student(PhD)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#master-s-researchers">Master’s Researchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#postdoc-researcher">Postdoc Researcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#interns"><strong>Interns</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#research-faculty"><strong>Research Faculty</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_info.html#alumni-and-former-students">Alumni and Former Students</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="research_area.html">Research Areas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact_us.html">Get in Touch with the CCI xG Testbed Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: black" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CCI_TESTBED_DOCS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4G Deployment Experiment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/4g-deployment.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="g-deployment-experiment">
+<span id="id1"></span><h1>4G Deployment Experiment<a class="headerlink" href="#g-deployment-experiment" title="Link to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>This document provides a step-by-step guide on how to set up and conduct a 4G deployment experiment using the srsRAN 4G suite and USRP hardware.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<p>Before starting the experiment, ensure that you have the following:</p>
+<ul class="simple">
+<li><p>UHD (USRP Hardware Driver) installed and set up</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We can use this as a reference: <a class="reference internal" href="4g_prerequisite.html#installation-script-documentation"><span class="std std-ref">UHD Installation Guide</span></a></p>
+</div>
+<ul class="simple">
+<li><p>USRP hardware with a known IP address</p></li>
+<li><p>Two machines: one for the srsRAN 4G ePC and eNB, and another for the srsRAN UE</p></li>
+</ul>
+</section>
+<section id="setting-up-uhd">
+<h2>Setting up UHD<a class="headerlink" href="#setting-up-uhd" title="Link to this heading"></a></h2>
+<p>Verify the UHD installation by running <cite>uhd_find_devices</cite> with the address of your USRP. The last octet of the USRP IP will always be <cite>.2</cite>, regardless of the OpenStack network configuration.</p>
+</section>
+<section id="installing-srsran-4g-suite">
+<h2>Installing srsRAN 4G Suite<a class="headerlink" href="#installing-srsran-4g-suite" title="Link to this heading"></a></h2>
+<p>Install the srsRAN 4G suite on both the ePC/eNB machine and the UE machine:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/srsRAN/srsRAN_4G.git
+<span class="nb">cd</span><span class="w"> </span>srsRAN_4G
+mkdir<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>../
+make
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you encounter the following error during the installation:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;error message&gt;
+</pre></div>
+</div>
+<p>To resolve this issue, follow these steps:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gcc-10<span class="w"> </span>g++-10
+<span class="nb">cd</span><span class="w"> </span>srsRAN_4G/build
+rm<span class="w"> </span>-f<span class="w"> </span>CMakeCache.txt
+<span class="nb">export</span><span class="w"> </span><span class="nv">CC</span><span class="o">=</span><span class="k">$(</span>which<span class="w"> </span>gcc-10<span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">CXX</span><span class="o">=</span><span class="k">$(</span>which<span class="w"> </span>g++-10<span class="k">)</span>
+cmake<span class="w"> </span>../<span class="w"> </span>-B<span class="w"> </span>build
+cmake<span class="w"> </span>--build<span class="w"> </span>build<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
+cmake<span class="w"> </span>../
+make
+make<span class="w"> </span><span class="nb">test</span>
+sudo<span class="w"> </span>make<span class="w"> </span>install
+sudo<span class="w"> </span>ldconfig
+</pre></div>
+</div>
+</div>
+</section>
+<section id="configuring-srsran-ue">
+<h2>Configuring srsRAN UE<a class="headerlink" href="#configuring-srsran-ue" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the UE machine, edit the configuration file located at <cite>/root/.config/srsran/ue.conf</cite> after running the <cite>srsran_install_configs.sh</cite> script. You need to be the root user to access this file.</p></li>
+<li><p>Modify the configuration file according to your setup, such as the USRP address, <cite>dl_earfcn</cite>, etc.</p></li>
+<li><p>Run the following memory commands:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>sysctl<span class="w"> </span>-w<span class="w"> </span>net.core.rmem_max<span class="o">=</span><span class="m">24862979</span>
+sudo<span class="w"> </span>sysctl<span class="w"> </span>-w<span class="w"> </span>net.core.wmem_max<span class="o">=</span><span class="m">24862979</span>
+</pre></div>
+</div>
+</section>
+<section id="configuring-srsran-enb">
+<h2>Configuring srsRAN eNB<a class="headerlink" href="#configuring-srsran-enb" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the ePC/eNB machine, install srsRAN eNB by following the instructions in the <a class="reference external" href="https://docs.srsran.com/projects/4g/en/latest/usermanuals/source/srsenb/source/2_enb_getstarted.html">srsRAN 4G documentation</a>.</p></li>
+<li><p>Modify the eNB configuration file according to your setup.</p></li>
+</ul>
+</section>
+</section>
+<section id="running-the-experiment">
+<h1>Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>On the ePC/eNB machine, start the srsRAN ePC:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>screen<span class="w"> </span>-S<span class="w"> </span>epc
+sudo<span class="w"> </span>srsepc
+</pre></div>
+</div>
+<p>Detach from the screen by pressing <cite>Ctrl+A</cite> followed by <cite>d</cite>.</p>
+<ul class="simple">
+<li><p>On the same machine, start the srsRAN eNB:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>screen<span class="w"> </span>-S<span class="w"> </span>enb
+sudo<span class="w"> </span>srsenb
+</pre></div>
+</div>
+<p>Press <cite>t</cite> and then <cite>Enter</cite> to enable tracing and view the UE attach and throughput information.</p>
+<ul class="simple">
+<li><p>On the UE machine, start the srsRAN UE:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>screen<span class="w"> </span>-S<span class="w"> </span>ue
+sudo<span class="w"> </span>srsue
+</pre></div>
+</div>
+<p>Wait for the UE to attach and obtain an IP address (e.g., 172.16.0.X).</p>
+<section id="generating-traffic-with-iperf">
+<h2>Generating Traffic with iPerf<a class="headerlink" href="#generating-traffic-with-iperf" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the eNB machine, install iPerf:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>iperf
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Start the iPerf server:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>screen<span class="w"> </span>-S<span class="w"> </span>iperf
+iperf<span class="w"> </span>-s
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>On the UE machine, install screen and iPerf:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>screen<span class="w"> </span>iperf
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Start the iPerf client:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>screen<span class="w"> </span>-S<span class="w"> </span>iperf
+iperf<span class="w"> </span>-c<span class="w"> </span><span class="m">172</span>.16.0.1<span class="w"> </span>-i1<span class="w"> </span>-t60<span class="w"> </span>-u<span class="w"> </span>-b<span class="w"> </span>40M
+</pre></div>
+</div>
+<p>Note: The IP address <cite>172.16.0.1</cite> is used because the first address is always reserved for the core. Observe the data transfer on the eNB machine’s iPerf screen.</p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>If the UE fails to attach, ensure that the eNB is configured correctly and running.</p></li>
+<li><p>Double-check the configuration files for the eNB and UE to ensure that the settings match your setup.</p></li>
+<li><p>Verify that the USRP hardware is properly connected and recognized by the system.</p></li>
+<li><p>If you encounter any errors or issues, refer to the srsRAN 4G documentation or seek assistance from the srsRAN community.</p></li>
+</ul>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>srsRAN 4G Documentation: <a class="reference external" href="https://docs.srsran.com/projects/4g/en/latest/index.html">https://docs.srsran.com/projects/4g/en/latest/index.html</a></p></li>
+<li><p>srsRAN GitHub Repository: <a class="reference external" href="https://github.com/srsRAN/srsRAN_4G">https://github.com/srsRAN/srsRAN_4G</a></p></li>
+<li><p>USRP Hardware Driver (UHD) Documentation: <a class="reference external" href="https://files.ettus.com/manual/">https://files.ettus.com/manual/</a></p></li>
+</ul>
+<p><a href="#id2"><span class="problematic" id="id3">``</span></a><a href="#id4"><span class="problematic" id="id5">`</span></a></p>
+<p>This document follows the reStructuredText format and is ready to be used in a Sphinx documentation project.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="4g_prerequisite.html" class="btn btn-neutral float-left" title="Installation Script Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="5g-deployment.html" class="btn btn-neutral float-right" title="5G Deployment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, TEAM.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+         .wy-nav-content { max-width: none;}
+  </style>
+
+
+
+</body>
+</html>
