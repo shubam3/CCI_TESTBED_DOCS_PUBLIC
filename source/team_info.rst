@@ -16,7 +16,7 @@ Team Composition
 - 3 Doctoral Students
 - 2 Master's Researchers
 - 2 Postdoctoral Researchers
-- 3 Interns
+- 4 Interns
 - 2 Research Faculty
 
 The team's research spans various aspects of next-generation wireless technologies, from fundamental network architectures to advanced machine learning applications in communications. With a mix of experienced researchers and upcoming talent, the CCI xG Testbed Team is well-positioned to contribute to the evolving landscape of wireless communication.
@@ -253,14 +253,19 @@ Postdoc Researcher
    :align: left
    :width: 200px
 
-Sanjna Kumari
+   Sanjna Kumari
 
 **Sanjna Kumari**
 --------------------------
 
 - Focus: NextG Testbed, Cloud Computing, Open radio access networks (O-RAN).
 - Sanjna Kumari is a master’s student in Computer Science at Virginia Tech. She holds a B.Eng in computer systems from NED University of Engineering and Technology.  Kumari works as a research intern at the Commonwealth Cyber Initiative on the NextG Testbed, focusing on Cloud computing and Non Real-Time RIC Open Radio Access Networks (O-RAN). 
-Kumari has experience in Software engineering and fintech technology from her work at TPS Worldwide.
+- Kumari has experience in Software engineering and fintech technology from her work at TPS Worldwide.
+
+|
+|
+|
+|
 
 
 
