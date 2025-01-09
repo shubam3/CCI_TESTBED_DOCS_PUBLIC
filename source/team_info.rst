@@ -248,6 +248,19 @@ Postdoc Researcher
 |
 |
 |
+.. figure:: _static/sanjna.png
+   :alt: Harshit Sai Teja Doddi
+   :align: left
+   :width: 200px
+
+Sanjna Kumari
+
+**Sanjna Kumari**
+--------------------------
+
+- Focus: NextG Testbed, Cloud Computing, Open radio access networks (O-RAN).
+- Sanjna Kumari is a master’s student in Computer Science at Virginia Tech. She holds a B.Eng in computer systems from NED University of Engineering and Technology.  Kumari works as a research intern at the Commonwealth Cyber Initiative on the NextG Testbed, focusing on Cloud computing and Non Real-Time RIC Open Radio Access Networks (O-RAN). 
+Kumari has experience in Software engineering and fintech technology from her work at TPS Worldwide.
 
 
 
