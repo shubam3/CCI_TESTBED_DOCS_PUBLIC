@@ -1,6 +1,6 @@
 .. _cci-xg-testbed-internal-user-policy:
 
-**CCI xG Testbed User Policy**
+CCI xG Acceptable Use Policy
 =======================================
 
 Introduction

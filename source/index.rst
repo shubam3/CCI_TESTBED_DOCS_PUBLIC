@@ -1,17 +1,22 @@
-Welcome to CCI's xG Testbed documentation!
-============================================
+CCI's xG Testbed documentation
+==============================
 
 .. toctree::
    :maxdepth: 9
    :caption: Overview
 
-   ccixg
+   overview/ccixg_introduction
+   overview/ccixg_infrastructure
+   overview/ccixg_software
+   overview/ccixg_capabilities
+   overview/ccixg_policy
+   overview/ccixg_citation
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 2
    :caption: Getting Started
 
-   policies
+   getting_started/ccixg_policy
 
 .. toctree::
    :maxdepth: 9

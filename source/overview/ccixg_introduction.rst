@@ -1,7 +1,7 @@
 .. _xg-testbed:
 
-Overview to CCI xG testbed
-==========================
+What is CCI xG Testbed? 
+=======================
 
 The Commonwealth Cyber Initiative (CCI) xG Testbed is a cutting-edge research facility designed to support experimentation and prototyping of next-generation technologies in networks and artificial intelligence (AI) solutions.
 
