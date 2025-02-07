@@ -2,7 +2,7 @@ CCI's xG Testbed documentation
 ==============================
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 2
    :caption: Overview
 
    overview/ccixg_introduction
@@ -11,6 +11,13 @@ CCI's xG Testbed documentation
    overview/ccixg_capabilities
    overview/ccixg_policy
    overview/ccixg_citation
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Testbed Sites 
+
+   sites/indoor
+   sites/outdoor
 
 .. toctree::
    :maxdepth: 2
@@ -44,9 +51,9 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 9
-   :caption: OTIC
+   :caption: O-RAN OTIC Washington DC Metro Area
 
-   otic_documents
+   otic
 
 .. toctree::
    :maxdepth: 9
@@ -74,12 +81,6 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 9
-   :caption: Creek Testbed
-
-   CREEK_TESTBED_SITE
-
-.. toctree::
-   :maxdepth: 9
    :caption: ORAN
 
    oran
@@ -92,7 +93,7 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 9
-   :caption: Research
+   :caption: Publications
 
    research_area
 
