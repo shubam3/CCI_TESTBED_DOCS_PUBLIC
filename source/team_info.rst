@@ -88,20 +88,20 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 
 
-.. figure:: _static/aditya.jpg
-   :alt: Aditya Sathish
-   :align: left
-   :width: 200px
+.. .. figure:: _static/aditya.jpg
+..    :alt: Aditya Sathish
+..    :align: left
+..    :width: 200px
 
-- **Name:** Aditya Sathish  
-- **Role:** Doctoral Student  
-- **Focus:** 5G and beyond networks, WLAN, and challenges in O-RAN deployment
-|
-|
-|
-|
-|
-|
+.. - **Name:** Aditya Sathish  
+.. - **Role:** Doctoral Student  
+.. - **Focus:** 5G and beyond networks, WLAN, and challenges in O-RAN deployment
+.. |
+.. |
+.. |
+.. |
+.. |
+.. |
 
 
 .. figure:: _static/asheesh.jpg
@@ -262,5 +262,6 @@ Associate Research Faculty
 Visitors/Residence
 -------------------
 - **Details on visiting researchers and resident scholars are currently being updated.**
+
 
 For more details, please visit the `CCI xG Testbed Team page <https://ccixgtestbed.org/cci-xg-testbed-team.html>`_.
