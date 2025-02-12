@@ -34,8 +34,11 @@ CCI's xG Testbed documentation
 .. toctree::
    :maxdepth: 9
    :caption: OpenSAS
-
-   Opensas
+   
+   opensas/introduction
+   opensas/installation_configuration
+   opensas/experiments
+   opensas/references
 
 .. toctree::
    :maxdepth: 9
