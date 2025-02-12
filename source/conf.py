@@ -14,9 +14,13 @@ release = '1.0.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+graphviz_dot = r'C:\Program Files\Graphviz\bin\dot.exe'
 
 
-extensions = []
+extensions = [
+    'sphinx.ext.graphviz'
+]
+
 
 templates_path = ['_templates']
 exclude_patterns = []
