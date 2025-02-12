@@ -59,7 +59,6 @@ Post-Doc Researchers
 - **Focus:** AI-driven radio resource management, 5G, and next-generation networks  
 - **Profile:** `Profile <https://sites.google.com/view/mayukh-roy-chowdhury/>`_
 
-.. clear::
 |
 |
 |
@@ -139,7 +138,7 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 |
 
-.. figure:: _static/fahim.jpg
+.. figure:: _static/fahim-bashar-testbed-team.jpg
    :alt: Fahim Bashar
    :align: left
    :width: 200px
@@ -155,7 +154,7 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 |
 
-.. figure:: _static/harshit.jpg
+.. figure:: _static/harshit_sai_teja.jpg
    :alt: Harshit Sai Teja Doddi
    :align: left
    :width: 200px
@@ -203,7 +202,7 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 |
 
-.. figure:: _static/sanjna.jpg
+.. figure:: _static/sanjna.png
    :alt: Sanjna Kumari
    :align: left
    :width: 200px
@@ -212,6 +211,7 @@ The Technical Team includes doctoral students, master's researchers, and interns
 - **Role:** Master's Researcher / Intern  
 - **Focus:** Cloud computing and non-real-time RIC aspects of O-RAN
 
+|
 |
 |
 |
