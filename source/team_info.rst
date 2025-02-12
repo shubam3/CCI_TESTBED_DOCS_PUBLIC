@@ -7,21 +7,21 @@ Organizational Structure
 ------------------------
 Below is the organizational structure for the CCI xG Testbed Team, which defines the hierarchy and groups involved in research and operations.
 
-.. graphviz::
+.. .. graphviz::
 
-   digraph org_structure {
-       rankdir=TB;
-       node [shape=box, style=filled, color=lightblue, fontname=Helvetica];
+..    digraph org_structure {
+..        rankdir=TB;
+..        node [shape=box, style=filled, color=lightblue, fontname=Helvetica];
        
-       Director [label="Director\nAloizio P. DaSilva"];
-       PostDocs [label="Post-Doc Researchers"];
-       Tech [label="Technical Team\n(Doctoral Students,\nMaster's Researchers & Interns)"];
-       Admin [label="Admin Team"];
-       Associate [label="Associate Research Faculty"];
-       Visitors [label="Visitors / Residence"];
+..        Director [label="Director\nAloizio P. DaSilva"];
+..        PostDocs [label="Post-Doc Researchers"];
+..        Tech [label="Technical Team\n(Doctoral Students,\nMaster's Researchers & Interns)"];
+..        Admin [label="Admin Team"];
+..        Associate [label="Associate Research Faculty"];
+..        Visitors [label="Visitors / Residence"];
        
-       Director -> { PostDocs Tech Admin Associate Visitors };
-   }
+..        Director -> { PostDocs Tech Admin Associate Visitors };
+..    }
 
 The People
 ==========
