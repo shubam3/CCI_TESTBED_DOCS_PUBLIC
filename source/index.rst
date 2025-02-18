@@ -3,20 +3,22 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 1
+   :caption: Overview
    
-   OVERVIEW <overview/ccixg_introduction>
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Testbed Sites 
-
-      sites/indoor
-      sites/outdoor
+   Introduction <overview/ccixg_introduction>
 
 .. toctree::
    :maxdepth: 1
+   :caption: Testbed Sites 
 
-   GETTING STARTED <getting_started/user_access>
+   sites/indoor
+   sites/outdoor
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting Started
+
+   Getting Started <getting_started/user_access>
 
 .. toctree::
 ..    :maxdepth: 9
@@ -25,7 +27,7 @@ CCI's xG Testbed documentation
 ..    introduction
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: OpenSAS
 
    opensas/introduction
@@ -34,67 +36,67 @@ CCI's xG Testbed documentation
    opensas/references
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: OpenStack
 
    openstack
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: Network Plan
 
    net_plan_config
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: O-RAN OTIC Washington DC Metro Area
 
    otic
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: UHD Config
 
    uhd
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: 4G Setup
 
    4g_prerequisite
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: 4G Deployment
 
    4g-deployment
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: 5G Deployment
 
    5g-deployment
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: ORAN
 
    oran
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: Team
 
    team_info
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: Publications
 
    research_area
 
 .. toctree::
-   :maxdepth: 9
+   :maxdepth: 1
    :caption: Contact
 
    contact_us
