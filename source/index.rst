@@ -10,21 +10,19 @@ CCI's xG Testbed documentation
    :maxdepth: 2
    :caption: Testbed Sites 
 
-   sites/indoor
-   sites/outdoor
+      sites/indoor
+      sites/outdoor
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Getting Started
+   :maxdepth: 1
 
-   getting_started/ccixg_policy
-   getting_started/user_access
+   GETTING STARTED <getting_started/user_access>
 
 .. toctree::
-   :maxdepth: 9
-   :caption: Introduction
+..    :maxdepth: 9
+..    :caption: Introduction
 
-   introduction
+..    introduction
 
 .. toctree::
    :maxdepth: 9
