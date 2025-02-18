@@ -1,6 +1,6 @@
 .. _xg-testbed:
 
-CCI xG Testbed User Policy 
+User Policy 
 ==========================
 
 

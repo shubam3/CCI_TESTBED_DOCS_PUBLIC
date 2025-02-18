@@ -1,7 +1,7 @@
 Citing CCI xG Testbed
 ===========================
 
-For studies using the CCI xG Testbed as an experimental infrastructure, it is required that any work derived from the testbed must acknowledge and cite “CCI xG Testbed” to promote awareness of its capabilities and foster its adoption in advanced wireless research. The primary reference is as follows:
+For any work using the CCI xG Testbed as an experimental infrastructure, it is required that any work derived from the testbed must acknowledge and cite “CCI xG Testbed” to promote awareness of its capabilities and foster its adoption in advanced wireless research. The primary reference is as follows:
 
 
 *Aloizio Da Silva, Mayukh Roy Chowdhury, Aditya Sathish, Asheesh Tripathi, Scott F. 
