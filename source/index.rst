@@ -2,15 +2,9 @@ CCI's xG Testbed documentation
 ==============================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Overview
-
-   overview/ccixg_introduction
-   overview/ccixg_infrastructure
-   overview/ccixg_software
-   overview/ccixg_capabilities
-   overview/ccixg_policy
-   overview/ccixg_citation
+   :maxdepth: 1
+   
+   OVERVIEW <overview/ccixg_introduction>
 
 .. toctree::
    :maxdepth: 2
@@ -24,6 +18,7 @@ CCI's xG Testbed documentation
    :caption: Getting Started
 
    getting_started/ccixg_policy
+   getting_started/user_access
 
 .. toctree::
    :maxdepth: 9
@@ -34,7 +29,7 @@ CCI's xG Testbed documentation
 .. toctree::
    :maxdepth: 9
    :caption: OpenSAS
-   
+
    opensas/introduction
    opensas/installation_configuration
    opensas/experiments

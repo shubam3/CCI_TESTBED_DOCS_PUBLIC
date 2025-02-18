@@ -7,21 +7,58 @@ Organizational Structure
 ------------------------
 Below is the organizational structure for the CCI xG Testbed Team, which defines the hierarchy and groups involved in research and operations.
 
-.. .. graphviz::
+.. graphviz::
+   :align: center
 
-..    digraph org_structure {
-..        rankdir=TB;
-..        node [shape=box, style=filled, color=lightblue, fontname=Helvetica];
-       
-..        Director [label="Director\nAloizio P. DaSilva"];
-..        PostDocs [label="Post-Doc Researchers"];
-..        Tech [label="Technical Team\n(Doctoral Students,\nMaster's Researchers & Interns)"];
-..        Admin [label="Admin Team"];
-..        Associate [label="Associate Research Faculty"];
-..        Visitors [label="Visitors / Residence"];
-       
-..        Director -> { PostDocs Tech Admin Associate Visitors };
-..    }
+   digraph org_structure {
+       graph [
+         dpi=130,       // Lower DPI for a more compact image
+         rankdir=TB,    // Top-to-bottom layout
+         splines=ortho, // Orthogonal edges for a clean look
+         ranksep=0.5    // Reduced vertical space between levels for a shorter diagram
+       ];
+
+       node [
+         shape=box,
+         style=filled,
+         color=lightblue,
+         fontname=Helvetica,
+         penwidth=2
+       ];
+
+       edge [
+         dir=none,      // No arrows, just lines
+         color=black,
+         penwidth=2
+       ];
+
+       // Define nodes
+       Director    [label="Director"];
+       Postdoc     [label="Postdoc"];
+       Associate   [label="Associate Faculty"];
+       TechTeam    [label="Technical Team"];
+       AdminTeam   [label="Admin Team"];
+       Visitors    [label="Visitor/Engineer Resident"];
+
+       // Force ranking by levels
+       { rank=min;  Director }
+       { rank=same; Postdoc; Associate }
+       { rank=max;  TechTeam; AdminTeam; Visitors }
+
+       // Direct (solid) reporting lines to Director
+       Director -> Postdoc    [style=solid];
+       Director -> TechTeam   [style=solid];
+       Director -> AdminTeam  [style=solid];
+       Director -> Visitors   [style=solid];
+
+       // Indirect (dotted) lines to Postdoc
+       Postdoc -> TechTeam   [style=dotted];
+       Postdoc -> AdminTeam  [style=dotted];
+
+       // Associate Faculty has no lines
+   }
+
+|
 
 The People
 ==========
@@ -40,6 +77,7 @@ Director
 - **Expertise:** Wireless networking, NFV, SDN, and SDR  
 - **Profile:** `Profile <https://cyberinitiative.org/research/researcher-directory/silva-aloizio-pereira-da.html>`_
 
+.. clear::
 |
 |
 |
@@ -59,6 +97,7 @@ Post-Doc Researchers
 - **Focus:** AI-driven radio resource management, 5G, and next-generation networks  
 - **Profile:** `Profile <https://sites.google.com/view/mayukh-roy-chowdhury/>`_
 
+.. clear::
 |
 |
 |
@@ -68,7 +107,7 @@ Post-Doc Researchers
 
 Technical Team
 --------------
-The Technical Team includes doctoral students, master's researchers, and interns dedicated to developing and implementing advanced wireless technologies.
+The Technical Team includes doctoral students and a subset of master's researchers dedicated to developing and implementing advanced wireless technologies.
 
 **Doctoral Students:**
 
@@ -87,22 +126,20 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 |
 
+.. figure:: _static/aditya.jpg
+   :alt: Aditya Sathish
+   :align: left
+   :width: 200px
 
-.. .. figure:: _static/aditya.jpg
-..    :alt: Aditya Sathish
-..    :align: left
-..    :width: 200px
-
-.. - **Name:** Aditya Sathish  
-.. - **Role:** Doctoral Student  
-.. - **Focus:** 5G and beyond networks, WLAN, and challenges in O-RAN deployment
-.. |
-.. |
-.. |
-.. |
-.. |
-.. |
-
+- **Name:** Aditya Sathish  
+- **Role:** Doctoral Student  
+- **Focus:** 5G and beyond networks, WLAN, and challenges in O-RAN deployment
+|
+|
+|
+|
+|
+|
 
 .. figure:: _static/asheesh.jpg
    :alt: Asheesh Tripathi
@@ -112,7 +149,6 @@ The Technical Team includes doctoral students, master's researchers, and interns
 - **Name:** Asheesh Tripathi  
 - **Role:** Doctoral Student  
 - **Focus:** SDR-based CBRS networks and machine learning in wireless systems
-
 |
 |
 |
@@ -128,9 +164,8 @@ The Technical Team includes doctoral students, master's researchers, and interns
    :width: 200px
 
 - **Name:** Abida Sultana  
-- **Role:** Master's Researcher / Intern  
+- **Role:** Graduate Research Assistant  
 - **Focus:** Near Real-Time Open Radio Access Networks (O-RAN)
-
 |
 |
 |
@@ -144,41 +179,8 @@ The Technical Team includes doctoral students, master's researchers, and interns
    :width: 200px
 
 - **Name:** Fahim Bashar  
-- **Role:** Master's Researcher / Intern  
+- **Role:** Graduate Research Assistant
 - **Focus:** NextG Testbed deployment and development
-
-|
-|
-|
-|
-|
-|
-
-.. figure:: _static/harshit_sai_teja.jpg
-   :alt: Harshit Sai Teja Doddi
-   :align: left
-   :width: 200px
-
-- **Name:** Harshit Sai Teja Doddi  
-- **Role:** Master's Researcher / Intern  
-- **Focus:** AI and ML in cloud computing for NextG Testbed applications
-
-|
-|
-|
-|
-|
-|
-
-.. figure:: _static/kshitij.jpg
-   :alt: Kshitij Narvekar
-   :align: left
-   :width: 200px
-
-- **Name:** Kshitij Narvekar  
-- **Role:** Master's Researcher / Intern  
-- **Focus:** Integration of AI/ML in cloud platforms for wireless research
-
 |
 |
 |
@@ -192,9 +194,42 @@ The Technical Team includes doctoral students, master's researchers, and interns
    :width: 200px
 
 - **Name:** Rajat Nagar  
-- **Role:** Master's Researcher / Intern  
+- **Role:** Researcher Intern   
 - **Focus:** Deployment of cloud solutions and support for proof-of-concept development
+|
+|
+|
+|
+|
+|
 
+Admin Team
+----------
+
+
+.. figure:: _static/harshit_sai_teja.jpg
+   :alt: Harshit Sai Teja Doddi
+   :align: left
+   :width: 200px
+
+- **Name:** Harshit Sai Teja Doddi  
+- **Role:** Master's Researcher / Intern (Admin Team)  
+- **Focus:** AI and ML in cloud computing for NextG Testbed applications
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/kshitij.jpg
+   :alt: Kshitij Narvekar
+   :align: left
+   :width: 200px
+
+- **Name:** Kshitij Narvekar  
+- **Role:** Master's Researcher / Intern (Admin Team)  
+- **Focus:** Integration of AI/ML in cloud platforms for wireless research
 |
 |
 |
@@ -208,9 +243,8 @@ The Technical Team includes doctoral students, master's researchers, and interns
    :width: 200px
 
 - **Name:** Sanjna Kumari  
-- **Role:** Master's Researcher / Intern  
+- **Role:** Master's Researcher / Intern (Admin Team)  
 - **Focus:** Cloud computing and non-real-time RIC aspects of O-RAN
-
 |
 |
 |
@@ -218,10 +252,6 @@ The Technical Team includes doctoral students, master's researchers, and interns
 |
 |
 |
-
-Admin Team
-----------
-- **Details on the administrative team will be updated soon.**
 
 Associate Research Faculty
 ---------------------------
@@ -235,6 +265,7 @@ Associate Research Faculty
 - **Focus:** Modeling and technology design for next-generation mobile networks using stochastic geometry, AI, and optimization  
 - **Profile:** `Profile <https://scholar.google.com/citations?user=obwKxOoAAAAJ&hl=en&oi=ao>`_
 
+.. clear::
 |
 |
 |
@@ -252,6 +283,7 @@ Associate Research Faculty
 - **Focus:** 5G testbed and AI assurance; integrating SDR with SDN for programmable networks  
 - **Profile:** `Profile <https://cyberinitiative.org/research/researcher-directory/santos-joao.html>`_
 
+.. clear::
 |
 |
 |
@@ -262,6 +294,5 @@ Associate Research Faculty
 Visitors/Residence
 -------------------
 - **Details on visiting researchers and resident scholars are currently being updated.**
-
 
 For more details, please visit the `CCI xG Testbed Team page <https://ccixgtestbed.org/cci-xg-testbed-team.html>`_.

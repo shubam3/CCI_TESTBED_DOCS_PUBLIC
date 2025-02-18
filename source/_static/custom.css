@@ -1,0 +1,6 @@
+.wy-menu-vertical li.toctree-l0 > a,
+.wy-menu-vertical li.toctree-l0 > a:hover,
+.wy-menu-vertical li.toctree-l0 > a:active,
+.wy-menu-vertical li.toctree-l0 > a:focus {
+  color: red !important;
+}

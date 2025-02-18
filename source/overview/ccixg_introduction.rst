@@ -19,3 +19,12 @@ The Testbed's approach fosters a flexible and adaptable research environment, al
 - Allows for flexibility, scalability, and ease of management through a modular approach
 
 In summary, the Commonwealth Cyber Initiative xG Testbed empowers researchers, industry partners, and government agencies to collaboratively explore and develop next-generation technologies in networks and AI solutions. By fostering innovation and collaboration, the Testbed drives the advancement of wireless communication and AI technologies both indoor and outdoor for the benefit of businesses, consumers, and society as a whole.
+
+.. toctree::
+   :maxdepth: 1
+
+   ccixg_infrastructure
+   ccixg_software
+   ccixg_capabilities
+   ccixg_policy
+   ccixg_citation
