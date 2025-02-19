@@ -183,11 +183,12 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Fahim Bashar
    :align: left
    :width: 200px
-   :height: 220px
+   :height: 250px
 
 - **Name:** Fahim Bashar  
 - **Role:** Graduate Research Assistant
 - **Focus:** NextG Testbed deployment and development
+|
 |
 |
 |
@@ -199,11 +200,12 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Rajat Nagar
    :align: left
    :width: 200px
-   :height: 220px
+   :height: 250px
 
 - **Name:** Rajat Nagar  
-- **Role:** Researcher Intern   
+- **Role:** Research Intern   
 - **Focus:** Deployment of cloud solutions and support for proof-of-concept development
+|
 |
 |
 |
@@ -222,7 +224,7 @@ Admin Team
    :height: 200px
 
 - **Name:** Harshit Sai Teja Doddi  
-- **Role:** Master's Researcher / Intern (Admin Team)  
+- **Role:** Master's Researcher / Intern
 - **Focus:** AI and ML in cloud computing for NextG Testbed applications
 |
 |
@@ -238,7 +240,7 @@ Admin Team
    :height: 200px
 
 - **Name:** Kshitij Narvekar  
-- **Role:** Master's Researcher / Intern (Admin Team)  
+- **Role:** Master's Researcher / Intern 
 - **Focus:** Integration of AI/ML in cloud platforms for wireless research
 |
 |
@@ -254,7 +256,7 @@ Admin Team
    :height: 200px
 
 - **Name:** Sanjna Kumari  
-- **Role:** Master's Researcher / Intern (Admin Team)  
+- **Role:** Master's Researcher / Intern
 - **Focus:** Cloud computing and non-real-time RIC aspects of O-RAN
 |
 |
@@ -263,6 +265,9 @@ Admin Team
 |
 |
 |
+
+Alumni and Former Students
+----------
 
 Associate Research Faculty
 ---------------------------
