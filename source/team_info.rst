@@ -71,6 +71,7 @@ Director
    :alt: Aloizio P. DaSilva
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Aloizio P. DaSilva  
 - **Role:** Director, CCI xG Testbed Team  
@@ -91,6 +92,7 @@ Post-Doc Researchers
    :alt: Mayukh Roy Chowdhury
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Mayukh Roy Chowdhury  
 - **Role:** Postdoctoral Researcher  
@@ -115,6 +117,7 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Md. Habibur Rahman
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Md. Habibur Rahman  
 - **Role:** Doctoral Student  
@@ -130,6 +133,7 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Aditya Sathish
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Aditya Sathish  
 - **Role:** Doctoral Student  
@@ -145,6 +149,7 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Asheesh Tripathi
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Asheesh Tripathi  
 - **Role:** Doctoral Student  
@@ -162,6 +167,7 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Abida Sultana
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Abida Sultana  
 - **Role:** Graduate Research Assistant  
@@ -173,10 +179,11 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 
-.. figure:: _static/fahim-bashar-testbed-team.jpg
+.. figure:: _static/fahim.png
    :alt: Fahim Bashar
    :align: left
    :width: 200px
+   :height: 220px
 
 - **Name:** Fahim Bashar  
 - **Role:** Graduate Research Assistant
@@ -192,6 +199,7 @@ The Technical Team includes doctoral students and a subset of master's researche
    :alt: Rajat Nagar
    :align: left
    :width: 200px
+   :height: 220px
 
 - **Name:** Rajat Nagar  
 - **Role:** Researcher Intern   
@@ -211,6 +219,7 @@ Admin Team
    :alt: Harshit Sai Teja Doddi
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Harshit Sai Teja Doddi  
 - **Role:** Master's Researcher / Intern (Admin Team)  
@@ -226,6 +235,7 @@ Admin Team
    :alt: Kshitij Narvekar
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Kshitij Narvekar  
 - **Role:** Master's Researcher / Intern (Admin Team)  
@@ -241,6 +251,7 @@ Admin Team
    :alt: Sanjna Kumari
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Sanjna Kumari  
 - **Role:** Master's Researcher / Intern (Admin Team)  
@@ -259,6 +270,7 @@ Associate Research Faculty
    :alt: Jacek Kibilda
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Jacek Kibilda  
 - **Role:** Associate Research Faculty  
@@ -277,6 +289,7 @@ Associate Research Faculty
    :alt: Joao Santos
    :align: left
    :width: 200px
+   :height: 200px
 
 - **Name:** Joao Santos  
 - **Role:** Associate Research Faculty  
