@@ -188,7 +188,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 
-.. figure:: _static/rajat_1.png
+.. figure:: _static/rajat_2.png
    :alt: Rajat Nagar
    :align: left
    :width: 200px
