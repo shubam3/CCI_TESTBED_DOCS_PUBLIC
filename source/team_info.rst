@@ -57,10 +57,10 @@ Below is the organizational structure for the CCI xG Testbed Team, which defines
 
 ..        // Associate Faculty has no lines
 ..    }
-.. figure:: ../_static/cci_organization.png
+
+.. figure:: _static/cci_organization.png
    :alt: structure
    :align: center
-   :scale: 50%
 
 |
 
