@@ -74,6 +74,7 @@ The outdoor enclosure houses several key components that enable the deployment o
   :align: center
   :scale: 30%
 
+|
 
 The outdoor enclosure is designed to protect these components from the elements, ensuring reliable operation in various weather conditions. The enclosure is weatherproof and provides a controlled environment for the sensitive electronic equipment.
 By integrating these components into a single outdoor enclosure, the CCI xG Testbed Team has created a modular and scalable solution for deploying experimental 5G NR networks in the CBRS band. This setup allows researchers to easily deploy and manage their experiments, while also providing remote access and control capabilities for efficient operation and maintenance.
@@ -84,10 +85,10 @@ Implementation of CBRS Hardware
 
 This section describes the implementation of the CBRS hardware components in the outdoor enclosure. The hardware components include the USRP x310, Intel NUC, CommScope CBRS antenna, Dell networking switch, CyberPower metered PDU, and PiKVM. These components are integrated into the enclosure to create a self-contained and weatherproof system for deploying the experimental CBSD (5G NR standalone network in the CBRS band).
 
-.. figure:: ../_static/REALHARDWARE.png
+.. figure:: ../_static/read_hardware.png
   :alt: CBRS Hardware
   :align: center
-  :scale: 30%
+  :scale: 12%
 
 |
 
