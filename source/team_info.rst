@@ -7,56 +7,60 @@ Organizational Structure
 ------------------------
 Below is the organizational structure for the CCI xG Testbed Team, which defines the hierarchy and groups involved in research and operations.
 
-.. graphviz::
+.. .. graphviz::
+..    :align: center
+
+..    digraph org_structure {
+..        graph [
+..          dpi=130,       // Lower DPI for a more compact image
+..          rankdir=TB,    // Top-to-bottom layout
+..          splines=ortho, // Orthogonal edges for a clean look
+..          ranksep=0.5    // Reduced vertical space between levels for a shorter diagram
+..        ];
+
+..        node [
+..          shape=box,
+..          style=filled,
+..          color=lightblue,
+..          fontname=Helvetica,
+..          penwidth=2
+..        ];
+
+..        edge [
+..          dir=none,      // No arrows, just lines
+..          color=black,
+..          penwidth=2
+..        ];
+
+..        // Define nodes
+..        Director    [label="Director"];
+..        Postdoc     [label="Postdoc"];
+..        Associate   [label="Associate Faculty"];
+..        TechTeam    [label="Technical Team"];
+..        AdminTeam   [label="Admin Team"];
+..        Visitors    [label="Visitor/Engineer Resident"];
+
+..        // Force ranking by levels
+..        { rank=min;  Director }
+..        { rank=same; Postdoc; Associate }
+..        { rank=max;  TechTeam; AdminTeam; Visitors }
+
+..        // Direct (solid) reporting lines to Director
+..        Director -> Postdoc    [style=solid];
+..        Director -> TechTeam   [style=solid];
+..        Director -> AdminTeam  [style=solid];
+..        Director -> Visitors   [style=solid];
+
+..        // Indirect (dotted) lines to Postdoc
+..        Postdoc -> TechTeam   [style=dotted];
+..        Postdoc -> AdminTeam  [style=dotted];
+
+..        // Associate Faculty has no lines
+..    }
+.. figure:: ../_static/cci_organization.png
+   :alt: structure
    :align: center
-
-   digraph org_structure {
-       graph [
-         dpi=130,       // Lower DPI for a more compact image
-         rankdir=TB,    // Top-to-bottom layout
-         splines=ortho, // Orthogonal edges for a clean look
-         ranksep=0.5    // Reduced vertical space between levels for a shorter diagram
-       ];
-
-       node [
-         shape=box,
-         style=filled,
-         color=lightblue,
-         fontname=Helvetica,
-         penwidth=2
-       ];
-
-       edge [
-         dir=none,      // No arrows, just lines
-         color=black,
-         penwidth=2
-       ];
-
-       // Define nodes
-       Director    [label="Director"];
-       Postdoc     [label="Postdoc"];
-       Associate   [label="Associate Faculty"];
-       TechTeam    [label="Technical Team"];
-       AdminTeam   [label="Admin Team"];
-       Visitors    [label="Visitor/Engineer Resident"];
-
-       // Force ranking by levels
-       { rank=min;  Director }
-       { rank=same; Postdoc; Associate }
-       { rank=max;  TechTeam; AdminTeam; Visitors }
-
-       // Direct (solid) reporting lines to Director
-       Director -> Postdoc    [style=solid];
-       Director -> TechTeam   [style=solid];
-       Director -> AdminTeam  [style=solid];
-       Director -> Visitors   [style=solid];
-
-       // Indirect (dotted) lines to Postdoc
-       Postdoc -> TechTeam   [style=dotted];
-       Postdoc -> AdminTeam  [style=dotted];
-
-       // Associate Faculty has no lines
-   }
+   :scale: 50%
 
 |
 
@@ -123,21 +127,6 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Role:** Doctoral Student  
 - **Focus:** Machine learning and deep learning in wireless networks and O-RAN
 |
-|
-|
-|
-|
-|
-
-.. figure:: _static/aditya.jpg
-   :alt: Aditya Sathish
-   :align: left
-   :width: 200px
-   :height: 200px
-
-- **Name:** Aditya Sathish  
-- **Role:** Doctoral Student  
-- **Focus:** 5G and beyond networks, WLAN, and challenges in O-RAN deployment
 |
 |
 |
@@ -267,7 +256,42 @@ Admin Team
 |
 
 Alumni and Former Students
-----------
+----------------------------
+
+.. figure:: _static/aditya.jpg
+   :alt: Aditya Sathish
+   :align: left
+   :width: 200px
+   :height: 200px
+
+   `Aditya Sathish <https://scholar.google.com/citations?user=_DI_jTsAAAAJ&hl=en>`_
+
+.. figure:: _static/souradeep.jpg
+   :alt: Souradeep Deb
+   :align: left
+   :width: 200px
+
+   `Souradeep Deb <https://scholar.google.com/citations?user=4hCPcvoAAAAJ&hl=en>`_
+
+.. figure:: _static/jaswanth_sai_reddy.jpg
+   :alt: Jaswanth Sai Reddy
+   :align: left
+   :width: 200px
+
+   Jaswanth Sai Reddy
+
+|     
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
 
 Associate Research Faculty
 ---------------------------
