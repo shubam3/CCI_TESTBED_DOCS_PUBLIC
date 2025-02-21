@@ -27,7 +27,7 @@ CCI's xG Testbed documentation
 ..    introduction
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Software Architecture
 
    software_architecture/opensas/introduction
