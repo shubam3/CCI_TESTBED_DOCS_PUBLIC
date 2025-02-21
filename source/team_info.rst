@@ -335,6 +335,19 @@ Associate Research Faculty
 
 Visitors/Residence
 -------------------
-- **Details on visiting researchers and resident scholars are currently being updated.**
+.. figure:: _static/zeeshan-pic.jpg
+   :alt: Zeeshan
+   :align: left
+   :width: 200px
+   :height: 200px
 
+- **Name:** Zeeshan Shah  
+- **Role:** Principal Engineer- 5G ORAN Lab  
+- **Focus:** 5G O-RAN- ACCoRD Testing and Integration Engineer- Support Day to Day ORAN ACCoRD testing activities  
+- **Profile:** `Profile <https://www.linkedin.com/in/zeeshan-shah-pmp%C2%AE%EF%B8%8F-59406742/>`_
+
+|
+|
+|
+|
 For more details, please visit the `CCI xG Testbed Team page <https://ccixgtestbed.org/cci-xg-testbed-team.html>`_.
