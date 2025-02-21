@@ -102,11 +102,11 @@ Installation and Configuration
 This section presents installation and configuration steps for OpenSAS server, OpenSAS dashboard, and CBSDs in linux environment. OpenSAS and its dashboard can be installed from source or using Docker. The following sections provide detailed instructions for each method.
 
 Building OpenSAS from Source
-""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The `Core/` folder contains everything required to launch the SAS Core Server. Regardless of your institution, this contains the code that is of primary interest for SAS researchers.
 
 Clone the Repository
-~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""
 
 In this method, the repository is cloned locally. This is the way to go if HTTPS is required.
 
@@ -118,7 +118,7 @@ First clone the repository using git
 
 
 Generate Certificates
-~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""
 
 - Next, create the CA and server/client certificates using the create_ssl_certs.sh script. Go into the /Core/Certs folder and run the script. 
 
@@ -146,7 +146,7 @@ Generate Certificates
    **Figure:** Certificate Generation.
 
 Update Server Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""
 
 Update the paths to the server certificate and key in `Core/server.py`. The following code snipped show which paths to update.
 
@@ -161,7 +161,7 @@ Update the paths to the server certificate and key in `Core/server.py`. The foll
    
 
 Install Requirements
-~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""
 
 Finally, before starting the server, install all the requirements (packages) by running pip3 install as follows:
 
@@ -179,7 +179,7 @@ Finally, before starting the server, install all the requirements (packages) by 
    **Figure:** Installation Requirements.
 
 Run the OpenSAS Server
-~~~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""
 
 Start the OpenSAS server:
 
@@ -216,17 +216,17 @@ The OpenSAS server will start listening for HTTPS requests from CBSDs.
 These endpoints allow CBSDs to perform various actions such as registration, spectrum inquiry, grant requests, heartbeats, relinquishment, and deregistration with the OpenSAS server.
 
 Building OpenSAS Dashboard from Source
-""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Clone the Repository
-~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""
 
 .. code-block:: bash
 
    git clone https://github.com/CCI-NextG-Testbed/OpenSAS-dashboard/
 
 Install npm
-~~~~~~~~~~~
+"""""""""""""""""""""""""""
 
 Install npm if it's not already installed:
 
@@ -235,7 +235,7 @@ Install npm if it's not already installed:
    sudo apt-get install npm
 
 Install Dependencies
-~~~~~~~~~~~~~~~~~~~~
+"""""""""""""""""""""""""""
 
 From the cloned directory, install dependencies:
 
@@ -245,7 +245,7 @@ From the cloned directory, install dependencies:
    npm install --legacy-peer-deps
 
 Configure and Run the Dashboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 - Set the IP and port to the OpenSAS SocketIO in the configuration files.
 - If the OpenSAS core is running on a different VM or machine, use its IP; else it will be `localhost`.
@@ -293,12 +293,12 @@ Then, start the dashboard:
    **Figure:** CBSD List on Dashboard.
 
 Build from Docker Image of OpenSAS and OpenSAS Dashboard
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Alternatively, you can build and run OpenSAS using Docker. The Dockerfile provides an easy way to get started.
 
 Install Docker Engine
-~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Update your package lists and install Docker:
 
@@ -308,7 +308,7 @@ Update your package lists and install Docker:
    sudo apt install docker.io
 
 Clone the Docker Repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -316,14 +316,14 @@ Clone the Docker Repository
    cd OpenSASDocker
 
 Build the Docker Image
-~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 .. code-block:: bash
 
    sudo docker build . --tag=opensas-server-dash --no-cache
 
 Run the OpenSAS Container
-~~~~~~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -347,13 +347,13 @@ Run the OpenSAS Container
 
 
 CBSD Client for OpenSAS
-"""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 CBSD consists of a CBSD client and a 4G/5G gNB. The CBSD client is responsible for communicating with the OpenSAS server to register, request spectrum, and perform other actions. Once CBSD client receives the grant from the SAS, it communicates with the gNB to start transmitting on the assigned frequency. Open-source 4G/5G stacks can be used for end-to-end deployment in the CBRS ecosystem, however it is not mandatory to have over-the-air 4G/5G setup. ZMQ or simulated-RF can also be used. For 4G/5G gNB installation, refer to the srsRAN/OAI documentation. We use `tmux` terminal to trigger gNB operation, once the grant is received from the SAS.
 
 
 1. Clone the Repository
-~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 .. code-block:: bash
 
@@ -362,12 +362,12 @@ CBSD consists of a CBSD client and a 4G/5G gNB. The CBSD client is responsible f
 
 
 2. Install TMUX and Copy the Certificates
-~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Make sure that the `tmux` is installed on CBSD machine and client Certs are generated in OpenSAS server with client's machine IP (accessible from other VMs) and placed in the Certs folder here. Also, the proper gnb yml file is copied from your srsRAN/configs folder. modify the run.py script to include any specific srsRAN config file. Make appropriate changes in the run.py and CBSD.py.
 
 3. Modify run.py
-~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Modify run.py to add you gnb yml file name
 
@@ -380,7 +380,7 @@ Modify run.py to add you gnb yml file name
 
 
 4. Modify CBSD.py
-~~~~~~~~~~~~~~~~~~~~
+""""""""""""""""""""""""
 
 Modify CBSD.py to inculde OpenSAS IP and proper CBSD client certificate path:
 

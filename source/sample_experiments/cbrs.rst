@@ -33,8 +33,8 @@ Setting Up the Experiment
 
 **Prerequisites**
 
-   - OpenSAS server and dashboard are installed and configured properly. The installation and configuration steps can be found at `server installation and configuration <https://cci-testbed-docs-public.readthedocs.io/en/latest/installation.html#building-opensas-from-source>`_ and `dashboard installation and configuration <https://cci-testbed-docs-public.readthedocs.io/en/latest/installation.html#building-opensas-dashboard-from-source>`_.
-   - Install and configure PAL and GAA CBSDs with srsRAN gNB and Open5GS core. The installation and configuration steps can be found at `CBSD client for OpenSAS <https://cci-testbed-docs-public.readthedocs.io/en/latest/installation.html#cbsd-client-for-opensas>`_.
+   - OpenSAS server and dashboard are installed and configured properly. The installation and configuration steps can be found at `server installation and configuration <https://cci-testbed-docs-public.readthedocs.io/en/latest/software_architecture/opensas/introduction.html#building-opensas-from-source>`_ and `dashboard installation and configuration <https://cci-testbed-docs-public.readthedocs.io/en/latest/software_architecture/opensas/introduction.html#building-opensas-dashboard-from-source>`_.
+   - Install and configure PAL and GAA CBSDs with srsRAN gNB and Open5GS core. The installation and configuration steps can be found at `CBSD client for OpenSAS <https://cci-testbed-docs-public.readthedocs.io/en/latest/software_architecture/opensas/introduction.html#cbsd-client-for-opensas>`_.
 
 **Running the Experiment**
 
