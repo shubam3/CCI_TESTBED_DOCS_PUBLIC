@@ -142,7 +142,9 @@ The Technical Team includes doctoral students and a subset of master's researche
 
 - **Name:** Asheesh Tripathi  
 - **Role:** Doctoral Student  
-- **Focus:** SDR-based CBRS networks and machine learning in wireless systems
+- **Focus:** Spectrum Sharing, Machine learning in wireless systems, O-RAN and experimental cellular research.
+- **Profile:** `Linkedin <https://www.linkedin.com/in/asheesh-tripathi/>`_, `Github <https://github.com/asheeshtripathi/>`_, `Google Scholar <https://scholar.google.com/citations?user=fcRTl7kAAAAJ&hl=en/>`_
+
 |
 |
 |

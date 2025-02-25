@@ -16,7 +16,7 @@ CBRS, also known as the 3.5 GHz band (3550-3700 MHz), is designed to promote sha
 
 
 - **Incumbent Access:** This tier includes federal and non-federal incumbents, such as fixed satellite service earth stations and radar systems. Incumbents have the highest priority and are protected from interference by the lower tiers.
-- **Priority Access License (PAL):** PALs are licensed on a county-by-county basis and consist of a 10 MHz channel in the 3550-3650 MHz portion of the band. PALs must protect incumbent users and accept interference from them.
+- **Priority Access License (PAL):** PALs are licensed on a county-by-county basis and consist of a 10 MHz channel in the 3550-3650 MHz portion of the band. PALs must protect incumbent users and accept interference from them but they are protected against GAA users interference. Virginia Tech has acquired Priority Access Licenses (PALs) that include four 10‑MHz blocks in Montgomery County and an additional four 10‑MHz blocks in Craig County.
 - **General Authorized Access (GAA):** GAA operates in the 3550-3700 MHz band and includes any CBRS device that is not associated with a higher tier. GAA users must avoid causing interference to higher tier users and accept interference from them.
 
 .. figure:: ../_static/cbrs_three_tier_system.png
