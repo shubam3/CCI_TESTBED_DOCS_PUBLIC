@@ -269,13 +269,13 @@ Results and Graphics
 Conclusion
 ----------
 This experiment demonstrates how to:
-- Configure a 4G LTE network using srsRAN with Ettus X310 USRPs.
-- Set up multiple VMs running EPC, eNodeB, and UE processes.
-- Integrate a COTS UE (mobile phone) via the Sysmocom SIM toolkit.
-- Validate network performance with iperf and monitor data transmission.
+   - Configure a 4G LTE network using srsRAN with Ettus X310 USRPs.
+   - Set up multiple VMs running EPC, eNodeB, and UE processes.
+   - Integrate a COTS UE (mobile phone) via the Sysmocom SIM toolkit.
+   - Validate network performance with iperf and monitor data transmission.
 
 References
 ----------
-- srsRAN 4G Documentation
-- Ettus Research UHD Installation Guides
-- Sysmocom USIM Toolkit Documentation
+   - srsRAN 4G Documentation
+   - Ettus Research UHD Installation Guides
+   - Sysmocom USIM Toolkit Documentation

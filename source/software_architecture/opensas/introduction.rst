@@ -52,7 +52,14 @@ Introduction
 Why OpenSAS
 ~~~~~~~~~~~~~~~~~~~~
 
-While several commercial SAS providers (such as Google SAS and Federated SAS) are available today, SDR-based CBSDs cannot be certified by the FCC due to their easily modifiable software and firmware—this violates FCC guidelines. Consequently, research in the SAS ecosystem using commercial solutions is limited. To address this gap, Virginia Tech/CCI developed an open-source SAS that supports SDR-based CBSDs for experimental purposes. We enhanced this platform and named it OpenSAS. OpenSAS aligns with WInnForum specifications and has been successfully tested with SDR-based CBSDs and ESCs. Its primary functions include managing spectrum for CBSDs, activating dynamic protection zones, and providing environmental sensing for incumbent protection—all while striving to adhere to FCC and WInnForum regulations.
+While several commercial SAS providers (such as Google SAS and Federated SAS) are available today, 
+SDR-based CBSDs cannot be certified by the FCC due to their easily modifiable software and firmware—this violates FCC guidelines. 
+Consequently, experimental research in the SAS ecosystem using commercial solutions is limited. 
+To address this gap, Virginia Tech/CCI developed an open-source SAS that supports SDR/O-RAN based CBSDs for experimental purposes. 
+We enhanced this platform to include ML-based incumbent sensing, SAS-SAS communication, and named it OpenSAS. OpenSAS aligns with WInnForum specifications and has been 
+successfully integrated and tested with SDR-based 5G CBSDs and ESCs. 
+Its primary functions include managing spectrum for CBSDs, activating dynamic protection zones, and providing environmental sensing for incumbent protection—all 
+while striving to adhere to FCC and WInnForum regulations for SAS-SAS and SAS-CBSD communications.
 
 Citizens Broadband Radio Service (CBRS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

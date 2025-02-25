@@ -3,14 +3,14 @@ Priority Protection of PAL Users through OpenSAS
 
 
 Objective
-~~~~~~~~~~~~~~~~~~~~~~~~~
+------------
 
 This tutorial outlines the steps to demonstrate the integration of the OpenSAS Server and CBSD for GAA and PAL operations using srsRAN and Open5GS. We demonstrate priority protection for higher-tier user (PAL) in presence of lower-tier users (GAA) in the CBRS ecosystem through OpenSAS.  
 
 For more information on OpenSAS architecture and installation configuration, please visit: `OpenSAS <https://cci-testbed-docs-public.readthedocs.io/en/latest/software_architecture/opensas/introduction.html>`_.
 
 Experimental Setup
-~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 The setup uses one VM/PC running OpenSAS and its dashboard, and two other VMs/PCs running the CBSD client with an srsRAN gNB in ZMQ mode. The GAA CBSD is run first, followed by the PAL CBSD requesting same frequency in a overlapping coverage area. The OpenSAS server will grant the PAL CBSD access to the spectrum, ensuring priority protection for PAL users and GAA users wait for the spectrum to be available. Once spectrum is vacated by the PAL user, the GAA user is automatically granted access to the spectrum.
 
@@ -23,7 +23,7 @@ The setup uses one VM/PC running OpenSAS and its dashboard, and two other VMs/PC
 
 
 Setting Up the Experiment
-~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 
 .. - :ref:`OpenSAS Core <start-opensas-server>`
@@ -230,5 +230,17 @@ Setting Up the Experiment
          :scale: 50%
 
          **Figure 12:** OpenSAS Dashboard displaying GAA CBSD location on the map.
+
+References
+------------
+    
+.. [1] OpenSAS GitHub Repository. Available at: https://github.com/CCI-NextG-Testbed/OpenSAS
+    
+.. [2] CCI NextG Testbed GitHub. Available at: https://github.com/CCI-NextG-Testbed
+    
+.. [3] O.R. Collaco, A. Tripathi, and A. P. da Silva, "Enabling AI/ML-based Incumbent Detection in a CBRS Experimental Network Through OpenSAS," in *Proceedings of the ACM Workshop on Wireless Network Testbeds, Experimental Evaluation & Characterization (WiNTECH '23)*, New York, USA, 2023, pp. 25–32.
+    
+.. [4] O.R. Collaco, M. R. Chowdhury, A. P. da Silva, and L. DaSilva, "Enabling CBRS Experimentation through an OpenSAS and SDR-based CBSD," *IEEE INFOCOM 2023 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)*, Hoboken, NJ, USA, 2023, pp. 1-2, doi: 10.1109/INFOCOMWKSHPS57453.2023.10225978.
+    
 
 
