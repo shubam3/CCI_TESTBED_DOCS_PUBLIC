@@ -31,7 +31,7 @@ Stroubles Creek Outdoor Testbed
 
 The Stroubles Creek outdoor testbed, located in Blacksburg, Va., is an outdoor component of CCI's xG testbed at the Arlington, Va., site. It is composed of two networks:
 
-- **Production Network (CBRS Private Network):** This network contains a commercial core and three Citizens Broadband Radio Service Devices (CBSDs) orchestrated by the Federated Wireless Spectrum Access System (SAS). It is designed to immediately support university use cases and generate real datasets.
+- **Production Network (CBRS Private Network):** This network contains a commercial core and three Citizens Broadband Radio Service Devices (CBSDs) orchestrated by the Federated Wireless Spectrum Access System (SAS). It is designed to immediately support university use cases and generate real datasets. The production network utilizes CBRS PAL license for spectrum use.
 - **Experimental Network:** This network consists of an open-source core, three software-defined radio (SDR)-based 5G CBSD prototypes built in the lab, and an open-source SAS called "OpenSAS." It allows researchers to customize, reconfigure, and control software and hardware parameters, develop algorithms, and improve performance and efficiency. For the first time, experimenters can perform end-to-end CBRS experimentation.
 
 The outdoor testbed site covers a 1.5-mile corridor with three rooftop locations for the CBSD nodes:
@@ -44,6 +44,8 @@ The outdoor testbed site covers a 1.5-mile corridor with three rooftop locations
 
   <div style="display: flex; justify-content: center;">
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1y-14BrRX_dkfD7plXZ76obGwEjDvDzI&ehbc=2E312F" width="800" height="500"></iframe></div>
+
+  **Map 1:** CBRS Three-Tier Priority Access System.
 
 
 Experimental CBSD (5G NR Standalone Network in CBRS Band)
@@ -65,14 +67,16 @@ The outdoor enclosure houses several key components that enable the deployment o
 - **Dell Networking Switch:** The Dell networking switch is used to connect the various devices within the enclosure and provide network connectivity to the external infrastructure.
 - **Intel NUC:** The Intel NUC (Next Unit of Computing) is a small form factor computer that hosts the core and RAN software required for the 5G NR standalone network. It provides the computational power needed to run the software-defined radio (SDR) and core network functions.
 - **PiKVM:** The PiKVM is a Raspberry Pi-based device that allows remote access and control of the equipment inside the enclosure. It enables administrators to monitor and manage the system remotely, reducing the need for on-site maintenance.
-- **USRP x310:** The USRP (Universal Software Radio Peripheral) x310 is a high-performance, scalable software-defined radio platform. It is used to implement the physical layer of the 5G NR network, providing the radio frequency (RF) front-end for the CBSD.
+- **USRP x310:** The USRP (Universal Software Radio Peripheral) N310 is a high-performance, scalable software-defined radio platform. It is used to implement the physical layer of the 5G NR network, providing the radio frequency (RF) front-end for the CBSD.
 - **CyberPower metered PDU:** The CyberPower metered power distribution unit (PDU) provides power to the devices within the enclosure and allows for remote monitoring and control of the power supply. It helps ensure the stability and reliability of the system by managing power distribution and enabling remote power cycling if needed.
-- **CommScope CBRS Antenna:** The CommScope CBRS antenna is a commercial-grade antenna designed specifically for operation in the CBRS band. It is connected to the USRP x310 via an RF cable and provides the necessary radio frequency interface for the 5G NR network.
+- **CommScope CBRS Antenna:** The CommScope CBRS antenna is a commercial-grade antenna designed specifically for operation in the CBRS band. It is connected to the USRP N310 via an RF cable and provides the necessary radio frequency interface for the 5G NR network.
 
 .. figure:: ../_static/hardware.png
   :alt: CBSD Equipment
   :align: center
   :scale: 30%
+
+  **Figure 2:** Connectivity diagram of CBSD 1 prototype.
 
 |
 
@@ -89,6 +93,8 @@ This section describes the implementation of the CBRS hardware components in the
   :alt: CBRS Hardware
   :align: center
   :scale: 12%
+  
+  **Figure 3:** CBSD 1 outdoor enclosure with equipments.
 
 |
 

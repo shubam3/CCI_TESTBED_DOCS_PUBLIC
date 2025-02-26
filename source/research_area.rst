@@ -1,5 +1,3 @@
-.. _research_area:
-
 Research Areas
 ==============
 The research areas of the group include, but are not limited to:
@@ -21,10 +19,6 @@ Fair Consensus in Blockchain
 
 **Conference:** 2024 IEEE 21st Consumer Communications & Networking Conference (CCNC), Pages 937-942, 2024
 
-This paper presents a novel approach to achieve fair consensus in blockchain systems by using reinforcement learning and adaptive proof-of-work for heterogeneous miners.
-
-.. _fair_consensus_reference:
-
 
 O-RAN Control Loop for Resource Allocation
 ------------------------------------------
@@ -33,10 +27,6 @@ O-RAN Control Loop for Resource Allocation
 **Authors:** A Tripathi, JSR Mallu, MH Rahman, A Sultana, A Sathish, A Huff, ...
 
 **Conference:** MILCOM 2023-2023 IEEE Military Communications Conference (MILCOM), Pages 253-254, 2023
-
-This paper discusses an end-to-end O-RAN control loop for efficient radio resource allocation in SDR-based 5G networks.
-
-.. _orran_control_loop_reference:
 
 
 CBRS Experimentation with OpenSAS
@@ -47,11 +37,20 @@ CBRS Experimentation with OpenSAS
 
 **Conference:** IEEE INFOCOM 2023-IEEE Conference on Computer Communications Workshops, 2023
 
-This paper presents a framework to enable CBRS experimentation using an open-source Spectrum Access System (OpenSAS) and SDR-based Citizens Broadband Radio Service Devices (CBSD).
 
-.. _cbrs_experimentation_reference:
+CCI xG Testbed: An O-RAN Based Platform for Future Wireless Network Experimentation
+------------------------------------------------------------------------------------
+`CCI xG Testbed: An O-RAN Based Platform for Future Wireless Network Experimentation <https://doi.org/10.1109/MCOM.001.2400322>`_.
+
+**Authors:** A. Da Silva, M. R. Chowdhury, A. Sathish, A. Tripathi, S. F. Midkiff, and L. DaSilva
+
+**Journal:** IEEE Communications Magazine, vol. 63, no. 2, pp. 62-68, February 2025, doi: 10.1109/MCOM.001.2400322
 
 
-References
-----------
-1. OR Collaco, MR Chowdhury, AP da Silva, L DaSilva, *Enabling CBRS Experimentation through an OpenSAS and SDR-based CBSD*, IEEE INFOCOM 2023-IEEE Conference on Computer Communications Workshops, 2023.
+Enabling AI/ML-based Incumbent Detection in a CBRS Experimental Network Through OpenSAS
+-----------------------------------------------------------------------------------------
+`Enabling AI/ML-based Incumbent Detection in a CBRS Experimental Network Through OpenSAS`_.
+
+**Authors:** O.R. Collaco, A. Tripathi, and A.P. da Silva
+
+**Conference:** Proceedings of the ACM Workshop on Wireless Network Testbeds, Experimental Evaluation & Characterization (WiNTECH '23), New York, USA, 2023, pp. 25–32.
