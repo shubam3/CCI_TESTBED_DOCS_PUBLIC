@@ -224,7 +224,7 @@ Admin Team
 |
 |
 
-.. figure:: _static/kshitij.jpg
+.. figure:: _static/kshitij.png
    :alt: Kshitij Narvekar
    :align: left
    :width: 200px
