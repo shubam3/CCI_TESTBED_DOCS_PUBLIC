@@ -3,7 +3,8 @@ O-RAN Non-RT RIC
 
 Introduction
 -----------
-The Non-Real-Time RAN Intelligent Controller (Non-RT RIC) is a key component of the O-RAN (Open Radio Access Network) architecture. It operates on a time scale of more than 1 second, enabling non-real-time control and optimization of RAN elements and resources. The Non-RT RIC introduces AI/ML-based intelligence in the RAN through a microservice-based platform that hosts applications called rApps.
+A Non-RealTime RIC (RAN Intelligent Controller) is an Orchestration and Automation function described by the O-RAN Alliance for non-real-time intelligent management of RAN (Radio Access Network) functions. The primary goal of the NONRTRIC is to support non-real-time radio resource management, higher layer procedure optimization, policy optimization in RAN, and providing guidance, parameters, policies to achieve higher-level non-real-time objectives. NONRTRIC functions include service and policy management for the near-RealTime RICs. 
+The NONRTRIC implementation communicates with near-RealTime RIC elements in the RAN via the A1 interface. Using the A1 interface the NONRTRIC will facilitate the provision of policies for individual UEs or groups of UEs; monitor and provide basic feedback on policy state from near-RealTime RICs; provide enrichment information as required by near-RealTime RICs
 
 Architecture
 -----------
