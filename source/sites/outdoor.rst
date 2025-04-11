@@ -1,6 +1,6 @@
 .. _Stroubles Creek CBRS Testbed Site:
 
-Outdoor Experimentation and Testing Environment (Stroubles Creek Site)
+Outdoor CBRS Strubble Creek
 ==================================================================================
 
 Introduction
@@ -26,15 +26,15 @@ CBRS, also known as the 3.5 GHz band (3550-3700 MHz), is designed to promote sha
 
   **Figure 1:** CBRS Three-Tier Priority Access System.
 
-Stroubles Creek Outdoor Testbed
+Stroubles Creek Outdoor Site
 -------------------------------
 
-The Stroubles Creek outdoor testbed, located in Blacksburg, Va., is an outdoor component of CCI's xG testbed at the Arlington, Va., site. It is composed of two networks:
+The Stroubles Creek outdoor site, located in Blacksburg, Va., is an outdoor component of CCI's xG testbed at the Arlington, Va., site. It is composed of two networks:
 
-- **Production Network (CBRS Private Network):** This network contains a commercial core and three Citizens Broadband Radio Service Devices (CBSDs) orchestrated by the Federated Wireless Spectrum Access System (SAS). It is designed to immediately support university use cases and generate real datasets. The production network utilizes CBRS PAL license for spectrum use.
+- **Production Network (CBRS Private Network):** This network contains a commercial core and three Citizens Broadband Radio Service Devices (CBSDs) (Airspan) orchestrated by the Federated Wireless Spectrum Access System (SAS). It is designed to immediately support university use cases and generate real datasets. The production network utilizes CBRS PAL license for spectrum use.
 - **Experimental Network:** This network consists of an open-source core, three software-defined radio (SDR)-based 5G CBSD prototypes built in the lab, and an open-source SAS called "OpenSAS." It allows researchers to customize, reconfigure, and control software and hardware parameters, develop algorithms, and improve performance and efficiency. For the first time, experimenters can perform end-to-end CBRS experimentation.
 
-The outdoor testbed site covers a 1.5-mile corridor with three rooftop locations for the CBSD nodes:
+The outdoor site covers a 1.5-mile corridor with three rooftop locations for the CBSD nodes:
 
 - **CBSD1:** Human and Agricultural Biosciences Building rooftop
 - **CBSD2:** Hahn Hall North rooftop
@@ -42,20 +42,16 @@ The outdoor testbed site covers a 1.5-mile corridor with three rooftop locations
 
 .. raw:: html
 
-  <div style="display: flex; justify-content: center;">
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1y-14BrRX_dkfD7plXZ76obGwEjDvDzI&ehbc=2E312F" width="800" height="500"></iframe></div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1y-14BrRX_dkfD7plXZ76obGwEjDvDzI&ehbc=2E312F" width="800" height="500"></iframe>
+    <p style="text-align: center; margin-top: 10px;"><strong>Map 1:</strong> CBRS Three-Tier Priority Access System.</p>
+  </div>
 
-  **Map 1:** CBRS Three-Tier Priority Access System.
 
-
-Experimental CBSD (5G NR Standalone Network in CBRS Band)
+Prototype
 ---------------------------------------------------------
 
-The experimental CBSDs are deployed using USRP x310, srsRAN 5G NR stack, and Open5GS core network for the 5G NR standalone CBRS network deployment. Intel NUCs are used to host the core and RAN software, and a Commscope commercial CBRS antenna has been integrated. These equipment are housed in weatherproof enclosures equipped with PiKVM and Ethernet PDU for remote monitoring and control.
-
-The Stroubles Creek outdoor testbed that's under construction in Blacksburgs, Va., an outdoor component of CCI's xG testbed at the Arlington, Va., site, is composed of two networks.
-
-A production network (or CBRS private network) that contains a commercial core, three Citizens Broadband Radio Service Device (CBSD)s orchestrated by the FederatedWireless Spectrum Access System (SAS) to immediately support university use cases and to generate real datasets.
+The experimental CBSDs are developed using USRP x310, srsRAN 5G NR stack, and Open5GS core network for the 5G NR standalone CBRS network deployment. Intel NUCs are used to host the core and RAN software, and a Commscope commercial CBRS antenna has been integrated. These equipment are housed in weatherproof enclosures equipped with PiKVM and Ethernet PDU for remote monitoring and control.
 
 
 Outdoor Enclosure Components
@@ -84,17 +80,17 @@ The outdoor enclosure is designed to protect these components from the elements,
 By integrating these components into a single outdoor enclosure, the CCI xG Testbed Team has created a modular and scalable solution for deploying experimental 5G NR networks in the CBRS band. This setup allows researchers to easily deploy and manage their experiments, while also providing remote access and control capabilities for efficient operation and maintenance.
 
 
-Implementation of CBRS Hardware
+CBSD Enclosure Implementation
 -------------------------------
 
-This section describes the implementation of the CBRS hardware components in the outdoor enclosure. The hardware components include the USRP x310, Intel NUC, CommScope CBRS antenna, Dell networking switch, CyberPower metered PDU, and PiKVM. These components are integrated into the enclosure to create a self-contained and weatherproof system for deploying the experimental CBSD (5G NR standalone network in the CBRS band).
+The following figure shows the actual implementation of the outdoor enclosure with all components integrated into a weatherproof system.
 
 .. figure:: ../_static/read_hardware.png
   :alt: CBRS Hardware
   :align: center
   :scale: 12%
   
-  **Figure 3:** CBSD 1 outdoor enclosure with equipments.
+  **Figure 3:** CBSD 1 outdoor enclosure with equipment.
 
 |
 

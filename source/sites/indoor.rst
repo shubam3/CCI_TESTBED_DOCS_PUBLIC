@@ -10,10 +10,10 @@ Grid Configuration and Setup
 ------------------------------
 This testbed features a novel two-dimensional grid configuration that measures approximately 32' x 29'. The grid is organized as a 9x8 array of programmable advanced software-defined radio (SDR) nodes. The nodes include a mix of Ettus Research models such as X310, X410, and N310, as well as B210 and B205-mini devices. These nodes can be interconnected into specified topologies to create reproducible wireless channel models. This flexible setup enables researchers to emulate a variety of wireless scenarios—from end-to-end CBRS experimentation (leveraging Virginia Tech’s Priority Access Licenses) to closed-loop O-RAN trials.
 
-.. figure:: ../_static/TestBedLab064.jpg
+.. figure:: ../_static/TestBedLab069.jpg
    :alt: Indoor Radio Grid Ceiling Rack
    :align: center
-   :scale: 40%
+   :scale: 20%
 |
 
 Laboratory Infrastructure and Capabilities
