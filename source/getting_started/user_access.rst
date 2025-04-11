@@ -57,8 +57,8 @@ Follow these steps:
 2. Use your provided OpenStack credentials to access the OpenStack dashboard.
 3. Navigate through the dashboard to launch your experiment environment.
 
-For further step-by-step guidance, please refer to the dedicated sections in our 
-documentation.
+For detailed instructions on creating and managing OpenStack instances, please refer to our 
+:doc:`OpenStack Instance Launch Guide <openstack>`.
 
 .. note:: For the best experience with the CCI xG Testbed portal, we recommend 
           using modern web browsers such as Google Chrome, Mozilla Firefox, or 
