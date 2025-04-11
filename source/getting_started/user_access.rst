@@ -4,79 +4,42 @@
 
 CCI xG Testbed provides a platform consisting of wireless and computing
 resources for researchers to carry out advanced wireless
-research. Users can request access to the platform with their research details
-and reserve the required resources for a specific period of time for executing their
-wireless experiments.
+research. Users can access the platform by completing the User Sign-up Form with their personal and project details.
+Once approved, users can utilize the allocated resources for executing their wireless experiments.
 
 Access and Account Creation
 ==========================
 
-How does a user get access?
---------------------------
+User Sign-up Process
+-----------------
 
-To gain access to the testbed, you must first request the necessary resources. 
-The process typically involves filling out a Google Forms sheet with your research 
-details and requirements.
+To gain access to the CCI xG Testbed, you need to complete the User Sign-up Form:
 
-In your request, please include:
-
-* A description of your research.
-* The duration for which you require the resources.
-* Any specific resource needs (compute, storage, network, etc.).
-* Whether you need SDRs and if so, how many.
-* Who referred you to the testbed (if applicable).
+`CCI xG Testbed User Sign-up Form <https://docs.google.com/forms/d/e/1FAIpQLSdabgove9qaSd6HdAFQQRSCwPfLcizga8na9gwxjZaWukF9qQ/viewform>`_
 
 .. note:: Account requests typically take 2 business days for approval.
 
-Once your request is reviewed, the Administrative team will send you an email 
+The form collects the following information:
+
+* **Email address**
+* **First Name and Last Name**
+* **Phone number** (including country code)
+* **Institution/Organization**
+* **Department/School/Research Center**
+* **Position/Title**
+* **Country of Residence**
+* **Purpose of CCI xG Testbed Usage** (detailed response required)
+* **Project Name** (single word)
+* **Acceptance of the CCI xG Testbed User Policy**
+
+Once your submission is reviewed and approved, the Administrative team will send you an email 
 containing your access credentials:
 
 * **OpenStack Credentials**: For accessing the OpenStack dashboard and user environment.
 * **Gateway Credentials**: For secure access to the network gateway.
 * **Redmine Credentials**: For project management and support.
 
-How does the user create an account?
-----------------------------------
-
-User accounts are not self-service. To create an account, please send an email 
-to the Testbed Admin Team with your research details and the reasons for needing 
-the testbed resources, or fill out the Google Forms sheet as mentioned above.
-
-Your account will be created upon approval of your request, which typically takes 
-2 business days.
-
-Requesting Resources
-==================
-
-How does the user request resources?
----------------------------------
-
-Resource requests are submitted by either:
-
-1. Emailing the Testbed Admin Team directly at: cci.xg.testbed.admin@cyberinitiative.org
-2. Filling out the Google Forms sheet provided for resource requests
-
-.. attention:: When requesting resources, be specific about your requirements to 
-               ensure that appropriate resources are allocated for your experiment.
-
-Ensure that your request includes:
-
-* Your research topic and objectives.
-* The duration for which the resources are needed.
-* Any additional requirements or specifications for the experiment.
-* Whether you need SDRs and if so, how many.
-* Who referred you to the testbed (if applicable).
-
-Google Forms Details
-------------------
-
-The Google Forms for requesting access should include the following information:
-
-* Name
-* Research topic
-* Duration
-* Do they need SDR's? If yes, how many?
-* Referred by
+.. attention:: When completing the form, be specific about your project requirements in the "Purpose of CCI xG Testbed Usage" field to ensure that appropriate resources are allocated for your experiment.
 
 Transitioning to the Experiment Environment
 =========================================
