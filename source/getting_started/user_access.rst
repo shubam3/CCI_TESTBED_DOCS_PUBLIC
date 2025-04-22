@@ -39,6 +39,9 @@ containing your access credentials:
 * **Gateway Credentials**: For secure access to the network gateway.
 * **Redmine Credentials**: For project management and support.
 
+For detailed information on using the Gateway and Redmine systems, please refer to our 
+:doc:`Gateway and Redmine Access Guide <gateway_and_redmine>`.
+
 .. attention:: When completing the form, be specific about your project requirements in the "Purpose of CCI xG Testbed Usage" field to ensure that appropriate resources are allocated for your experiment.
 
 Transitioning to the Experiment Environment
