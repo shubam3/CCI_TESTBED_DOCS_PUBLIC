@@ -69,17 +69,5 @@ The CCI xG Testbed embraces open-source software to enable flexible and customiz
 
 4. **O-RAN Software Community (OSC)**: The testbed leverages software components from the O-RAN Software Community, including the Near-RT RIC, Non-RT RIC, and AI/ML framework.
 
-Experimental Capabilities
------------------------
-
-The software architecture of the CCI xG Testbed enables a wide range of experimental capabilities:
-
-1. **End-to-End O-RAN Experimentation**: The testbed supports end-to-end O-RAN experimentation using SDRs and open-source components, including AIMLFW, Non-RT RIC, Near-RT RIC, RAN (4G and 5G), and UE.
-
-2. **CBRS Ecosystem Experimentation**: The testbed provides an end-to-end CBRS ecosystem for experimentation, including SDR-based CBSDs and ESC nodes, OpenSAS, and CBRS PAL.
-
-3. **AI/ML-based Network Optimization**: The testbed enables AI/ML-based network optimization through its native AI/ML framework, supporting research in areas such as resource allocation, energy efficiency, and QoS/QoE optimization.
-
-4. **Spectrum Sharing Research**: The software architecture supports spectrum sharing research, including homogeneous and heterogeneous dynamic spectrum sharing, priority protection, interference management, and coexistence in CBRS and other multi-tier spectrum sharing ecosystems.
 
 For more detailed information about specific software components and experimental capabilities, please refer to the relevant sections in the documentation.

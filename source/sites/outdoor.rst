@@ -1,6 +1,6 @@
 .. _Stroubles Creek CBRS Testbed Site:
 
-Outdoor CBRS Strubble Creek
+Outdoor CBRS Stroubles Creek
 ==================================================================================
 
 Introduction

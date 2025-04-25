@@ -295,7 +295,7 @@ Alumni and Former Students
 |
 
 
-Associate Research Faculty
+Associated Research Faculty
 ---------------------------
 .. figure:: _static/jacek-kibilda-cci-researcher.jpg
    :alt: Jacek Kibilda
