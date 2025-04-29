@@ -44,13 +44,10 @@ For detailed information on using the Gateway and Redmine systems, please refer 
 
 .. attention:: When completing the form, be specific about your project requirements in the "Purpose of CCI xG Testbed Usage" field to ensure that appropriate resources are allocated for your experiment.
 
-CCI Dashboard User Flow
-=======================
+CCI Dashboard and Experiment Environment
+=======================================
 
-After receiving your access credentials, you'll be able to log in to the CCI Dashboard, which serves as the central hub for accessing various components of the CCI xG Testbed.
-
-Authentication Flow
-------------------
+After receiving your access credentials, you'll begin your journey with the CCI Dashboard, which serves as the central hub for accessing various components of the CCI xG Testbed and launching your experiments.
 
 .. figure:: ../user-dashboard/user-flow.png
    :alt: User-Flow 
@@ -59,25 +56,28 @@ Authentication Flow
    
    Figure: CCI Dashboard User Flow Diagram showing the authentication process and navigation options
 
+Authentication and Navigation
+---------------------------
 
-1. Navigate to the CCI Dashboard login page
-2. Enter your provided username and password
-3. The system will validate your credentials
-   - If invalid, an error message will be displayed, prompting you to re-enter your credentials
-   - If valid, you'll be redirected to the main navigation page
+1. **Initial Access**:
+   - Navigate to the CCI Dashboard login page
+   - Enter your provided username and password
+   - The system will validate your credentials
+     * If invalid, an error message will be displayed, prompting you to re-enter your credentials
+     * If valid, you'll be redirected to the main navigation page
 
-Main Navigation Options
----------------------
+2. **Main Navigation Options**:
+   After successful login, you'll be presented with a clean, intuitive interface offering four main options:
 
-After successful login, you'll be presented with a clean, intuitive interface offering four main options:
+   * **Non-RT Dashboard**: Access to Non-Real-Time RAN Intelligent Controller management
+   * **Near-RT Dashboard**: Access to Near-Real-Time RAN Intelligent Controller management
+   * **Clear-ML**: Access to the Clear-ML platform for ML model training and management
+   * **OpenStack Login**: Button to authenticate and access the OpenStack environment
 
-* **Non-RT Dashboard**: Access to Non-Real-Time RAN Intelligent Controller management
-* **Near-RT Dashboard**: Access to Near-Real-Time RAN Intelligent Controller management
-* **Clear-ML**: Access to the Clear-ML platform for ML model training and management
-* **OpenStack Login**: Button to authenticate and access the OpenStack environment
+Dashboard Components
+------------------
 
-Non-RT Dashboard
---------------
+**Non-RT Dashboard**
 
 If you select the Non-RT Dashboard option, you'll gain access to:
 
@@ -85,8 +85,7 @@ If you select the Non-RT Dashboard option, you'll gain access to:
 * **rApps Management**: Deploy, configure, and monitor rApps
 * **Policy Management**: Create, edit, and distribute policies to Near-RT RICs
 
-Near-RT Dashboard
----------------
+**Near-RT Dashboard**
 
 If you select the Near-RT Dashboard option, you'll gain access to:
 
@@ -94,36 +93,30 @@ If you select the Near-RT Dashboard option, you'll gain access to:
 * **xApps Management**: Deploy, configure, and monitor xApps
 * **E2 Node Management**: Monitor and manage E2 Nodes (CU/DU) connected to the Near-RT RIC
 
-OpenStack Access
---------------
+Accessing the Experiment Environment via OpenStack
+-----------------------------------------------
 
-If you click the OpenStack Login button:
+The primary way to access your experiment environment is through the OpenStack dashboard. This is where you'll create and manage the virtual machines and resources needed for your experiments.
 
-* You'll be redirected to the OpenStack authentication page
-* After successful authentication, you'll access the OpenStack Dashboard
-* From there, you can manage instances, networks, volumes, etc.
+**Accessing OpenStack**:
 
-.. note:: For detailed information about using the OpenStack Dashboard, please refer to our :doc:`OpenStack Instance Launch Guide <openstack>`.
+1. From the CCI Dashboard main navigation page, click the **OpenStack Login** button
+2. You'll be redirected to the OpenStack authentication page
+3. Enter your OpenStack credentials (provided in your welcome email)
+4. After successful authentication, you'll access the OpenStack Dashboard
+5. From there, you can create instances, configure networks, manage volumes, and launch your experiment environment
 
-Transitioning to the Experiment Environment
-=========================================
+**Setting Up Your Experiment Environment**:
 
-How does a user go from the CCI xG Testbed Portal to the user environment?
------------------------------------------------------------------------
+Once logged into the OpenStack Dashboard, you can:
 
-Once your account is active, you can access the experiment environment through 
-the OpenStack dashboard. Detailed instructions are provided in the CCI xG Testbed 
-documentation as well as within the OpenStack dashboard itself.
-
-Follow these steps:
-
-1. Log in to the CCI xG Testbed Portal.
-2. Use your provided OpenStack credentials to access the OpenStack dashboard.
-3. Navigate through the dashboard to launch your experiment environment.
+1. Create virtual machines with your required specifications
+2. Configure networking for your experiment
+3. Allocate storage resources
+4. Deploy and run your experiment software
 
 For detailed instructions on creating and managing OpenStack instances, please refer to our 
 :doc:`OpenStack Instance Launch Guide <openstack>`.
 
-.. note:: For the best experience with the CCI xG Testbed portal, we recommend 
-          using modern web browsers such as Google Chrome, Mozilla Firefox, or 
-          Microsoft Edge.
+.. note:: For the best experience with the CCI xG Testbed portal and OpenStack dashboard, we recommend 
+          using modern web browsers such as Google Chrome, Mozilla Firefox, or Microsoft Edge.
