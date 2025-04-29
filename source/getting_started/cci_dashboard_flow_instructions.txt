@@ -1,0 +1,72 @@
+Instructions for Adding the CCI Dashboard Flow Diagram to Documentation
+==================================================================
+
+The CCI Dashboard User Flow has been added to the user_access.rst file in the getting_started directory. To enhance the documentation with a visual representation of the user flow, you can generate an image from the Mermaid diagram in the HTML file.
+
+Option 1: Generate an Image Using the Mermaid Live Editor
+--------------------------------------------------------
+
+1. Copy the Mermaid diagram code from the HTML file (CCI_Dashboard_User_Flow.html):
+
+```
+flowchart TD
+    A[User Lands on CCI Dashboard Login Page] --> B[User Inputs Credentials]
+    B --> C{Authentication}
+    C -->|Successful| D[Main Navigation Page]
+    C -->|Failed| E[Error Message]
+    E --> B
+    
+    D --> F[Non-RT Dashboard]
+    D --> G[Near-RT Dashboard]
+    D --> H[Clear-ML]
+    D --> I[OpenStack Login]
+    
+    F --> J[Non-RT RIC Management]
+    F --> K[rApps Management]
+    F --> L[Policy Management]
+    
+    G --> M[Near-RT RIC Management]
+    G --> N[xApps Management]
+    G --> O[E2 Node Management]
+    
+    I --> P[OpenStack Authentication]
+    P --> Q[OpenStack Dashboard]
+```
+
+2. Go to the Mermaid Live Editor: https://mermaid.live/
+3. Paste the diagram code into the editor
+4. Click on "Download SVG" or "Download PNG" to save the image
+5. Add the image to the source/_static directory
+6. Update the user_access.rst file to include the image:
+
+```
+.. image:: ../_static/cci_dashboard_flow.png
+   :alt: CCI Dashboard User Flow
+   :align: center
+   :scale: 70%
+```
+
+Option 2: Use the HTML File to Generate an Image
+----------------------------------------------
+
+1. Open the CCI_Dashboard_User_Flow.html file in a web browser
+2. The Mermaid diagram will be rendered on the page
+3. Take a screenshot of the diagram
+4. Crop the screenshot to include only the diagram
+5. Save the image as cci_dashboard_flow.png
+6. Add the image to the source/_static directory
+7. Update the user_access.rst file to include the image as shown in Option 1
+
+Option 3: Use a Mermaid CLI Tool
+------------------------------
+
+If you're comfortable with command-line tools, you can use the Mermaid CLI to generate an image:
+
+1. Install Node.js if not already installed
+2. Install the Mermaid CLI: `npm install -g @mermaid-js/mermaid-cli`
+3. Create a file named cci_dashboard_flow.mmd with the Mermaid diagram code
+4. Run: `mmdc -i cci_dashboard_flow.mmd -o cci_dashboard_flow.png`
+5. Add the image to the source/_static directory
+6. Update the user_access.rst file to include the image as shown in Option 1
+
+The CCI Dashboard User Flow information has been successfully added to the documentation. Adding an image will enhance the user experience by providing a visual representation of the flow.

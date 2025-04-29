@@ -44,6 +44,67 @@ For detailed information on using the Gateway and Redmine systems, please refer 
 
 .. attention:: When completing the form, be specific about your project requirements in the "Purpose of CCI xG Testbed Usage" field to ensure that appropriate resources are allocated for your experiment.
 
+CCI Dashboard User Flow
+=======================
+
+After receiving your access credentials, you'll be able to log in to the CCI Dashboard, which serves as the central hub for accessing various components of the CCI xG Testbed.
+
+Authentication Flow
+------------------
+
+.. figure:: ../user-dashboard/user-flow.png
+   :alt: User-Flow 
+   :align: center
+   :scale: 70%
+   
+   Figure: CCI Dashboard User Flow Diagram showing the authentication process and navigation options
+
+
+1. Navigate to the CCI Dashboard login page
+2. Enter your provided username and password
+3. The system will validate your credentials
+   - If invalid, an error message will be displayed, prompting you to re-enter your credentials
+   - If valid, you'll be redirected to the main navigation page
+
+Main Navigation Options
+---------------------
+
+After successful login, you'll be presented with a clean, intuitive interface offering four main options:
+
+* **Non-RT Dashboard**: Access to Non-Real-Time RAN Intelligent Controller management
+* **Near-RT Dashboard**: Access to Near-Real-Time RAN Intelligent Controller management
+* **Clear-ML**: Access to the Clear-ML platform for ML model training and management
+* **OpenStack Login**: Button to authenticate and access the OpenStack environment
+
+Non-RT Dashboard
+--------------
+
+If you select the Non-RT Dashboard option, you'll gain access to:
+
+* **Non-RT RIC Management**: Monitor and configure the Non-RT RIC platform
+* **rApps Management**: Deploy, configure, and monitor rApps
+* **Policy Management**: Create, edit, and distribute policies to Near-RT RICs
+
+Near-RT Dashboard
+---------------
+
+If you select the Near-RT Dashboard option, you'll gain access to:
+
+* **Near-RT RIC Management**: Monitor and configure the Near-RT RIC platform
+* **xApps Management**: Deploy, configure, and monitor xApps
+* **E2 Node Management**: Monitor and manage E2 Nodes (CU/DU) connected to the Near-RT RIC
+
+OpenStack Access
+--------------
+
+If you click the OpenStack Login button:
+
+* You'll be redirected to the OpenStack authentication page
+* After successful authentication, you'll access the OpenStack Dashboard
+* From there, you can manage instances, networks, volumes, etc.
+
+.. note:: For detailed information about using the OpenStack Dashboard, please refer to our :doc:`OpenStack Instance Launch Guide <openstack>`.
+
 Transitioning to the Experiment Environment
 =========================================
 
