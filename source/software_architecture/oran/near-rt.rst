@@ -45,8 +45,8 @@ The E2 interface is a critical component of the O-RAN architecture, connecting t
 
 The E2 interface supports several service models:
 
-1. **RAN Function (RC)**: Enables the Near-RT RIC to control RAN functions.
-2. **Key Performance Metrics (KPM)**: Enables the Near-RT RIC to collect performance metrics from RAN elements.
+1. **RAN Control (RC)**: Enables the Near-RT RIC to control RAN functions.
+2. **Key Performance Measurement (KPM)**: Enables the Near-RT RIC to collect performance metrics from RAN elements.
 3. **Cell Configuration (CC)**: Enables the Near-RT RIC to configure cell parameters.
 4. **Handover Control (HC)**: Enables the Near-RT RIC to control handover decisions.
 5. **Load Balancing (LB)**: Enables the Near-RT RIC to balance load across cells.
