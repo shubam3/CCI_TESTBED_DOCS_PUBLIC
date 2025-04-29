@@ -34,7 +34,6 @@ CCI's xG Testbed documentation
 
    software_architecture/opensas/introduction
    software_architecture/openstack/openstack
-   software_architecture/oran/smo
    software_architecture/oran/non-rt
    software_architecture/oran/near-rt
    software_architecture/oran/rat
