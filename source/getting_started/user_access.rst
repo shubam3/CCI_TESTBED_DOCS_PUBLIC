@@ -60,9 +60,11 @@ Authentication and Navigation
 ---------------------------
 
 1. **Initial Access**:
+
    - Navigate to the CCI Dashboard login page
    - Enter your provided username and password
    - The system will validate your credentials
+
      * If invalid, an error message will be displayed, prompting you to re-enter your credentials
      * If valid, you'll be redirected to the main navigation page
 
