@@ -43,13 +43,10 @@ E2 Interface
 -----------
 The E2 interface is a critical component of the O-RAN architecture, connecting the Near-RT RIC to E2 Nodes (CU/DU) in the RAN. It enables the Near-RT RIC to collect data from and control the RAN elements.
 
-The E2 interface supports several service models:
+The E2 interface supports two primary service models:
 
 1. **RAN Control (RC)**: Enables the Near-RT RIC to control RAN functions.
 2. **Key Performance Measurement (KPM)**: Enables the Near-RT RIC to collect performance metrics from RAN elements.
-3. **Cell Configuration (CC)**: Enables the Near-RT RIC to configure cell parameters.
-4. **Handover Control (HC)**: Enables the Near-RT RIC to control handover decisions.
-5. **Load Balancing (LB)**: Enables the Near-RT RIC to balance load across cells.
 
 xApps
 -----
@@ -62,6 +59,9 @@ Examples of xApps include:
 3. **QoS Optimization**: Adjusts QoS parameters to meet service requirements.
 4. **Interference Management**: Mitigates interference between cells to improve performance.
 5. **KPIMON**: Monitors Key Performance Indicators (KPIs) from RAN elements.
+6. **Cell Configuration**: Manages and optimizes cell parameters.
+7. **Handover Control**: Optimizes handover decisions between cells.
+8. **Load Balancing**: Distributes load across cells to optimize network performance.
 
 xApp Lifecycle
 ~~~~~~~~~~~~~
