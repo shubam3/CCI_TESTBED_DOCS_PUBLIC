@@ -282,6 +282,48 @@ Alumni and Former Students
 
    Jaswanth Sai Reddy
 
+.. figure:: _static/jaswanth_sai_reddy.jpg
+   :alt: Jaswanth Sai Reddy
+   :align: left
+   :width: 200px
+
+   Pratik
+
+|
+|     
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/jaswanth_sai_reddy.jpg
+   :alt: Jaswanth Sai Reddy
+   :align: left
+   :width: 200px
+
+   Vikas
+
+.. figure:: _static/jaswanth_sai_reddy.jpg
+   :alt: Jaswanth Sai Reddy
+   :align: left
+   :width: 200px
+
+   Tapan
+
+.. figure:: _static/jaswanth_sai_reddy.jpg
+   :alt: Jaswanth Sai Reddy
+   :align: left
+   :width: 200px
+
+   Oren
+   
+|
 |     
 |
 |
