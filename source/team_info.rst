@@ -264,7 +264,7 @@ Alumni and Former Students
    :alt: Aditya Sathish
    :align: left
    :width: 200px
-   :height: 200px
+   :height: 220px
 
    `Aditya Sathish <https://scholar.google.com/citations?user=_DI_jTsAAAAJ&hl=en>`_
 
@@ -272,6 +272,7 @@ Alumni and Former Students
    :alt: Souradeep Deb
    :align: left
    :width: 200px
+   :height: 220px
 
    `Souradeep Deb <https://scholar.google.com/citations?user=4hCPcvoAAAAJ&hl=en>`_
 
@@ -279,15 +280,17 @@ Alumni and Former Students
    :alt: Jaswanth Sai Reddy
    :align: left
    :width: 200px
+   :height: 220px
 
    Jaswanth Sai Reddy
 
-.. figure:: _static/jaswanth_sai_reddy.jpg
+.. figure:: _static/Prateek.jpg
    :alt: Jaswanth Sai Reddy
    :align: left
    :width: 200px
+   :height: 220px
 
-   Pratik
+   Prateek
 
 |
 |     
@@ -302,22 +305,24 @@ Alumni and Former Students
 |
 |
 
-.. figure:: _static/jaswanth_sai_reddy.jpg
+.. figure:: _static/Vikas.jpg
    :alt: Jaswanth Sai Reddy
    :align: left
    :width: 200px
+   :height: 220px
 
    Vikas
 
-.. figure:: _static/jaswanth_sai_reddy.jpg
+.. figure:: _static/Tapan.jpg
    :alt: Jaswanth Sai Reddy
    :align: left
    :width: 200px
+   :height: 220px
 
    Tapan
 
-.. figure:: _static/jaswanth_sai_reddy.jpg
-   :alt: Jaswanth Sai Reddy
+.. figure:: _static/Oren.jpg
+   :alt: Oren
    :align: left
    :width: 200px
 
