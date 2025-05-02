@@ -23,6 +23,7 @@ The indoor testbed is situated within a dedicated 500 m² area of the overall ~2
 - **Processing and Control:** Numerous CPUs and GPUs are located near the radio grid, enabling real-time signal processing and network function virtualization (NFV).
 - **Maintenance and Support:** Approximately 45 m² is allocated for maintenance workstations and network components, ensuring the facility remains highly serviceable and up-to-date.
 - **Remote Management:** Core testbed services run on computing clusters that support remote experiment execution, measurements, and data collection via secure VPN and SSH connections.
+- **Hardware:** The testbed is equipped with various software-defined radio devices including USRP X310, X410, B210, B25MINI, as well as commercial devices from CORTSUI and SAMSUNG. Additionally, the lab features virtual reality equipment including VR GLASSES, OCLUS AND ONOLENS for immersive research applications.
 
 
 Remote Access and Security
