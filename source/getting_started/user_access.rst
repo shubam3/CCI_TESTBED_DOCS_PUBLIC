@@ -19,18 +19,6 @@ To gain access to the CCI xG Testbed, you need to complete the User Sign-up Form
 
 .. note:: Account requests typically take 2 business days for approval.
 
-The form collects the following information:
-
-* **Email address**
-* **First Name and Last Name**
-* **Phone number** (including country code)
-* **Institution/Organization**
-* **Department/School/Research Center**
-* **Position/Title**
-* **Country of Residence**
-* **Purpose of CCI xG Testbed Usage** (detailed response required)
-* **Project Name** (single word)
-* **Acceptance of the CCI xG Testbed User Policy**
 
 Once your submission is reviewed and approved, the Administrative team will send you an email 
 containing your access credentials:
@@ -54,7 +42,7 @@ After receiving your access credentials, you'll begin your journey with the CCI 
    :align: center
    :scale: 70%
    
-   Figure: CCI Dashboard User Flow Diagram showing the authentication process and navigation options
+   Figure: Experimental User - Workflow Diagram
 
 Authentication and Navigation
 ---------------------------
@@ -116,6 +104,7 @@ Once logged into the OpenStack Dashboard, you can:
 2. Configure networking for your experiment
 3. Allocate storage resources
 4. Deploy and run your experiment software
+5. Document your experiment setup, track issues, and manage your project timeline using Redmine (refer to our :doc:`Redmine Access Guide <gateway_and_redmine>` for detailed instructions)
 
 For detailed instructions on creating and managing OpenStack instances, please refer to our 
 :doc:`OpenStack Instance Launch Guide <openstack>`.
