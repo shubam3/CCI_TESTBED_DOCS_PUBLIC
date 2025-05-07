@@ -1,102 +1,11 @@
-=================================
-Gateway and Redmine Access Guide
-=================================
+======================
+Redmine Access Guide
+======================
 
-This guide provides detailed information about accessing and using the CCI xG Testbed Gateway and Redmine project management system.
-
-Gateway Access
-=============
-
-What is the Gateway?
-------------------
-
-The Gateway serves as a secure entry point to the CCI xG Testbed network infrastructure. It provides controlled access to the testbed resources and acts as a security boundary between the public internet and the testbed's internal network.
-
-Accessing the Gateway
--------------------
-
-After your account request is approved, you will receive Gateway credentials via email. These credentials include:
-
-* **Username**: Your assigned gateway username
-* **Password**: Your initial gateway password
-* **Gateway URL/IP**: The address used to connect to the gateway
-
-Connection Methods
-----------------
-
-SSH Access
-^^^^^^^^^^
-
-To connect to the gateway using SSH:
-
-.. code-block:: bash
-
-   ssh username@gateway-address
-
-.. note:: We recommend using SSH key-based authentication for enhanced security. Instructions for setting up SSH keys are provided below.
-
-Setting Up SSH Keys
-^^^^^^^^^^^^^^^^^
-
-1. Generate an SSH key pair on your local machine (if you don't already have one):
-
-   .. code-block:: bash
-
-      ssh-keygen -t rsa -b 4096
-
-2. Copy your public key to the gateway:
-
-   .. code-block:: bash
-
-      ssh-copy-id username@gateway-address
-
-   Alternatively, you can provide your public key to the CCI xG Testbed administrators who will add it to your account.
-
-3. After setup, you can connect without entering your password:
-
-   .. code-block:: bash
-
-      ssh username@gateway-address
-
-Gateway Security Policies
------------------------
-
-* All connections to the gateway are logged for security purposes
-* Inactive sessions will be automatically disconnected after 30 minutes
-* Multiple failed login attempts may result in temporary account lockout
-* Do not share your gateway credentials with others
-
-Transferring Files Through the Gateway
------------------------------------
-
-To transfer files to and from the testbed through the gateway, you can use SCP or SFTP:
-
-Using SCP:
-
-.. code-block:: bash
-
-   # Upload a file to the gateway
-   scp /path/to/local/file username@gateway-address:/destination/path
-
-   # Download a file from the gateway
-   scp username@gateway-address:/path/to/remote/file /local/destination/path
-
-Using SFTP:
-
-.. code-block:: bash
-
-   # Start an SFTP session
-   sftp username@gateway-address
-
-   # Then use put and get commands
-   put /path/to/local/file
-   get /path/to/remote/file
-
-Redmine Project Management
-========================
+This guide provides detailed information about accessing and using the CCI xG Testbed Redmine project management system.
 
 What is Redmine?
---------------
+---------------
 
 Redmine is a flexible project management and issue tracking system used by the CCI xG Testbed to:
 
@@ -107,66 +16,171 @@ Redmine is a flexible project management and issue tracking system used by the C
 * Manage project timelines and milestones
 
 Accessing Redmine
----------------
+----------------
 
 After your account request is approved, you will receive Redmine credentials via email. These credentials include:
 
 * **Username**: Your assigned Redmine username
 * **Password**: Your initial Redmine password
-* **Redmine URL**: The web address to access the Redmine system
 
 To access Redmine:
 
 1. Open your web browser
-2. Navigate to the provided Redmine URL
+2. Navigate to the Redmine URL: https://redmine.xgtestbed.cyberinitiative.org/redmine/
 3. Enter your username and password
 4. Click "Login"
 
 .. note:: Upon first login, you may be prompted to change your password. Choose a strong, unique password that you don't use for other services.
 
-Using Redmine for Project Management
-----------------------------------
+Getting Started with Redmine
+---------------------------
 
-Creating and Managing Issues
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Dashboard Overview
+^^^^^^^^^^^^^^^^^
 
-Issues are the primary way to track tasks, bugs, and feature requests in Redmine:
+After logging in, you'll see the Redmine dashboard which provides:
+
+* **My page**: A personalized view of your assigned issues and activities
+* **Projects**: List of projects you have access to
+* **Issues**: All issues across projects you can view
+* **Help**: Documentation on using Redmine
+
+Navigating Projects
+^^^^^^^^^^^^^^^^^
+
+1. Click on the "Projects" tab to see all available projects
+2. Select a project to view its details
+3. Each project has several tabs:
+   * **Overview**: General project information
+   * **Activity**: Recent actions in the project
+   * **Issues**: List of all issues in the project
+   * **Wiki**: Project documentation
+   * **Settings**: Project configuration (for administrators)
+
+Working with Issues
+-----------------
+
+Searching for Existing Issues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before creating a new issue, it's best practice to search for existing issues that might address your concern:
+
+1. Navigate to the "Issues" section
+2. Use the search box to enter keywords related to your issue
+3. Apply filters to narrow down results:
+   * Status (open, closed, in progress)
+   * Priority
+   * Assignee
+   * Date ranges
+4. Review matching issues to see if your concern has already been addressed
+
+Creating New Issues
+^^^^^^^^^^^^^^^^^
+
+If you don't find an existing issue that matches your needs:
 
 1. Navigate to your project
 2. Click "New issue"
 3. Fill in the required fields:
-   * Subject: A brief, descriptive title
-   * Description: Detailed information about the issue
-   * Priority: The importance of the issue
-   * Assignee: Who should work on this issue
-4. Click "Create" to submit the issue
+   * **Subject**: A brief, descriptive title
+   * **Description**: Detailed information about the issue
+   * **Priority**: The importance of the issue (Normal, High, Urgent)
+   * **Assignee**: Who should work on this issue (leave blank if unsure)
+   * **Category**: The type of issue (Bug, Feature, Support)
+   * **Target version**: When this should be addressed (if applicable)
+4. Add attachments if needed (screenshots, logs, etc.)
+5. Click "Create" to submit the issue
 
-Tracking Experiment Progress
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Tracking and Updating Issues
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can use Redmine to track the progress of your experiments:
+Once an issue is created:
 
-1. Create a new issue for each major experiment phase
-2. Update the status as you progress
-3. Add comments with results or observations
-4. Upload attachments such as data files or screenshots
-5. Set due dates to manage your timeline
+1. You'll receive notifications about updates (based on your notification settings)
+2. You can add comments to provide additional information
+3. Update the status as the issue progresses:
+   * **New**: Just created
+   * **In Progress**: Being worked on
+   * **Resolved**: Solution implemented
+   * **Feedback**: Needs input from reporter
+   * **Closed**: Completed and verified
+4. Add time tracking information if required
 
-Getting Support Through Redmine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creating and Managing Documentation
+---------------------------------
 
-If you encounter technical issues with the testbed:
+Redmine's Wiki Feature
+^^^^^^^^^^^^^^^^^^^^
 
-1. Create a new issue in your project
-2. Set the issue type to "Support"
-3. Provide detailed information about the problem:
-   * What you were trying to do
-   * What happened instead
-   * Any error messages you received
-   * Steps to reproduce the issue
-4. Assign the issue to the appropriate support team member or leave it unassigned
+Each project has a wiki section for documentation:
 
-The support team will respond to your issue as soon as possible, typically within one business day.
+1. Navigate to the "Wiki" tab in your project
+2. Click "Edit" on an existing page or create a new page
+3. Use the rich text editor or Textile/Markdown syntax to format your content
+4. Add images, tables, and links as needed
+5. Save your changes with a brief description of what was updated
+
+Documentation Best Practices
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Structure documentation with clear headings and subheadings
+* Include step-by-step instructions where appropriate
+* Add screenshots or diagrams to illustrate complex procedures
+* Link related wiki pages and issues for cross-reference
+* Regularly update documentation as procedures change
+
+Collaboration Features
+--------------------
+
+Redmine offers several ways to collaborate with team members:
+
+* **Issue comments**: Discuss specific issues
+* **Wiki discussions**: Collaborate on documentation
+* **File sharing**: Upload and share relevant files
+* **News**: Post project announcements
+* **Forums**: Discuss broader topics (if enabled)
+
+User Profile and Preferences
+--------------------------
+
+Customize your Redmine experience:
+
+1. Click on your username in the top-right corner
+2. Select "My account"
+3. Update your:
+   * Personal information
+   * Password
+   * Email notification preferences
+   * UI theme and display options
+
+Flow Diagram of Redmine Functionality
+-----------------------------------
+
+The following diagram illustrates the typical workflow for using Redmine:
+
+.. code-block:: mermaid
+
+   flowchart TD
+       A[Access Redmine Website] --> B[Login with Credentials]
+       B --> C[View Dashboard]
+       C --> D[Select Project]
+       D --> E{Need to Report Issue?}
+       E -->|Yes| F[Search Existing Issues]
+       F --> G{Issue Already Exists?}
+       G -->|Yes| H[Add Comment to Existing Issue]
+       G -->|No| I[Create New Issue]
+       I --> J[Fill Issue Details]
+       J --> K[Submit Issue]
+       K --> L[Track Issue Progress]
+       E -->|No| M{Need to Create Documentation?}
+       M -->|Yes| N[Navigate to Wiki]
+       N --> O[Create/Edit Wiki Page]
+       O --> P[Save Documentation]
+       M -->|No| Q[Explore Other Features]
+       H --> L
+       L --> R[Receive Updates]
+       P --> S[Share with Team]
+       Q --> T[Collaborate on Projects]
 
 Best Practices for Using Redmine
 ------------------------------
@@ -177,18 +191,15 @@ Best Practices for Using Redmine
 * Update issue statuses as they progress
 * Include relevant attachments and screenshots when reporting problems
 * Subscribe to notifications for issues you're interested in
+* Contribute to documentation to help other users
 
-Integrating Gateway and Redmine in Your Workflow
-=============================================
+Getting Support
+-------------
 
-For the most efficient use of the CCI xG Testbed, we recommend integrating both the Gateway and Redmine into your regular workflow:
+If you encounter difficulties using Redmine:
 
-1. Use the Gateway to access testbed resources and conduct experiments
-2. Document your experiment setup and results in Redmine
-3. Report any issues encountered during experiments through Redmine
-4. Collaborate with team members and administrators through Redmine discussions
-5. Use Redmine's wiki feature to document your project's methodology and findings
+1. Check the Redmine help documentation
+2. Create a support issue in the appropriate project
+3. Contact the CCI xG Testbed support team via email at the address provided in your welcome message
 
-This integrated approach ensures that your experiments are well-documented and any issues are promptly addressed by the support team.
-
-.. note:: For additional assistance with either the Gateway or Redmine, please contact the CCI xG Testbed support team through Redmine or via email at the address provided in your welcome message.
+.. note:: For additional assistance with Redmine, please contact the CCI xG Testbed support team through Redmine or via email at the address provided in your welcome message.
