@@ -282,15 +282,16 @@ Alumni and Former Students
    :width: 200px
    :height: 220px
 
-   Jaswanth Sai Reddy
+   `Jaswanth Sai Reddy <https://www.linkedin.com/in/jaswanth-sai-reddy>`_
+
 
 .. figure:: _static/Prateek.jpg
-   :alt: Jaswanth Sai Reddy
+   :alt: Prateek Sethi
    :align: left
    :width: 200px
    :height: 220px
 
-   Prateek
+   `Prateek Sethi <https://www.linkedin.com/in/prateeksethiii/>`_
 
 |
 |     
@@ -314,12 +315,12 @@ Alumni and Former Students
    Vikas
 
 .. figure:: _static/Tapan.jpg
-   :alt: Jaswanth Sai Reddy
+   :alt: Tapan 
    :align: left
    :width: 200px
    :height: 220px
 
-   Tapan
+   `Tapan Bhatnagar <https://www.linkedin.com/in/prateeksethiii/>`_
 
 .. figure:: _static/Oren.jpg
    :alt: Oren
@@ -327,7 +328,7 @@ Alumni and Former Students
    :width: 200px
    :height: 220px
 
-   Oren
+   `Oren Collaco <https://www.linkedin.com/in/prateeksethiii/>`_
 
 .. figure:: _static/Adam.jpg
    :alt: Adam
