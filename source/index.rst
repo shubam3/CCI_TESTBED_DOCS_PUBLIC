@@ -20,7 +20,7 @@ CCI's xG Testbed documentation
 
    Getting Started <getting_started/user_access>
    OpenStack Guide <getting_started/openstack>
-   Redmine Guide <getting_started/gateway_and_redmine>
+   Redmine Guide <getting_started/redmine>
 
 .. .. toctree::
 ..    :maxdepth: 9
