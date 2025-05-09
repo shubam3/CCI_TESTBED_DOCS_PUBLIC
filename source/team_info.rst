@@ -462,15 +462,15 @@ Visiting Researchers
 |
 |
 
-.. figure:: _static/Abdellah.jpg
+.. figure:: _static/Abdellah.jpeg
    :alt: Abdellah
    :align: left
    :width: 200px
    :height: 200px
 
-- **Name:** Abdellah
+- **Name:** Abdellah El Baamrani
 - **Role:** Former Intern Student 
-- **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
+- **Profile:** `Profile <https://www.linkedin.com/in/abdellah-el-baamrani-819898286>`_
 
 |
 |
