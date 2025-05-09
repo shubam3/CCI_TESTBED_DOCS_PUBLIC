@@ -325,8 +325,17 @@ Alumni and Former Students
    :alt: Oren
    :align: left
    :width: 200px
+   :height: 220px
 
    Oren
+
+.. figure:: _static/Adam.jpg
+   :alt: Adam
+   :align: left
+   :width: 200px
+   :height: 220px
+
+   Adam
    
 |
 |     
@@ -382,7 +391,94 @@ Associated Research Faculty
 |
 |
 
-Visitors/Residence
+Visiting Researchers
+-------------------
+.. figure:: _static/Gustavo.jpg
+   :alt: Gustavo
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Gustavo Zanatta Bruno   
+- **Role:** Visiting PhD Scholar
+- **Profile:** `Profile <https://scholar.google.com/citations?user=XP3qsG8AAAAJ&hl=pt-BR/>`_
+
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/Abhishek.jpg
+   :alt: Abhishek
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Abhishek Kumar  
+- **Role:** Visiting PhD Scholar
+- **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
+
+
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/Efat.jpg
+   :alt: Efat
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Efat Samir  
+- **Role:** Visiting PhD Scholar 
+- **Profile:** `Profile <https://scholar.google.com/citations?user=u0DoSvsAAAAJ&hl=en>`_
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/Amirreza.jpg
+   :alt: Amirreza
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Amirreza Ghafoori 
+- **Role:** Visiting PhD Scholar 
+- **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
+
+|
+|
+|
+|
+|
+|
+
+.. figure:: _static/Abdellah.jpg
+   :alt: Abdellah
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Abdellah
+- **Role:** Former Intern Student 
+- **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
+
+|
+|
+|
+|
+|
+|
+
+Resident Engineers
 -------------------
 .. figure:: _static/zeeshan-pic.jpg
    :alt: Zeeshan
@@ -391,7 +487,7 @@ Visitors/Residence
    :height: 200px
 
 - **Name:** Zeeshan Shah  
-- **Role:** Principal Engineer- 5G ORAN Lab  
+- **Role:** Principal Engineer, Verizon- 5G ORAN Lab  
 - **Focus:** 5G O-RAN- ACCoRD Testing and Integration Engineer- Support Day to Day ORAN ACCoRD testing activities  
 - **Profile:** `Profile <https://www.linkedin.com/in/zeeshan-shah-pmp%C2%AE%EF%B8%8F-59406742/>`_
 
