@@ -37,10 +37,10 @@ CCI Dashboard and Experiment Environment
 
 After receiving your access credentials, you'll begin your journey with the CCI Dashboard, which serves as the central hub for accessing various components of the CCI xG Testbed and launching your experiments.
 
-.. figure:: ../user-dashboard/user-flow.png
+.. figure:: ../user-dashboard/user-flow.jpg
    :alt: User-Flow 
    :align: center
-   :scale: 70%
+   
    
    Figure: Experimental User - Workflow Diagram
 
