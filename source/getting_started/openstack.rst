@@ -2,7 +2,7 @@
 OpenStack Instance Launch Guide
 ==============================
 
-This document provides comprehensive instructions for creating and launching OpenStack instances, including instances with Universal Software Radio Peripheral (USRP) access using the Command-Line Interface (CLI), and generic compute virtual machines (VMs) via the OpenStack dashboard.
+This documents provides comprehensive instructions for creating and launching OpenStack instances, including instances with Universal Software Radio Peripheral (USRP) access using the Command-Line Interface (CLI), and generic compute virtual machines (VMs) via the OpenStack dashboard.
 
 **Keywords:** USRP, OpenStack, CLI, Dashboard, Compute VM, Cloud Computing
 
