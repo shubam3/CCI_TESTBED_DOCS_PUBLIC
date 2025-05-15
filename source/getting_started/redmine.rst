@@ -134,6 +134,9 @@ If you don't find an existing issue that matches your needs:
 
    Figure: Redmine new issue creation form
 
+.. note:: Admin team takes one business day to respond to an issue.
+
+
 Tracking and Updating Issues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
