@@ -1,11 +1,10 @@
-AI-ML
+ClearML
 ==========
 
 Introduction
 ============
 
-(Add your introduction here)
-
+ClearML is an open-source, end-to-end AI Platform designed to streamline AI adoption and the entire development lifecycle. It supports every phase of AI development, from research to production, allowing users to leverage any model, dataset, or architecture at scale.
 
 Architecture
 ============
@@ -14,7 +13,8 @@ Architecture
    :align: center
    :alt: AI-ML Architecture
    :scale: 40%
-
+   
+   **Figure 1:** ClearML-Based AI/ML System for CCI-xG O-RAN Architecture.
 This figure illustrates a **ClearML**-based AI/ML pipeline integrated with the CCI-xG Testbed O-RAN (Open Radio Access Network) architecture, specifically showing interactions between:
 
 - Non-Real-Time RIC (Non-RT RIC)
@@ -60,19 +60,8 @@ These components are configured to communicate over standard O-RAN interfaces li
 - Executes xApps (Near-RT RIC applications) using ML-generated policies or decisions.
 - Monitored via the Near-RT RIC dashboard.
 
+.. note::
 
-
-
-Conclusion
-==========
-
-(Add your conclusion here)
-
-Reference
-=========
-
-(Add your references here)
-
-
-
+   📘 **ClearML User Guide**
+   Get started with ClearML using the official ClearML Guide. It provides step-by-step instructions for setup, experiment tracking, task management, and more: `ClearML Integration Guide <https://clearml-guide.readthedocs.io/>`_
 

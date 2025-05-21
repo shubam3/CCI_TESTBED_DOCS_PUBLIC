@@ -25,20 +25,21 @@ Research Publications
 
 .. |quote2| raw:: html
 
+
     <span style="color: black; font-weight: bold">“Benchmarking Software Defined Radio Based 5G Deployments With srsRAN: Lessons Learned”</span>
 
 .. [1]  Da Silva, M. R. Chowdhury, A. Sathish, A. Tripathi, S. F. Midkiff, and L. DaSilva, |quote1|, in *IEEE Communications Magazine*, vol. 63, no. 2, pp. 62–68, February 2025, doi: 10.1109/MCOM.001.2400322. `Link <https://doi.org/10.1109/MCOM.001.2400322>`_
 
-.. [2]  Tripathi, F. Bashar, M. R. Chowdhury, A. P. da Silva, and S. F. Midkiff, |quote2|, accepted in *Proc. IEEE Wireless Communications and Networking Conference (WCNC)*, Milan, Italy, Mar. 24–27, 2025. `Link <#>`_
+.. [2]  A. Tripathi, F. Bashar, M. R. Chowdhury, A. Da Silva, and S. F. Midkiff, |quote2|, 2025 IEEE Wireless Communications and Networking Conference (WCNC), Milan, Italy, 2025, pp. 1-6, doi: 10.1109/WCNC61545.2025.10978285 `Link <https://ieeexplore.ieee.org/abstract/document/10978285>`_
 
-
+..  Tripathi, F. Bashar, M. R. Chowdhury, A. Da Silva and S. F. Midkiff, "Benchmarking Software Defined Radio Based 5G Deployments With srsRAN: Lessons Learned," 2025 IEEE Wireless Communications and Networking Conference (WCNC), Milan, Italy, 2025, pp. 1-6, doi: 10.1109/WCNC61545.2025.10978285
 
 AI/ML based E2E O-RAN Control
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |quote3| raw:: html
 
-    <span style="color: black; font-weight: bold">“Leveraging O-RAN SC AI/ML Framework & Non-RT RIC for AI-Driven Network Slice QoS Optimization”</span>
+    <span style="color: black; fontt-weight: bold">“Leveraging O-RAN SC AI/ML Framework & Non-RT RIC for AI-Driven Network Slice QoS Optimization”</span>
 
 
 .. [3]  M.H. Rahman, A. Jain, A. P. Da Silva, S. Singh, M. R. Chowdhury, H. S. Dhillon, and M. Hong, |quote3|, in *Proc. IEEE GLOBECOM Wkshp*, Cape Town, South Africa, Dec 2024. `Link <#>`_
