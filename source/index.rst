@@ -37,7 +37,7 @@ CCI's xG Testbed documentation
    software_architecture/oran/non-rt
    software_architecture/oran/near-rt
    software_architecture/oran/rat
-   software_architecture/oran/ai-ml
+   software_architecture/oran/clearml
 
 .. toctree::
    :maxdepth: 1
@@ -46,7 +46,7 @@ CCI's xG Testbed documentation
    sample_experiments/srsran-4g-lte
    sample_experiments/srsran-5g
    sample_experiments/cbrs
-   sample_experiments/ai-ml
+   sample_experiments/clearml
    sample_experiments/non-rt
    sample_experiments/near-rt
 
