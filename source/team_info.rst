@@ -187,13 +187,13 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 
-.. figure:: _static/rajat_2.png
-   :alt: Rajat Nagar
+.. figure:: _static/shubam.png
+   :alt: Shubam khantwal
    :align: left
    :width: 200px
-   :height: 250px
+   :height: 230px
 
-- **Name:** Rajat Nagar  
+- **Name:** Shubam khantwal  
 - **Role:** Research Intern   
 - **Focus:** Deployment of cloud solutions and support for proof-of-concept development
 |
@@ -336,10 +336,23 @@ Alumni and Former Students
    :width: 200px
    :height: 220px
 
-   Adam
-   
+   Adam   
 |
 |     
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 |
 |
 |
@@ -411,7 +424,7 @@ Visiting Researchers
 |
 |
 
-.. figure:: _static/Abhishek.jpg
+.. figure:: _static/Abhi.jpg
    :alt: Abhishek
    :align: left
    :width: 200px
