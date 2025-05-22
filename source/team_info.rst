@@ -187,7 +187,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 
-.. figure:: _static/shubam.png
+.. figure:: _static/Shubam.png
    :alt: Shubam khantwal
    :align: left
    :width: 200px
