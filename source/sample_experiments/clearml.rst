@@ -92,10 +92,8 @@ This section provides an overview of the dataset, including displaying basic inf
 Data Preprocessing
 ------------------
 
-After loading the dataset, preprocessing steps are performed:
-* Rows with a path loss of 250 are removed.
-* Input (X, Y) and output (Path Loss) are separated.
-* Nulls are dropped and data is scaled using `MinMaxScaler`.
+After loading the dataset, preprocessing steps are performed: Rows with a path loss of 250 are removed. Input (X, Y) and output (Path Loss) are separated. Nulls are dropped and data is scaled using MinMaxScaler.
+
 
 .. code-block:: python
 
