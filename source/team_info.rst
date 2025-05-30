@@ -415,23 +415,17 @@ Visiting Researchers
 |
 |
 
-.. figure:: _static/Abhi.jpg
-   :alt: Abhishek
-   :align: left
-   :width: 200px
-   :height: 200px
+.. .. figure:: _static/Abhi.jpg
+..    :alt: Abhishek
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
-- **Name:** Abhishek Kumar  
-- **Role:** Visiting PhD Scholar
-- **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
+.. - **Name:** Abhishek Kumar  
+.. - **Role:** Visiting PhD Scholar
+.. - **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
 
 
-|
-|
-|
-|
-|
-|
 
 .. figure:: _static/Efat.jpg
    :alt: Efat
