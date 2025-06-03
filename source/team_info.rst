@@ -224,21 +224,21 @@ Admin Team
 |
 |
 
-.. figure:: _static/kshitij.png
-   :alt: Kshitij Narvekar
-   :align: left
-   :width: 200px
-   :height: 200px
+.. .. figure:: _static/kshitij.png
+..    :alt: Kshitij Narvekar
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
-- **Name:** Kshitij Narvekar  
-- **Role:** Master's Researcher / Intern 
-- **Focus:** Integration of AI/ML in cloud platforms for wireless research
-|
-|
-|
-|
-|
-|
+.. - **Name:** Kshitij Narvekar  
+.. - **Role:** Master's Researcher / Intern 
+.. - **Focus:** Integration of AI/ML in cloud platforms for wireless research
+.. |
+.. |
+.. |
+.. |
+.. |
+.. |
 
 .. figure:: _static/sanjna.png
    :alt: Sanjna Kumari
