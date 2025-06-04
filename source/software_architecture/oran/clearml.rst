@@ -14,7 +14,7 @@ Architecture
    :alt: AI-ML Architecture
    :scale: 40%
    
-   **Figure 1:** ClearML-Based AI/ML System for CCI-xG O-RAN Architecture.
+   **Figure:** ClearML-Based AI/ML System for CCI-xG O-RAN Architecture.
 This figure illustrates a **ClearML**-based AI/ML pipeline integrated with the CCI-xG Testbed O-RAN (Open Radio Access Network) architecture, specifically showing interactions between:
 
 - Non-Real-Time RIC (Non-RT RIC)
