@@ -230,10 +230,11 @@ Flow Diagram of Redmine Functionality
 
 The following diagram illustrates the typical workflow for using Redmine:
 
-.. figure:: ../_static/redmine-flow.png
+.. figure:: ../_static/redmine_newflow.png
    :alt: Redmine User-flow
    :align: center
- 
+   :width: 800px
+   :height: 800px
 
    Figure: Redmine User-Flow 
 
