@@ -39,10 +39,10 @@ AI/ML based E2E O-RAN Control
 
 .. |quote3| raw:: html
 
-    <span style="color: black; fontt-weight: bold">“Leveraging O-RAN SC AI/ML Framework & Non-RT RIC for AI-Driven Network Slice QoS Optimization”</span>
+    <span style="color: black; font-weight: bold">“Leveraging O-RAN SC AI/ML Framework & Non-RT RIC for AI-Driven Network Slice QoS Optimization”</span>
 
 
-.. [3]  M.H. Rahman, A. Jain, A. P. Da Silva, S. Singh, M. R. Chowdhury, H. S. Dhillon, and M. Hong, |quote3|, in *Proc. IEEE GLOBECOM Wkshp*, Cape Town, South Africa, Dec 2024. `Link <#>`_
+.. [3]  M.H. Rahman, A. Jain, A. P. Da Silva, S. Singh, M. R. Chowdhury, H. S. Dhillon, and M. Hong, |quote3|, in *Proc. IEEE GLOBECOM Wkshp*, Cape Town, South Africa, Dec 2024. `Link <https://futurenetworks.ieee.org/images/files/pdf/WFRTN2025/18_Talk-13_Aloizio-Da_Silva.pdf>`_
 .. |quote4| raw:: html
 
     <span style="color: black; font-weight: bold">“End-to-End O-RAN Control-Loop For Radio Resource Allocation in SDR-Based 5G Network”</span>
@@ -69,7 +69,7 @@ Spectrum Sharing - CBRS and NR-U
 
 .. [6]  O.R. Collaco, A. Tripathi, and A.P. da Silva, |quote6|, in *Proceedings of the ACM Workshop on Wireless Network Testbeds, Experimental Evaluation & Characterization (WiNTECH '23)*, New York, USA, 2023, pp. 25–32. `Link <https://dl.acm.org/doi/10.1145/3615453.3616520>`_
 
-.. [7]  A. Sathish, M. R. Chowdhury, A. P. da Silva, M. Ghosh, and L. A. DaSilva, |quote7|, in *Proc. IEEE CCNC*, Las Vegas, NV, USA, Jan 2025. `Link <#>`_
+.. [7]  A. Sathish, M. R. Chowdhury, A. P. da Silva, M. Ghosh, and L. A. DaSilva, |quote7|, in *Proc. IEEE CCNC*, Las Vegas, NV, USA, Jan 2025. `Link <https://ieeexplore.ieee.org/document/10975910>`_
 
 
 Conflict Mitigation
@@ -83,7 +83,7 @@ Conflict Mitigation
 
     <span style="color: black; font-weight: bold">“A Software-Defined Radio based O-RAN Platform for xApp Conflict Detection and Mitigation”</span>
 
-.. [8]  A. Sultana, C. Adamczyk, M. R. Chowdhury, A. Kliks, and A. P. da Silva, |quote8|, accepted in *Proc. IEEE INFOCOM Wkshp*, London, United Kingdom, May 19–22, 2025. `Link <#>`_
+.. [8]  A. Sultana, C. Adamczyk, M. R. Chowdhury, A. Kliks, and A. P. da Silva, |quote8|, accepted in *Proc. IEEE INFOCOM Wkshp*, London, United Kingdom, May 19–22, 2025. `Link <https://arxiv.org/abs/2503.11566>`_
 
 .. [9]  A. Sultana, F. Bashar, M. R. Chowdhury, A. P. da Silva, |quote9|, in *Proc. IEEE MILCOM Demo*, Washington DC, USA, Oct. 2024. `Link <https://ieeexplore.ieee.org/document/10773739>`_
 
