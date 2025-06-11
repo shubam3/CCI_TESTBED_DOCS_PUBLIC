@@ -42,3 +42,7 @@ html_static_path = ['_static']
 html_css_files = ['width.css']
 
 #rajat commit final
+# # These are relative to the static path.
+html_css_files = [
+    'custom.css',
+]

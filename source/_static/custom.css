@@ -4,3 +4,53 @@
 .wy-menu-vertical li.toctree-l0 > a:focus {
   color: red !important;
 }
+
+/* Styles for the outer container of each person (for horizontal layout) */
+.person-profile {
+  /* REMOVE THIS LINE: border: 1px solid red !important; */
+  margin: 5px; /* Keep this for spacing between profiles */
+  padding: 5px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center; /* Keep this for centering the image above the text */
+  max-width: 210px;
+  min-height: 280px; /* Keep this or adjust as needed to prevent content collapse */
+  /* REMOVE THIS LINE IF YOU ADDED IT: overflow: hidden; */
+}
+
+.person-profile .figure {
+  margin-bottom: 0px;
+}
+
+.person-profile .figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container for Name and Role text */
+.person-profile .person-info {
+  text-align: left; /* Align text within this container to the left */
+  margin-top: 5px;
+  line-height: 1.4;
+  color: #333; /* Keep this or set to your desired text color (e.g., black, #000) */
+  /* REMOVE THIS LINE: background-color: yellow !important; */
+  word-wrap: break-word;
+}
+
+/* Style for links within the text */
+.person-profile .person-info a {
+  text-decoration: none; /* Keep this to remove underline */
+  color: inherit;       /* Keep this or set to your desired link color */
+  font-weight: normal; /* Keep this to remove bold */
+}
+
+/* REMOVE THIS TEMP TEST RULE IF YOU ADDED IT: */
+/*
+p {
+  color: red !important;
+}
+*/

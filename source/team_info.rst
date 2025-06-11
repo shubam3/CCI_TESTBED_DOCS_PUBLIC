@@ -154,21 +154,21 @@ The Technical Team includes doctoral students and a subset of master's researche
 
 **Master's Researchers and Interns:**
 
-.. figure:: _static/abida.jpg
-   :alt: Abida Sultana
-   :align: left
-   :width: 200px
-   :height: 200px
+.. .. figure:: _static/abida.jpg
+..    :alt: Abida Sultana
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
-- **Name:** Abida Sultana  
-- **Role:** Graduate Research Assistant  
-- **Focus:** Near Real-Time Open Radio Access Networks (O-RAN)
-|
-|
-|
-|
-|
-|
+.. - **Name:** Abida Sultana  
+.. - **Role:** Graduate Research Assistant  
+.. - **Focus:** Near Real-Time Open Radio Access Networks (O-RAN)
+.. |
+.. |
+.. |
+.. |
+.. |
+.. |
 
 .. figure:: _static/fahim.png
    :alt: Fahim Bashar
@@ -224,21 +224,7 @@ Admin Team
 |
 |
 
-.. .. figure:: _static/kshitij.png
-..    :alt: Kshitij Narvekar
-..    :align: left
-..    :width: 200px
-..    :height: 200px
 
-.. - **Name:** Kshitij Narvekar  
-.. - **Role:** Master's Researcher / Intern 
-.. - **Focus:** Integration of AI/ML in cloud platforms for wireless research
-.. |
-.. |
-.. |
-.. |
-.. |
-.. |
 
 .. figure:: _static/sanjna.png
    :alt: Sanjna Kumari
@@ -260,102 +246,222 @@ Admin Team
 Alumni and Former Students
 ----------------------------
 
-.. figure:: _static/aditya.jpg
-   :alt: Aditya Sathish
-   :align: left
-   :width: 200px
-   :height: 220px
 
-   `Aditya Sathish <https://scholar.google.com/citations?user=_DI_jTsAAAAJ&hl=en>`_
+.. container:: person-profile
 
-.. figure:: _static/souradeep.jpg
-   :alt: Souradeep Deb
-   :align: left
-   :width: 200px
-   :height: 220px
+   .. figure:: _static/aditya.jpg
+      :alt: Aditya Sathish
+      :width: 200px
+      :height: 220px
+      :target: https://scholar.google.com/citations?user=_DI_jTsAAAAJ&hl=en
 
-   `Souradeep Deb <https://scholar.google.com/citations?user=4hCPcvoAAAAJ&hl=en>`_
+   .. container:: person-info
+      
+      | Name: `Aditya Sathish <https://scholar.google.com/citations?user=_DI_jTsAAAAJ&hl=en>`_
+      | Role: Graduate Researcher
 
-.. figure:: _static/jaswanth_sai_reddy.jpg
-   :alt: Jaswanth Sai Reddy
-   :align: left
-   :width: 200px
-   :height: 220px
+.. container:: person-profile
 
-   `Jaswanth Sai Reddy <https://www.linkedin.com/in/jaswanth-sai-reddy>`_
+   .. figure:: _static/souradeep.jpg
+      :alt: Souradeep Deb
+      :width: 200px
+      :height: 220px
+      :target: https://scholar.google.com/citations?user=4hCPcvoAAAAJ&hl=en
 
+   .. container:: person-info
 
-.. figure:: _static/Prateek.jpg
-   :alt: Prateek Sethi
-   :align: left
-   :width: 200px
-   :height: 220px
+      | Name: `Souradeep Deb <https://scholar.google.com/citations?user=4hCPcvoAAAAJ&hl=en>`_
+      | Role: Graduate Researcher
+      
+.. container:: person-profile
 
-   `Prateek Sethi <https://www.linkedin.com/in/prateeksethiii/>`_
+   .. figure:: _static/jaswanth_sai_reddy.jpg
+      :alt: Jaswanth Sai Reddy
+      :width: 200px
+      :height: 220px
+      :target: https://www.linkedin.com/in/jaswanth-sai-reddy
 
-|
-|     
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+   .. container:: person-info
 
-.. figure:: _static/Vikas.jpg
-   :alt: Jaswanth Sai Reddy
-   :align: left
-   :width: 200px
-   :height: 220px
-
-   Vikas
-
-.. figure:: _static/Tapan.jpg
-   :alt: Tapan 
-   :align: left
-   :width: 200px
-   :height: 220px
-
-   `Tapan Bhatnagar <https://www.linkedin.com/in/prateeksethiii/>`_
-
-.. figure:: _static/Oren.jpg
-   :alt: Oren
-   :align: left
-   :width: 200px
-   :height: 220px
-
-   `Oren Collaco <https://www.linkedin.com/in/prateeksethiii/>`_
-
-.. figure:: _static/Adam.jpg
-   :alt: Adam
-   :align: left
-   :width: 200px
-   :height: 220px
-
-   Adam   
-|
-|     
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+      | Name: `Jaswanth Sai Reddy <https://www.linkedin.com/in/jaswanth-sai-reddy>`_
+      | Role: Graduate Researcher
 
 
+.. container:: person-profile
+
+   .. figure:: _static/Prateek.jpg
+      :alt: Prateek Sethi
+      :width: 200px
+      :height: 220px
+      :target: https://www.linkedin.com/in/prateeksethiii/
+
+   .. container:: person-info
+
+      | Name: `Prateek Sethi <https://www.linkedin.com/in/prateeksethiii/>`_
+      | Role:  Master's Researcher
+
+.. container:: person-profile
+
+   .. figure:: _static/Vikas.jpg
+      :alt: Vikas
+      :width: 200px
+      :height: 220px
+      :target: # 
+
+   .. container:: person-info
+
+      | Name: Vikas
+      | Role: Master's Researcher 
+
+.. container:: person-profile
+
+   .. figure:: _static/Tapan.jpg
+      :alt: Tapan
+      :width: 200px
+      :height: 220px
+      :target: https://www.linkedin.com/in/tapan-bhatnagar 
+
+   .. container:: person-info
+
+      | Name: Tapan Bhatnagar
+      | Role: Master's Researcher 
+
+.. container:: person-profile
+
+   .. figure:: _static/Oren.jpg
+      :alt: Oren
+      :width: 200px
+      :height: 220px
+      :target: https://www.linkedin.com/in/orencollaco/   
+
+   .. container:: person-info
+
+      | Name: Oren Collaco
+      | Role: Master's Researcher  
+
+.. container:: person-profile
+
+   .. figure:: _static/Adam.jpg
+      :alt: Adam
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Adam
+      | Role: Master's Researcher  
+
+    
+
+.. container:: person-profile
+
+   .. figure:: _static/Abhimanyu.jpeg
+      :alt: Abhimanyu Bhagwati
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Abhimanyu Bhagwati
+      | Role: Master's Researcher       
+
+.. container:: person-profile
+
+   .. figure:: _static/Abdellah.jpeg
+      :alt: Abdellah El Baamrani
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Abdellah El Baamrani
+      | Role: Master's Researcher      
+
+.. container:: person-profile
+
+   .. figure:: _static/Amirreza.jpg
+      :alt: Amirreza Ghafoori
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Amirreza Ghafoori
+      | Role: Graduate Researcher      
+
+.. container:: person-profile
+
+   .. figure:: _static/efat.jpg
+      :alt: Efat Samir
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Efat Samir
+      | Role: Graduate Researcher      
+
+.. container:: person-profile
+
+   .. figure:: _static/kshitij.png
+      :alt: Kshitij Narvekar
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Kshitij Narvekar
+      | Role: Master's Researcher        
+
+.. container:: person-profile
+
+   .. figure:: _static/Sunny.png
+      :alt: Sunny Khanorkar
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Sunny Khanorkar
+      | Role: Master's Researcher        
+
+.. container:: person-profile
+
+   .. figure:: _static/rajat_2.png
+      :alt: Rajat Nagar
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Rajat Nagar
+      | Role: Master's Researcher        
+
+.. container:: person-profile
+
+   .. figure:: _static/abida.jpg
+      :alt: Abida Sultana
+      :width: 200px
+      :height: 220px
+      :target: #  
+
+   .. container:: person-info
+
+      | Name: Abida Sultana
+      | Role: Graduate Researcher 
 
 
-
-
+|
+|
+|
 Associated Research Faculty
 ---------------------------
 .. figure:: _static/jacek-kibilda-cci-researcher.jpg
@@ -396,6 +502,7 @@ Associated Research Faculty
 |
 |
 
+
 Visiting Researchers
 -------------------
 .. figure:: _static/Gustavo.jpg
@@ -415,60 +522,59 @@ Visiting Researchers
 |
 |
 
-.. .. figure:: _static/Abhi.jpg
-..    :alt: Abhishek
+.. figure:: _static/Abhishek.gif
+   :alt: Abhishek
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Abhishek Kumar  
+- **Role:** Visiting PhD Scholar
+- **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
+
+
+.. .. figure:: _static/Efat.jpg
+..    :alt: Efat
 ..    :align: left
 ..    :width: 200px
 ..    :height: 200px
 
-.. - **Name:** Abhishek Kumar  
-.. - **Role:** Visiting PhD Scholar
-.. - **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
+.. - **Name:** Efat Samir  
+.. - **Role:** Visiting PhD Scholar 
+.. - **Profile:** `Profile <https://scholar.google.com/citations?user=u0DoSvsAAAAJ&hl=en>`_
+.. |
+.. |
+.. |
+.. |
+.. |
+.. |
 
+.. .. figure:: _static/Amirreza.jpg
+..    :alt: Amirreza
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
+.. - **Name:** Amirreza Ghafoori 
+.. - **Role:** Visiting PhD Scholar 
+.. - **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
 
-.. figure:: _static/Efat.jpg
-   :alt: Efat
-   :align: left
-   :width: 200px
-   :height: 200px
+.. |
+.. |
+.. |
+.. |
+.. |
+.. |
 
-- **Name:** Efat Samir  
-- **Role:** Visiting PhD Scholar 
-- **Profile:** `Profile <https://scholar.google.com/citations?user=u0DoSvsAAAAJ&hl=en>`_
-|
-|
-|
-|
-|
-|
+.. .. figure:: _static/Abdellah.jpeg
+..    :alt: Abdellah
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
-.. figure:: _static/Amirreza.jpg
-   :alt: Amirreza
-   :align: left
-   :width: 200px
-   :height: 200px
-
-- **Name:** Amirreza Ghafoori 
-- **Role:** Visiting PhD Scholar 
-- **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
-
-|
-|
-|
-|
-|
-|
-
-.. figure:: _static/Abdellah.jpeg
-   :alt: Abdellah
-   :align: left
-   :width: 200px
-   :height: 200px
-
-- **Name:** Abdellah El Baamrani
-- **Role:** Former Intern Student 
-- **Profile:** `Profile <https://www.linkedin.com/in/abdellah-el-baamrani-819898286>`_
+.. - **Name:** Abdellah El Baamrani
+.. - **Role:** Former Intern Student 
+.. - **Profile:** `Profile <https://www.linkedin.com/in/abdellah-el-baamrani-819898286>`_
 
 |
 |
