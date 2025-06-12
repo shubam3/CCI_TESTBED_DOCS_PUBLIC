@@ -395,7 +395,7 @@ Alumni and Former Students
 
 .. container:: person-profile
 
-   .. figure:: _static/efat.jpg
+   .. figure:: _static/Efat.jpg
       :alt: Efat Samir
       :width: 200px
       :height: 220px
