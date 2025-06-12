@@ -1,3 +1,5 @@
+.. _clearml_experiment:
+
 ClearML
 ========================================
 
@@ -234,4 +236,6 @@ The trained Keras model is saved locally for reuse.
 .. code-block:: python
 
    m.save('./serving_model.keras')
+
+For architectural details and integration, see the :ref:`ClearML Architecture <clearml_architecture>` in the Software Architecture section.
 

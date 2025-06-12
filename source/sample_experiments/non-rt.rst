@@ -1,3 +1,5 @@
+.. _non_rt_ric_experiment:
+
 O-RAN Non-RT RIC
 =======================================
 
@@ -5,7 +7,7 @@ Overview
 --------
 This tutorial details the experimental setup and procedures for deploying and testing an O-RAN Non-Real-Time RAN Intelligent Controller (Non-RT RIC) and establishing communication with a Near-RT RIC via the A1 interface. It covers the complete process from environment setup to policy creation and testing.
 
-.. image:: ../../images-oran/non_rt_experiment.png
+.. image:: ../images-oran/non_rt_experiment.png
    :alt: Non-RT RIC Experimental Setup
    :align: center
    :width: 70%
@@ -483,6 +485,8 @@ This experiment demonstrates how to:
    - Push data through the A1 interface
 
 The Non-RT RIC is a key component of the O-RAN architecture, enabling AI/ML-based intelligence in the RAN. By deploying and experimenting with the Non-RT RIC and its communication with the Near-RT RIC, you can gain practical knowledge of O-RAN components and their interactions, and explore the potential of open, intelligent, and programmable RAN.
+
+For architectural details and integration, see the :ref:`Non-RT RIC Architecture <non_rt_ric_architecture>` in the Software Architecture section.
 
 References
 ----------

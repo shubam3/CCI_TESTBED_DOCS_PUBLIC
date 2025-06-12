@@ -1,3 +1,5 @@
+.. _opensas_pal_experiment:
+
 Priority Protection of PAL Users through OpenSAS
 ======================================================
 
@@ -8,6 +10,7 @@ Objective
 This tutorial outlines the steps to demonstrate the integration of the OpenSAS Server and CBSD for GAA and PAL operations using srsRAN and Open5GS. We demonstrate priority protection for higher-tier user (PAL) in presence of lower-tier users (GAA) in the CBRS ecosystem through OpenSAS.  
 
 For more information on OpenSAS architecture and installation configuration, please visit: `OpenSAS <https://cci-testbed-docs-public.readthedocs.io/en/latest/software_architecture/opensas/introduction.html>`_.
+
 
 Experimental Setup
 ------------------------
@@ -230,6 +233,9 @@ Setting Up the Experiment
          :scale: 50%
 
          **Figure 12:** OpenSAS Dashboard displaying GAA CBSD location on the map.
+
+For architectural details and integration, see the :ref:`OpenSAS Architecture <opensas_architecture>` in the Software Architecture section.
+
 
 References
 ------------

@@ -1,4 +1,3 @@
-
 What is OTIC?
 ===============
 The North American OTIC in the Washington DC/Arlington VA Metro is aimed at facilitating the design, development, and deployment of cloud-enhanced and open-software-defined wireless technologies. It provides multiple testbeds to support real-world experimentation, testing, and interoperability on advanced wireless technologies and applications for the next generation. The facility is open to a wide range of users—including universities, industry research labs, and both US and non-US institutions. Commercial entities are also encouraged to use the facility for product development and evaluation with certain provisions. Researchers can run experiments remotely on the testbed by logging in via a remote terminal (VPN and SSH), which provides various facilities for experiment execution, measurements, and data collection across the available testbeds.
@@ -60,7 +59,7 @@ Interoperability
 ..    :align: center
 ..    :width: 300px
 
-Verifies that diverse vendors’ solutions and components work seamlessly together.
+Verifies that diverse vendors' solutions and components work seamlessly together.
 
 OTIC Labs
 =========
@@ -90,26 +89,29 @@ The CCI xG Testbed is equipped with a range of testing equipment and software to
 Testing Equipment
 -----------------
 - **Rohde & Schwarz Spectrum Analyzer**  
-  .. figure:: _static/spectrum_analyzer.png
-     :alt: Spectrum Analyzer
-     :align: center
-     :width: 250px
 
-  *Feature:* High frequency resolution and rapid scanning capability for precise spectrum measurements.
+.. figure:: _static/spectrum_analyzer.png
+   :alt: Spectrum Analyzer
+   :align: center
+   :width: 250px
+
+*Feature:* High frequency resolution and rapid scanning capability for precise spectrum measurements.
 
 - **Ettus USRP X310**  
-  .. figure:: _static/usrp_x310.png
-     :alt: USRP X310
-     :align: center
-     :width: 250px
 
-  *Feature:* Versatile software-defined radio platform ideal for real-time wireless testing and experimentation.
+.. figure:: _static/usrp_x310.png
+   :alt: USRP X310
+   :align: center
+   :width: 250px
+
+*Feature:* Versatile software-defined radio platform ideal for real-time wireless testing and experimentation.
 
 - **Keysight Signal Generator**  
-  .. figure:: _static/signal_generator.png
-     :alt: Signal Generator
-     :align: center
-     :width: 250px
+
+.. figure:: _static/signal_generator.png
+   :alt: Signal Generator
+   :align: center
+   :width: 250px
 
   *Feature:* Provides accurate and reliable signal generation for device calibration and performance tests.
 

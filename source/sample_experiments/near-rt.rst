@@ -1,3 +1,5 @@
+.. _near_rt_ric_experiment:
+
 O-RAN Near-RT RIC
 =======================================
 
@@ -340,6 +342,8 @@ This experiment demonstrates how to:
    - Test and validate the functionality of the Near-RT RIC and xApps
 
 The Near-RT RIC is a key component of the O-RAN architecture, enabling programmability and intelligence in the RAN. By deploying and experimenting with the Near-RT RIC and xApps, you can gain practical knowledge of O-RAN components and their interactions, and explore the potential of open, intelligent, and programmable RAN.
+
+For architectural details and integration, see the :ref:`Near-RT RIC Architecture <near_rt_ric_architecture>` in the Software Architecture section.
 
 References
 ----------

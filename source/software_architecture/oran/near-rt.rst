@@ -1,3 +1,5 @@
+.. _near_rt_ric_architecture:
+
 O-RAN Near-RT RIC
 =======================================
 
@@ -96,3 +98,5 @@ When deploying a Near-RT RIC, several factors need to be considered:
 Conclusion
 ---------
 The Near-RT RIC is a key component of the O-RAN architecture, enabling programmability and intelligence in the RAN. It provides a platform for hosting xApps that implement control logic for RAN elements, enabling optimization of RAN performance and resource utilization. The Near-RT RIC, along with the Non-RT RIC, forms the intelligence layer of the O-RAN architecture, enabling the vision of an open, intelligent, and programmable RAN.
+
+For a step-by-step walkthrough and practical usage, see the :ref:`Near-RT RIC Experiment <near_rt_ric_experiment>` in the Sample Experiments section.

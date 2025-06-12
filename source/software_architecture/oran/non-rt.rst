@@ -1,3 +1,5 @@
+.. _non_rt_ric_architecture:
+
 O-RAN Non-RT RIC
 =======================================
 
@@ -93,3 +95,5 @@ When deploying a Non-RT RIC, several factors need to be considered:
 Conclusion
 ---------
 The Non-RT RIC is a key component of the O-RAN architecture, enabling AI/ML-based intelligence in the RAN. It provides a platform for hosting rApps that implement control logic for RAN elements, enabling optimization of RAN performance and resource utilization. The Non-RT RIC, along with the Near-RT RIC, forms the intelligence layer of the O-RAN architecture, enabling the vision of an open, intelligent, and programmable RAN.
+
+For a step-by-step walkthrough and practical usage, see the :ref:`Non-RT RIC Experiment <non_rt_ric_experiment>` in the Sample Experiments section.
