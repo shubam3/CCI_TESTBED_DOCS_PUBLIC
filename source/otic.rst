@@ -22,44 +22,15 @@ Unique features include:
 For further details, please refer to the OTIC description on the `O-RAN Alliance website <https://www.o-ran.org/otics/north-american-otic-in-washington-dc-virginia-tech>`_.
 
 Testing and Evaluation Objective
-==================================
-End-to-end O-RAN testing is conducted in both lab and field environments. The primary evaluation areas include:
+===============================
 
-Conformance
------------
-.. .. figure:: _static/conformance.png
-..    :alt: Conformance Testing
-..    :align: center
-..    :width: 300px
+.. toctree::
+   :maxdepth: 2
 
-Ensures that all O-RAN components meet the industry standards and specifications.
-
-Performance
------------
-.. .. figure:: _static/performance.png
-..    :alt: Performance Testing
-..    :align: center
-..    :width: 300px
-
-Evaluates the system throughput, latency, and overall efficiency in real-world scenarios.
-
-Security
---------
-.. .. figure:: _static/security.png
-..    :alt: Security Testing
-..    :align: center
-..    :width: 300px
-
-Assesses the robustness of security measures, including data protection and system resilience.
-
-Interoperability
-----------------
-.. .. figure:: _static/interoperability.png
-..    :alt: Interoperability Testing
-..    :align: center
-..    :width: 300px
-
-Verifies that diverse vendors' solutions and components work seamlessly together.
+   testing/conformance
+   testing/performance
+   testing/security
+   testing/interoperability
 
 OTIC Labs
 =========

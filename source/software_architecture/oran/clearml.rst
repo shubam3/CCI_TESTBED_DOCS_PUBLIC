@@ -144,10 +144,10 @@ Before Getting Started
 
 
 Data Management
-===============
+---------------
 
 Check InfluxDB Credentials
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ensure you have the following InfluxDB credentials:
 
@@ -159,7 +159,7 @@ Ensure you have the following InfluxDB credentials:
    BUCKET = "..."        # Your bucket name
 
 Upload a Dataset from InfluxDB to ClearML Server Storage
---------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use the ClearML Data Management tool to upload datasets. The following Python code serves as a template:
 
@@ -208,7 +208,7 @@ Use the ClearML Data Management tool to upload datasets. The following Python co
    print(f"Dataset uploaded to ClearML with ID: {dataset.id}")
 
 Accessing the Uploaded Data and Preparing It
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -250,7 +250,7 @@ Accessing the Uploaded Data and Preparing It
    print(combined_data.describe())
 
 Preprocessing and Normalization
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -306,10 +306,10 @@ Preprocessing and Normalization
        return df
 
 Model Training
-==============
+--------------
 
 Creating and Training the Model
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -360,7 +360,7 @@ Creating and Training the Model
    print("Training complete!")
 
 Evaluation and Logging
-======================
+----------------------
 
 .. code-block:: python
 
@@ -394,7 +394,7 @@ For a step-by-step walkthrough and practical usage, see the :ref:`ClearML Experi
 
 
 References
-==========
+----------
 
 .. [1] https://clear.ml/docs/latest/docs/
 
