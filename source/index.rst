@@ -48,7 +48,7 @@ CCI's xG Testbed documentation
    sample_experiments/cbrs
    sample_experiments/clearml
    sample_experiments/non-rt
-   sample_experiments/near-rt
+   Time-Based Conflict Mitigation in Near-RT RIC <sample_experiments/near-rt>
 
 .. .. toctree::
 ..    :maxdepth: 1

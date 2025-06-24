@@ -63,3 +63,5 @@ We understand the objective, applicability, procedure, and expected results of t
    :width: 600px
 
    **Figure:** Example test case 3.1.1.1 – Transport and Handshake in IPv4/SSH.
+
+For more information, return to the `OTIC Main Page <../otic.html>`_.

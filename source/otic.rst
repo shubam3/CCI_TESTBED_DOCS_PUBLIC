@@ -25,7 +25,7 @@ Testing and Evaluation Objective
 ===============================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    testing/conformance
    testing/performance

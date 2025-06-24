@@ -1,7 +1,11 @@
+.. This file's sidebar/navigation title is set by the toctree entry in index.rst:
+..   Time-Based Conflict Mitigation in Near-RT RIC <sample_experiments/near-rt>
+.. The main heading below matches the sidebar title for consistency.
+
 .. _near_rt_ric_experiment:
 
-O-RAN Near-RT RIC
-=======================================
+Time-Based Conflict Mitigation in Near-RT RIC
+===============================================
 
 Overview
 --------

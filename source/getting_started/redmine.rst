@@ -26,7 +26,7 @@ After your account request is approved, you will receive Redmine credentials via
 To access Redmine:
 
 1. Open your web browser
-2. Navigate to the Redmine URL: `Link <https://redmine.xgtestbed.cyberinitiative.org/redmine/>`_
+2. Navigate to the Redmine URL: `Link <https://redmine.ccixgtestbed.org/redmine/>`_
 3. Enter your username and password
 4. Click "Login"
 
