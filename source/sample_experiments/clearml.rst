@@ -1,9 +1,9 @@
 .. _clearml_experiment:
 
-ClearML
-========================================
+ML based pathloss radio map predictor in ClearML
+=================================================
 
-This section details a step-by-step walkthrough of a neural network training pipeline using ClearML for experiment tracking and TensorFlow/Keras for model development. The workflow includes advanced data handling, model training, evaluation, and logging, closely matching the provided code.
+This section provides a step-by-step guide to training a machine learning (ML) model for pathloss radio map prediction in indoor wireless networks using the TensorFlow/Keras framework on the ClearML platform. The process covers uploading data to the ClearML server, training and evaluating an ML model, and logging results—closely aligned with the given code.
 
 Environment Setup and Library Imports
 -------------------------------------

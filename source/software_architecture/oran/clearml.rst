@@ -6,7 +6,16 @@ ClearML
 Introduction
 ------------
 
-ClearML is an open-source, end-to-end AI Platform designed to streamline AI adoption and the entire development lifecycle. It supports every phase of AI development, from research to production, allowing users to leverage any model, dataset, or architecture at scale.
+The integration of an AI/ML Framework within an O-RAN (Open Radio Access Network) setup serves as a pivotal enabler for realizing intelligent, adaptive, and efficient next-generation RAN operations. The primary objective is to harness data-driven learning to optimize network performance in real-time while ensuring openness and interoperability across RAN components.
+
+Objectives
+----------
+
+- **Enable Intelligent RAN Control:** Incorporate AI-driven decision-making to manage RAN functions (e.g., handover, scheduling, resource allocation) dynamically and autonomously.
+- **Support Near-RT and Non-RT Inference:** Enable low-latency inference in Near-Real-Time RIC (Near-RT RIC) and policy-/model-driven control in Non-Real-Time RIC (Non-RT RIC).
+- **Facilitate Data Collection and Model Training:** Aggregate large-scale RAN data via the SMO and RICs to support centralized or federated model training pipelines.
+- **Improve Network Efficiency and QoS:** Use predictive and adaptive ML models to optimize network KPIs such as throughput, latency, energy consumption, and slice SLA assurance.
+- **Enable Closed-Loop Automation:** Integrate with RIC control loops to support self-optimizing, self-healing, and self-configuring RAN behavior.
 
 Architecture
 ------------
