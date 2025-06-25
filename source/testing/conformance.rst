@@ -57,11 +57,10 @@ We understand the objective, applicability, procedure, and expected results of t
 - **Objective:** Verify that the O-RU NETCONF server can establish a TCP connection with the O-DU NETCONF client and perform a successful Call Home.
 - **Expected Result:** A secure SSH connection is established, and both units exchange <hello> messages to confirm NETCONF capability negotiation.
 
-.. figure:: Img/Conformance1.png
-   :alt: Example Test Case 3.1.1.1
-   :align: center
-   :width: 600px
 
-   **Figure:** Example test case 3.1.1.1 – Transport and Handshake in IPv4/SSH.
+Conclusion
+--------------------
 
-For more information, return to the `OTIC Main Page <../otic.html>`_.
+O-RAN conformance testing is a foundational step in ensuring that vendor equipment meets the interoperability, reliability, and performance standards essential for open and disaggregated RAN deployments. At the OTIC, our structured and standards-aligned approach supports vendors in validating their implementations across the M-Plane, U/C-Plane, and S-Plane interfaces. By offering a flexible, vendor-neutral environment, we enable early issue detection, smoother multi-vendor integration, and faster time to market. As the O-RAN ecosystem continues to grow, rigorous conformance testing remains key to delivering robust and future-ready network solutions.
+
+.. For more information, return to the `OTIC Main Page <../otic.html>`_.

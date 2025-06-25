@@ -24,6 +24,60 @@ For further details, please refer to the OTIC description on the `O-RAN Alliance
 Testing and Evaluation Objective
 ===============================
 
+The end-to-end testing process ensures that each Device Under Test (DUT) is evaluated thoroughly, reliably, and in alignment with industry standards as defined by the O-RAN Alliance. The workflow begins with a clear understanding of customer requirements and progresses through scoped planning, integration, systematic test execution, and result validation. Each step is designed to ensure a seamless and transparent experience from test request to final report delivering actionable insights and high-confidence outcomes.
+
+.. figure:: _static/testing_otic.png
+   :alt: testing_otic
+   :align: center
+   :width: 630px
+   
+   **Figure:** End-to-End Testing Process at OTIC.
+
+The following steps describe how the workflow in the above image operates:
+
+1. **Test Request**: Initial input from the customer outlining testing needs.
+
+
+   - DUT Type(s): Specify the type(s) of Device Under Test.
+   - Test Type(s): Indicate the nature of tests required (e.g., performance, conformance).
+   - Supported Features: Indicate capabilities of the DUT.
+
+.. raw:: html
+   <br>
+2. **Test Scope**: Defines the framework and terms of the testing.
+
+   - Applicable Tests: Identify test cases relevant to the DUT and its features.
+   - NDA & Compliance: Confirm legal agreements and regulatory requirements.
+   - Agreement: Finalize scope, deliverables, and responsibilities.
+
+.. raw:: html
+   <br>
+3. **Pre-test Integration**: Preparation phase ensuring DUT readiness for testing.
+
+   - DUT(s) Delivery: Receive the DUTs and verify their condition.
+   - Integration: Connect and configure DUTs within the test environment.
+   - Sanity Checks: Run basic checks to ensure DUTs are operational.
+
+.. raw:: html
+   <br>
+4. **Testing**: Execution of planned tests.
+
+   - Testing Schedule: Plan and organize the timeline for test execution.
+   - Run Tests: Perform all agreed tests per defined scope and procedure.
+
+.. raw:: html
+   <br>
+5. **Validation**: Assess results and report outcomes.
+
+   - Test Reports: Document test results, logs, and performance metrics.
+   - Identify Failures: Document errors and issues.
+
+.. raw:: html
+   <br>
+
+Testing and Evaluation Categories
+--------------------------------
+
 .. toctree::
    :maxdepth: 1
 

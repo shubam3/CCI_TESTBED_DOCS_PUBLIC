@@ -46,13 +46,9 @@ These components are configured to communicate over standard O-RAN interfaces li
 
 **2. Non-RT RIC:**
 
-*VES Collector:*
-- Gathers telemetry/events from the RAN elements and stores them in InfluxDB, a time-series database.
+- VES Collector: Gathers telemetry/events from the RAN elements and stores them in InfluxDB, a time-series database.
 
-*AI/ML Inference Host:*
-- Hosts ML rApps (rApps = RIC applications) for making AI/ML inferences.
-- Communicates with the A1 adapter to push policies or models to the Near-RT RIC.
-- Responsible for inference data collection and passing inference results to Near-RT RIC.
+- AI/ML Inference Host: It hosts ML rApps (RIC applications) that perform AI/ML inferences, collects inference data, and communicates with the A1 adapter to push policies or models to the Near-RT RIC, ensuring seamless transfer of inference results.
 
 **3. ClearML Framework for AI/ML Training:**
 
@@ -151,6 +147,51 @@ Before Getting Started
 
      - You are now ready to use ClearML in your code!
 
+
+ClearML Dashboard
+-----------------
+
+The project dashboard provides a summary of users most recent projects, reports, and tasks. Click a project, report or task to quickly access it.
+
+To access the dashboard:
+
+
+.. figure:: ../../_static/MLDash1.png
+   :align: center
+   :alt: AI-ML Architecture
+   :width: 900px
+
+
+.. raw:: html
+
+   <br><br>
+
+After logging in you can see the project pages, dataset pages, and access various experiment management features from the dashboard.
+
+.. raw:: html
+
+   <br><br>
+
+.. figure:: ../../_static/MLDash2.png
+   :align: center
+   :alt: AI-ML Architecture
+   :width: 900px
+
+
+.. raw:: html
+
+   <br><br>
+
+On the Datasets page, you can view, manage, and create datasets, as well as track their versions and storage usage
+
+.. raw:: html
+
+   <br><br>
+   
+.. figure:: ../../_static/MLDash3.png
+   :align: center
+   :alt: AI-ML Architecture
+   :width: 900px   
 
 Data Management
 ---------------

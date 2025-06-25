@@ -1,7 +1,7 @@
 .. _non_rt_ric_experiment:
 
-O-RAN Non-RT RIC
-=======================================
+Policy-Based Management using Non-RT RIC
+========================================
 
 Overview
 --------
