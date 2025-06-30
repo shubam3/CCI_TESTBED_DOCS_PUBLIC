@@ -434,11 +434,3 @@ Evaluation and Logging
 For a step-by-step walkthrough and practical usage, see the :ref:`ClearML Experiment <clearml_experiment>` in the Sample Experiments section.
 
 
-References
-----------
-
-.. [1] https://clear.ml/docs/latest/docs/
-
-.. [2] https://clear.ml/docs/latest/docs/getting_started/ds/ds_first_steps/#auto-log-experiment
-
-.. [3] https://clear.ml/docs/latest/docs/clearml_data/clearml_data_sdk

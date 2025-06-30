@@ -15,11 +15,54 @@ Objectives
 - **Improve Network Efficiency and QoS:** Use predictive and adaptive ML models to optimize network KPIs such as throughput, latency, energy consumption, and slice SLA assurance.
 - **Enable Closed-Loop Automation:** Integrate with RIC control loops to support self-optimizing, self-healing, and self-configuring RAN behavior.
 
+Resources
+---------
 
-Environment Setup and Library Imports
+- **Hardware:**
+
+  - Workstation or server with at least 4 CPU cores and 8 GB RAM (16+ GB RAM and a GPU recommended for large-scale training)
+  - Sufficient disk space for datasets and experiment logs
+
+- **Network:**
+
+  - Internet access for package installation and dataset download
+  - Network connectivity to the ClearML server
+
+- **Software:**
+
+  - Linux (Ubuntu 18.04/20.04+), macOS, or Windows 10/11
+  - Python 3.7 or higher
+  - Access to a running ClearML server (local or remote/cloud)
+  - ClearML Web UI for experiment and dataset management
+
+
+Prerequisites
+-------------
+
+Before starting the experiment, ensure the following prerequisites are met:
+
+1. **Python 3.7 or higher:**
+   - A working Python 3.7+ environment (Anaconda or venv recommended)
+
+2. **Required Python Packages:**
+   - clearml, tensorflow, keras, numpy, pandas, scikit-learn, matplotlib, seaborn, datasets (HuggingFace)
+
+3. **ClearML Server Access:**
+   - Access to a running ClearML server (local or remote/cloud) and valid credentials. ClearML Web UI for experiment and dataset management
+
+4. **Dataset:**
+   - Dataset(s) uploaded to the ClearML server in CSV format
+
+5. **Compute Resources:**
+   - Sufficient CPU/RAM (GPU recommended for large models)
+
+
+
+
+ClearML Environment Setup and Library Imports
 -------------------------------------
 
-The necessary libraries for data handling, visualization, machine learning, and ClearML tracking are imported. Random seeds are set for reproducibility. Warnings are filtered for a cleaner output.
+Step 1: Set random seeds for reproducibility and suppress warnings for cleaner output.
 
 .. code-block:: python
 
@@ -28,6 +71,17 @@ The necessary libraries for data handling, visualization, machine learning, and 
    import tensorflow
    from tensorflow import keras
    tensorflow.random.set_seed(0)
+
+.. code-block:: python
+
+   import warnings
+   warnings.filterwarnings('ignore')
+   warnings.simplefilter(action='ignore', category=FutureWarning)
+   warnings.filterwarnings('ignore', category=DeprecationWarning)
+
+Step 2: Import required libraries for data handling, visualization, and machine learning.
+
+.. code-block:: python
 
    import math
    import numpy as np
@@ -45,16 +99,11 @@ The necessary libraries for data handling, visualization, machine learning, and 
    from tensorflow.keras.optimizers import SGD, Adam, RMSprop
    from tensorflow.keras.callbacks import LearningRateScheduler, History, EarlyStopping
    from plot_keras_history import plot_history
-..    import warnings
-..    warnings.filterwarnings('ignore')
-..    warnings.simplefilter(action='ignore', category=FutureWarning)
-..    warnings.filterwarnings('ignore', category=DeprecationWarning)
-
 
 ClearML Task Initialization and Dataset Loading
 ----------------------------------------------
 
-ClearML `Task.init()` initializes the experiment. The dataset is fetched from the ClearML server using `Dataset.get()`. HuggingFace's `load_dataset` is used to load all CSV files in the dataset directory and convert them to a pandas DataFrame.
+Step 3: Initialize a ClearML task and get the dataset path from the ClearML server.
 
 .. code-block:: python
 
@@ -70,6 +119,10 @@ ClearML `Task.init()` initializes the experiment. The dataset is fetched from th
        dataset_name="radio_map_1",
        alias="radio_map_1"
    ).get_local_copy())
+
+Step 4: Load CSV files from the dataset path into a pandas DataFrame.
+
+.. code-block:: python
 
    # Filter for CSV files
    csv_files = [csv_path for csv_path in os.listdir(local_dataset_path) if csv_path.endswith(".csv")]
@@ -92,7 +145,7 @@ ClearML `Task.init()` initializes the experiment. The dataset is fetched from th
 Dataset Overview and Exploration
 -------------------------------
 
-This section provides an overview of the dataset, including displaying basic information and statistics, as well as uploading and previewing the dataset in the ClearML dashboard.
+Step 5: Explore the dataset and preview it in the ClearML dashboard.
 
 .. figure:: ../../_static/clearml_dataset.png
    :alt: Dataset overview screenshot (ClearML dashboard and logs)
@@ -101,23 +154,24 @@ This section provides an overview of the dataset, including displaying basic inf
 
    Figure 2: ClearML dashboard showing dataset upload and preview.
 
-
 Data Preprocessing
 ------------------
 
-After loading the dataset, preprocessing steps are performed: Rows with a path loss of 250 are removed. Input (X, Y) and output (Path Loss) are separated. Nulls are dropped and data is scaled using MinMaxScaler.
-
+Step 6: Clean and filter the dataset (remove invalid rows, drop nulls).
 
 .. code-block:: python
 
    X_actual = df[['X(m)','Y(m)']]
    y_actual = df[['Path Loss (dB)']]
-
    df['Path Loss (dB)'] = np.where(df['Path Loss (dB)'] == 250, np.nan, df['Path Loss (dB)'])
    df = df.dropna()
+
+Step 7: Split features/labels and scale the data.
+
+.. code-block:: python
+
    x = df[['X(m)', 'Y(m)']].values
    y = df[['Path Loss (dB)']].values
-
    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
    scaler1 = MinMaxScaler()
    x_train = scaler1.fit_transform(x_train)
@@ -125,7 +179,6 @@ After loading the dataset, preprocessing steps are performed: Rows with a path l
    scaler2 = MinMaxScaler()
    y_train = scaler2.fit_transform(y_train)
    y_test = scaler2.transform(y_test)
-
    X_actual_arr = X_actual.values
    X_actual_norm = scaler1.fit_transform(X_actual_arr)
 
@@ -139,7 +192,7 @@ After loading the dataset, preprocessing steps are performed: Rows with a path l
 Model Definition
 ----------------
 
-A Sequential Keras model is defined with three hidden layers using ReLU activations. BatchNormalization, Dropout, and other advanced layers can be added as needed.
+Step 8: Define a Keras Sequential model for pathloss prediction.
 
 .. code-block:: python
 
@@ -156,11 +209,10 @@ A Sequential Keras model is defined with three hidden layers using ReLU activati
        model.compile(optimizer=Adam(learning_rate=0.001), loss='mean_squared_error', metrics=['mean_absolute_error'])
        return model
 
-
 Model Training with Early Stopping
 ----------------------------------
 
-The model is trained with early stopping based on validation loss. Training history is plotted using `plot_history()` for visualization.
+Step 9: Train the model with early stopping and visualize the training history.
 
 .. code-block:: python
 
@@ -186,7 +238,7 @@ The model is trained with early stopping based on validation loss. Training hist
 Evaluation, Prediction, and Metrics Logging
 -------------------------------------------
 
-Predictions are made on the test set, and performance is evaluated using MSE, RMSE, MAE, and R2 metrics. Model predictions are made on the full dataset, then inverse-scaled back to the original values for interpretation. All key performance metrics and training duration are logged using ClearML's reporting utilities.
+Step 10: Evaluate the model and make predictions.
 
 .. code-block:: python
 
@@ -200,6 +252,10 @@ Predictions are made on the test set, and performance is evaluated using MSE, RM
 
    y_pred_all = m.predict(X_actual_norm)
    y_pred_all_inv = scaler2.inverse_transform(y_pred_all)
+
+Step 11: Log metrics and training duration to ClearML.
+
+.. code-block:: python
 
    task.get_logger().report_single_value("Test Mean Squared error (MSE)", metrics.mean_squared_error(y_test, y_pred))
    task.get_logger().report_single_value("Test Root mean squared error (RMSE)", np.sqrt(metrics.mean_squared_error(y_test, y_pred)))
@@ -248,5 +304,19 @@ The trained Keras model is saved locally for reuse.
 
    m.save('./serving_model.keras')
 
+
+Conclusion
+----------
+
+This experiment demonstrated how ClearML simplifies end-to-end ML workflow management and experiment tracking. From data preparation to model evaluation, ClearML enabled reproducibility and easy comparison of results for pathloss radio map prediction.
+
 For architectural details and integration, see the :ref:`ClearML Architecture <clearml_architecture>` in the Software Architecture section.
 
+References
+----------
+
+.. [1] https://clear.ml/docs/latest/docs/
+
+.. [2] https://clear.ml/docs/latest/docs/getting_started/ds/ds_first_steps/#auto-log-experiment
+
+.. [3] https://clear.ml/docs/latest/docs/clearml_data/clearml_data_sdk
