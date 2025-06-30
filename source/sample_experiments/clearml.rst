@@ -5,6 +5,17 @@ ML based pathloss radio map predictor in ClearML
 
 This section provides a step-by-step guide to training a machine learning (ML) model for pathloss radio map prediction in indoor wireless networks using the TensorFlow/Keras framework on the ClearML platform. The process covers uploading data to the ClearML server, training and evaluating an ML model, and logging results—closely aligned with the given code.
 
+
+Objectives
+----------
+
+- **Enable Intelligent RAN Control:** Incorporate AI-driven decision-making to manage RAN functions (e.g., handover, scheduling, resource allocation) dynamically and autonomously.
+- **Support Near-RT and Non-RT Inference:** Enable low-latency inference in Near-Real-Time RIC (Near-RT RIC) and policy-/model-driven control in Non-Real-Time RIC (Non-RT RIC).
+- **Facilitate Data Collection and Model Training:** Aggregate large-scale RAN data via the SMO and RICs to support centralized or federated model training pipelines.
+- **Improve Network Efficiency and QoS:** Use predictive and adaptive ML models to optimize network KPIs such as throughput, latency, energy consumption, and slice SLA assurance.
+- **Enable Closed-Loop Automation:** Integrate with RIC control loops to support self-optimizing, self-healing, and self-configuring RAN behavior.
+
+
 Environment Setup and Library Imports
 -------------------------------------
 
