@@ -402,7 +402,4 @@ Modify CBSD.py to inculde OpenSAS IP and proper CBSD client certificate path:
    **Figure:** cbsd.py snippet.
 
 
-
-The link to the experiment can be found at `OpenSAS Experiment <https://cci-testbed-docs-public-v1.readthedocs.io/en/latest/sample_experiments/cbrs.html>`_.
-
 For a step-by-step walkthrough and practical usage, see the :ref:`Priority Protection of PAL Users through OpenSAS Experiment <opensas_pal_experiment>` in the Sample Experiments section.

@@ -62,7 +62,23 @@ Before starting the experiment, ensure the following prerequisites are met:
 ClearML Environment Setup and Library Imports
 -------------------------------------
 
-Step 1: Set random seeds for reproducibility and suppress warnings for cleaner output.
+Step 1: Clone the GitHub repository and verify the expected folder structure.
+
+.. code-block:: bash
+
+   # Clone your repo that contains the dataset and helper scripts
+   git clone https://github.com/CCI-xGTestbed/clearml_experiments_dataset.git
+   cd  clearml_experiments_dataset
+
+Step 2: Upload the dataset to ClearML Datasets for versioned access.
+
+.. code-block:: bash
+
+   # Upload local CSVs under ./data as a ClearML Dataset
+   # Adjust arguments to match your script, project, and dataset names
+   python data-upload.py 
+
+Step 3: Set random seeds for reproducibility and suppress warnings for cleaner output.
 
 .. code-block:: python
 
@@ -72,14 +88,7 @@ Step 1: Set random seeds for reproducibility and suppress warnings for cleaner o
    from tensorflow import keras
    tensorflow.random.set_seed(0)
 
-.. code-block:: python
-
-   import warnings
-   warnings.filterwarnings('ignore')
-   warnings.simplefilter(action='ignore', category=FutureWarning)
-   warnings.filterwarnings('ignore', category=DeprecationWarning)
-
-Step 2: Import required libraries for data handling, visualization, and machine learning.
+Step 4: Import required libraries for data handling, visualization, and machine learning.
 
 .. code-block:: python
 
@@ -103,7 +112,7 @@ Step 2: Import required libraries for data handling, visualization, and machine 
 ClearML Task Initialization and Dataset Loading
 ----------------------------------------------
 
-Step 3: Initialize a ClearML task and get the dataset path from the ClearML server.
+Step 5: Initialize a ClearML task and get the dataset path from the ClearML server.
 
 .. code-block:: python
 
@@ -120,7 +129,7 @@ Step 3: Initialize a ClearML task and get the dataset path from the ClearML serv
        alias="radio_map_1"
    ).get_local_copy())
 
-Step 4: Load CSV files from the dataset path into a pandas DataFrame.
+Step 6: Load CSV files from the dataset path into a pandas DataFrame.
 
 .. code-block:: python
 
@@ -145,7 +154,7 @@ Step 4: Load CSV files from the dataset path into a pandas DataFrame.
 Dataset Overview and Exploration
 -------------------------------
 
-Step 5: Explore the dataset and preview it in the ClearML dashboard.
+Step 7: Explore the dataset and preview it in the ClearML dashboard.
 
 .. figure:: ../../_static/clearml_dataset.png
    :alt: Dataset overview screenshot (ClearML dashboard and logs)
@@ -157,7 +166,7 @@ Step 5: Explore the dataset and preview it in the ClearML dashboard.
 Data Preprocessing
 ------------------
 
-Step 6: Clean and filter the dataset (remove invalid rows, drop nulls).
+Step 8: Clean and filter the dataset (remove invalid rows, drop nulls).
 
 .. code-block:: python
 
@@ -166,7 +175,7 @@ Step 6: Clean and filter the dataset (remove invalid rows, drop nulls).
    df['Path Loss (dB)'] = np.where(df['Path Loss (dB)'] == 250, np.nan, df['Path Loss (dB)'])
    df = df.dropna()
 
-Step 7: Split features/labels and scale the data.
+Step 9: Split features/labels and scale the data.
 
 .. code-block:: python
 
@@ -192,7 +201,7 @@ Step 7: Split features/labels and scale the data.
 Model Definition
 ----------------
 
-Step 8: Define a Keras Sequential model for pathloss prediction.
+Step 10: Define a Keras Sequential model for pathloss prediction.
 
 .. code-block:: python
 
@@ -212,7 +221,7 @@ Step 8: Define a Keras Sequential model for pathloss prediction.
 Model Training with Early Stopping
 ----------------------------------
 
-Step 9: Train the model with early stopping and visualize the training history.
+Step 11: Train the model with early stopping and visualize the training history.
 
 .. code-block:: python
 
@@ -238,7 +247,7 @@ Step 9: Train the model with early stopping and visualize the training history.
 Evaluation, Prediction, and Metrics Logging
 -------------------------------------------
 
-Step 10: Evaluate the model and make predictions.
+Step 12: Evaluate the model and make predictions.
 
 .. code-block:: python
 
@@ -253,7 +262,7 @@ Step 10: Evaluate the model and make predictions.
    y_pred_all = m.predict(X_actual_norm)
    y_pred_all_inv = scaler2.inverse_transform(y_pred_all)
 
-Step 11: Log metrics and training duration to ClearML.
+Step 13: Log metrics and training duration to ClearML.
 
 .. code-block:: python
 

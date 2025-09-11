@@ -115,30 +115,30 @@ Testing Equipment
 -----------------
 - **Rohde & Schwarz Spectrum Analyzer**  
 
-.. figure:: _static/spectrum_analyzer.png
-   :alt: Spectrum Analyzer
-   :align: center
-   :width: 250px
+.. .. figure:: _static/spectrum_analyzer.png
+..    :alt: Spectrum Analyzer
+..    :align: center
+..    :width: 250px
 
 *Feature:* High frequency resolution and rapid scanning capability for precise spectrum measurements.
 
 - **Ettus USRP X310**  
 
-.. figure:: _static/usrp_x310.png
-   :alt: USRP X310
-   :align: center
-   :width: 250px
+.. .. figure:: _static/usrp_x310.png
+..    :alt: USRP X310
+..    :align: center
+..    :width: 250px
 
 *Feature:* Versatile software-defined radio platform ideal for real-time wireless testing and experimentation.
 
 - **Keysight Signal Generator**  
 
-.. figure:: _static/signal_generator.png
-   :alt: Signal Generator
-   :align: center
-   :width: 250px
+.. .. figure:: _static/signal_generator.png
+..    :alt: Signal Generator
+..    :align: center
+..    :width: 250px
 
-  *Feature:* Provides accurate and reliable signal generation for device calibration and performance tests.
+*Feature:* Provides accurate and reliable signal generation for device calibration and performance tests.
 
 Testing Software
 ----------------
