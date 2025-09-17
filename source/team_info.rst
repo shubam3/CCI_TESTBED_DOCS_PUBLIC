@@ -92,16 +92,16 @@ Director
 
 Post-Doc Researchers
 ---------------------
-.. figure:: _static/mayukh.jpg
-   :alt: Mayukh Roy Chowdhury
-   :align: left
-   :width: 200px
-   :height: 200px
+.. .. figure:: _static/mayukh.jpg
+..    :alt: Mayukh Roy Chowdhury
+..    :align: left
+..    :width: 200px
+..    :height: 200px
 
-- **Name:** Mayukh Roy Chowdhury  
-- **Role:** Postdoctoral Researcher  
-- **Focus:** AI-driven radio resource management, 5G, and next-generation networks  
-- **Profile:** `Profile <https://sites.google.com/view/mayukh-roy-chowdhury/>`_
+.. - **Name:** Mayukh Roy Chowdhury  
+.. - **Role:** Postdoctoral Researcher  
+.. - **Focus:** AI-driven radio resource management, 5G, and next-generation networks  
+.. - **Profile:** `Profile <https://sites.google.com/view/mayukh-roy-chowdhury/>`_
 
 .. clear::
 |
@@ -154,22 +154,6 @@ The Technical Team includes doctoral students and a subset of master's researche
 
 **Master's Researchers and Interns:**
 
-.. .. figure:: _static/abida.jpg
-..    :alt: Abida Sultana
-..    :align: left
-..    :width: 200px
-..    :height: 200px
-
-.. - **Name:** Abida Sultana  
-.. - **Role:** Graduate Research Assistant  
-.. - **Focus:** Near Real-Time Open Radio Access Networks (O-RAN)
-.. |
-.. |
-.. |
-.. |
-.. |
-.. |
-
 .. figure:: _static/fahim.png
    :alt: Fahim Bashar
    :align: left
@@ -216,7 +200,7 @@ Admin Team
 
 - **Name:** Harshit Sai Teja Doddi  
 - **Role:** Master's Researcher / Intern
-- **Focus:** AI and ML in cloud computing for NextG Testbed applications
+- **Focus:** Network Administration and Management
 |
 |
 |
@@ -224,24 +208,6 @@ Admin Team
 |
 |
 
-
-
-.. figure:: _static/sanjna.png
-   :alt: Sanjna Kumari
-   :align: left
-   :width: 200px
-   :height: 200px
-
-- **Name:** Sanjna Kumari  
-- **Role:** Master's Researcher / Intern
-- **Focus:** Cloud computing and non-real-time RIC aspects of O-RAN
-|
-|
-|
-|
-|
-|
-|
 
 Alumni and Former Students
 ----------------------------
@@ -298,7 +264,7 @@ Alumni and Former Students
    .. container:: person-info
 
       | Name: `Prateek Sethi <https://www.linkedin.com/in/prateeksethiii/>`_
-      | Role:  Master's Researcher
+      | Role: Graduate Researcher
 
 .. container:: person-profile
 
@@ -311,7 +277,7 @@ Alumni and Former Students
    .. container:: person-info
 
       | Name: Vikas
-      | Role: Master's Researcher 
+      | Role: Research Intern 
 
 .. container:: person-profile
 
@@ -319,12 +285,12 @@ Alumni and Former Students
       :alt: Tapan
       :width: 200px
       :height: 220px
-      :target: https://www.linkedin.com/in/tapan-bhatnagar 
+      :target: https://www.linkedin.com/in/tapan212/
 
    .. container:: person-info
 
-      | Name: Tapan Bhatnagar
-      | Role: Master's Researcher 
+      | Name: `Tapan Bhatnagar <https://www.linkedin.com/in/tapan212/>`_
+      | Role: Research Intern  
 
 .. container:: person-profile
 
@@ -336,8 +302,8 @@ Alumni and Former Students
 
    .. container:: person-info
 
-      | Name: Oren Collaco
-      | Role: Master's Researcher  
+      | Name: `Oren Collaco <https://www.linkedin.com/in/orencollaco/>`_
+      | Role: Research Intern  
 
 .. container:: person-profile
 
@@ -349,8 +315,8 @@ Alumni and Former Students
 
    .. container:: person-info
 
-      | Name: Adam
-      | Role: Master's Researcher  
+      | Name: `Adam <https://www.linkedin.com/in/adam-k-1999/>`_
+      | Role: Research Intern  
 
     
 
@@ -365,7 +331,7 @@ Alumni and Former Students
    .. container:: person-info
 
       | Name: Abhimanyu Bhagwati
-      | Role: Master's Researcher       
+      | Role: Research Intern       
 
 .. container:: person-profile
 
@@ -373,12 +339,12 @@ Alumni and Former Students
       :alt: Abdellah El Baamrani
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/abdellah-el-baamrani-819898286/  
 
    .. container:: person-info
 
-      | Name: Abdellah El Baamrani
-      | Role: Master's Researcher      
+      | Name: `Abdellah El Baamrani <https://www.linkedin.com/in/abdellah-el-baamrani-819898286/>`_
+      | Role: Research Intern     
 
 .. container:: person-profile
 
@@ -386,11 +352,11 @@ Alumni and Former Students
       :alt: Amirreza Ghafoori
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/amirrezaghafoori/ 
 
    .. container:: person-info
 
-      | Name: Amirreza Ghafoori
+      | Name: `Amirreza Ghafoori <https://www.linkedin.com/in/amirrezaghafoori/>`_
       | Role: Graduate Researcher      
 
 .. container:: person-profile
@@ -404,7 +370,7 @@ Alumni and Former Students
    .. container:: person-info
 
       | Name: Efat Samir
-      | Role: Graduate Researcher      
+      | Role: Research Intern      
 
 .. container:: person-profile
 
@@ -412,12 +378,12 @@ Alumni and Former Students
       :alt: Kshitij Narvekar
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/kshitij-narvekar/ 
 
    .. container:: person-info
 
-      | Name: Kshitij Narvekar
-      | Role: Master's Researcher        
+      | Name: `Kshitij Narvekar <https://www.linkedin.com/in/kshitij-narvekar/>`_
+      | Role: Research Intern        
 
 .. container:: person-profile
 
@@ -425,12 +391,12 @@ Alumni and Former Students
       :alt: Sunny Khanorkar
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/sunny-khanorkar/   
 
    .. container:: person-info
 
-      | Name: Sunny Khanorkar
-      | Role: Master's Researcher        
+      | Name: `Sunny Khanorkar <https://www.linkedin.com/in/sunny-khanorkar/>`_
+      | Role: Research Intern        
 
 .. container:: person-profile
 
@@ -438,12 +404,12 @@ Alumni and Former Students
       :alt: Rajat Nagar
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/rajatnagarr/ 
 
    .. container:: person-info
 
-      | Name: Rajat Nagar
-      | Role: Master's Researcher        
+      | Name: `Rajat Nagar <https://www.linkedin.com/in/rajatnagarr/>`_
+      | Role: Research Intern         
 
 .. container:: person-profile
 
@@ -451,12 +417,40 @@ Alumni and Former Students
       :alt: Abida Sultana
       :width: 200px
       :height: 220px
-      :target: #  
+      :target: https://www.linkedin.com/in/abida-sultana-7053891bb/  
 
    .. container:: person-info
 
-      | Name: Abida Sultana
-      | Role: Graduate Researcher 
+      | Name: `Abida Sultana <https://www.linkedin.com/in/abida-sultana-7053891bb/>`_
+      | Role: Graduate Researcher
+
+.. container:: person-profile
+
+
+   .. figure:: _static/sanjna.png
+       :alt: Sanjna Kumari
+       :width: 200px
+       :height: 200px 
+       :target: https://www.linkedin.com/in/sanjnakumari/
+   .. container:: person-info
+
+      | Name: `Sanjna Kumari <https://www.linkedin.com/in/sanjnakumari/>`_
+      | Role: Research Intern
+
+.. container:: person-profile
+
+
+   .. figure:: _static/mayukh.jpg
+       :alt: Mayukh Chowdhury
+       :width: 300px
+       :height: 200px 
+       :target: https://www.linkedin.com/in/mayukh-roy-chowdhury-ph-d-48830442/
+   .. container:: person-info
+
+      | Name: `Mayukh Chowdhury <https://www.linkedin.com/in/mayukh-roy-chowdhury-ph-d-48830442/>`_
+      | Role: Postdoc Researcher
+
+
 
 
 |
