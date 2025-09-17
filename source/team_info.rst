@@ -416,7 +416,7 @@ Alumni and Former Students
    .. figure:: _static/abida.jpg
       :alt: Abida Sultana
       :width: 200px
-      :height: 220px
+      :height: 200px
       :target: https://www.linkedin.com/in/abida-sultana-7053891bb/  
 
    .. container:: person-info
