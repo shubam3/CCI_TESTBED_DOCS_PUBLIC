@@ -121,6 +121,18 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 1
+   :caption: Partnerships
+
+   partnerships
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Certifications
+
+   badges
+
+.. toctree::
+   :maxdepth: 1
    :caption: Help
 
    help

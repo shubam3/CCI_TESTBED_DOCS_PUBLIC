@@ -527,49 +527,6 @@ Visiting Researchers
 - **Profile:** `Profile <https://scholar.google.co.kr/citations?user=VHuU14AAAAAJ&hl=en/>`_
 
 
-.. .. figure:: _static/Efat.jpg
-..    :alt: Efat
-..    :align: left
-..    :width: 200px
-..    :height: 200px
-
-.. - **Name:** Efat Samir  
-.. - **Role:** Visiting PhD Scholar 
-.. - **Profile:** `Profile <https://scholar.google.com/citations?user=u0DoSvsAAAAJ&hl=en>`_
-.. |
-.. |
-.. |
-.. |
-.. |
-.. |
-
-.. .. figure:: _static/Amirreza.jpg
-..    :alt: Amirreza
-..    :align: left
-..    :width: 200px
-..    :height: 200px
-
-.. - **Name:** Amirreza Ghafoori 
-.. - **Role:** Visiting PhD Scholar 
-.. - **Profile:** `Profile <hhttps://scholar.google.com/citations?user=91cfNncAAAAJ&hl=en>`_
-
-.. |
-.. |
-.. |
-.. |
-.. |
-.. |
-
-.. .. figure:: _static/Abdellah.jpeg
-..    :alt: Abdellah
-..    :align: left
-..    :width: 200px
-..    :height: 200px
-
-.. - **Name:** Abdellah El Baamrani
-.. - **Role:** Former Intern Student 
-.. - **Profile:** `Profile <https://www.linkedin.com/in/abdellah-el-baamrani-819898286>`_
-
 |
 |
 |

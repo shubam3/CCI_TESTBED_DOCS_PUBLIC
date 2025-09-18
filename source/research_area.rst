@@ -42,7 +42,7 @@ AI/ML based E2E O-RAN Control
     <span style="color: black; font-weight: bold">“Leveraging O-RAN SC AI/ML Framework & Non-RT RIC for AI-Driven Network Slice QoS Optimization”</span>
 
 
-.. [3]  M.H. Rahman, A. Jain, A. P. Da Silva, S. Singh, M. R. Chowdhury, H. S. Dhillon, and M. Hong, |quote3|, in *Proc. IEEE GLOBECOM Wkshp*, Cape Town, South Africa, Dec 2024. `Link <https://futurenetworks.ieee.org/images/files/pdf/WFRTN2025/18_Talk-13_Aloizio-Da_Silva.pdf>`_
+.. [3]  M.H. Rahman, A. Jain, A. P. Da Silva, S. Singh, M. R. Chowdhury, H. S. Dhillon, and M. Hong, |quote3|, in *Proc. IEEE GLOBECOM Wkshp*, Cape Town, South Africa, Dec 2024. `Link <https://ieeexplore.ieee.org/document/11100808>`_
 .. |quote4| raw:: html
 
     <span style="color: black; font-weight: bold">“End-to-End O-RAN Control-Loop For Radio Resource Allocation in SDR-Based 5G Network”</span>

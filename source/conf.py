@@ -31,8 +31,8 @@ html_theme_options = {
 'logo_only': True,
 'style_nav_header_background': 'black',
 'display_version': False,
-'collapse_navigation': True,
-'navigation_depth': 2
+'collapse_navigation': False,
+'navigation_depth': 4
 }
 
 html_theme = 'sphinx_rtd_theme'
