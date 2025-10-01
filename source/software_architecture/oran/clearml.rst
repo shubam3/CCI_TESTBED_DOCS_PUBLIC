@@ -8,6 +8,17 @@ Introduction
 
 The integration of an AI/ML Framework within an O-RAN (Open Radio Access Network) setup serves as a pivotal enabler for realizing intelligent, adaptive, and efficient next-generation RAN operations. The primary objective is to harness data-driven learning to optimize network performance in real-time while ensuring openness and interoperability across RAN components.
 
+
+.. Objectives
+.. ----------
+
+.. - **Enable Intelligent RAN Control:** Incorporate AI-driven decision-making to manage RAN functions (e.g., handover, scheduling, resource allocation) dynamically and autonomously.
+.. - **Support Near-RT and Non-RT Inference:** Enable low-latency inference in Near-Real-Time RIC (Near-RT RIC) and policy-/model-driven control in Non-Real-Time RIC (Non-RT RIC).
+.. - **Facilitate Data Collection and Model Training:** Aggregate large-scale RAN data via the SMO and RICs to support centralized or federated model training pipelines.
+.. - **Improve Network Efficiency and QoS:** Use predictive and adaptive ML models to optimize network KPIs such as throughput, latency, energy consumption, and slice SLA assurance.
+.. - **Enable Closed-Loop Automation:** Integrate with RIC control loops to support self-optimizing, self-healing, and self-configuring RAN behavior.
+
+
 Architecture
 ------------
 
@@ -16,7 +27,7 @@ Architecture
    :alt: AI-ML Architecture
    :width: 900px
    
-   **Figure:** ClearML-Based AI/ML System for CCI-xG O-RAN Architecture.
+   **Figure:** Integrated AI/ML (ClearML platform) with CCI-xG O-RAN Architecture.
 This figure illustrates a **ClearML**-based AI/ML pipeline integrated with the CCI-xG Testbed O-RAN (Open Radio Access Network) architecture, specifically showing interactions between:
 
 - Non-Real-Time RIC (Non-RT RIC)
@@ -184,8 +195,8 @@ On the Datasets page, you can view, manage, and create datasets, as well as trac
    :alt: AI-ML Architecture
    :width: 900px   
 
-Data Management
----------------
+Data Collection, Processing or Management examples
+------------------------------------------------        
 
 Check InfluxDB Credentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -240,12 +251,21 @@ Use the ClearML Data Management tool to upload datasets. The following Python co
    df.to_csv(csv_buffer, index=False)
    csv_buffer.seek(0)  # Reset the buffer to the beginning
 
-   # Upload the in-memory CSV data to ClearML
+
+   print(f"Dataset uploaded to ClearML with ID: {dataset.id}")
+
+Upload your own dataset to ClearML Server Storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+     # Upload the in-memory CSV data to ClearML
    dataset = Dataset.create(dataset_name="rapp_data", dataset_project="rapp_examples")
    dataset.add_object(csv_buffer, "randata.csv")  # Add the in-memory CSV as an object with a filename
    dataset.upload()
    dataset.finalize()
 
+   
    print(f"Dataset uploaded to ClearML with ID: {dataset.id}")
 
 Accessing the Uploaded Data and Preparing It
