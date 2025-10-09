@@ -92,16 +92,19 @@ Director
 
 Post-Doc Researchers
 ---------------------
-.. .. figure:: _static/mayukh.jpg
-..    :alt: Mayukh Roy Chowdhury
-..    :align: left
-..    :width: 200px
-..    :height: 200px
 
-.. - **Name:** Mayukh Roy Chowdhury  
-.. - **Role:** Postdoctoral Researcher  
-.. - **Focus:** AI-driven radio resource management, 5G, and next-generation networks  
-.. - **Profile:** `Profile <https://sites.google.com/view/mayukh-roy-chowdhury/>`_
+
+.. figure:: _static/madhurra.jpg
+   :alt: Madhura
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Madhura Adeppady
+- **Role:** Postdoctoral Researcher  
+- **Focus:** Resource-efficient microservice orchestration, edge computing, and serverless systems 
+- **Profile:** `Profile <https://scholar.google.com/citations?user=uvJ9x24AAAAJ&hl=en>`_
+- **Report To:** DR Aloizio P. DaSilva
 
 .. clear::
 |
@@ -126,6 +129,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Md. Habibur Rahman  
 - **Role:** Doctoral Student  
 - **Focus:** Machine learning and deep learning in wireless networks and O-RAN
+- **Report To:** DR Aloizio P. DaSilva
 |
 |
 |
@@ -144,6 +148,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Role:** Doctoral Student  
 - **Focus:** Spectrum Sharing, Machine learning in wireless systems, O-RAN and experimental cellular research.
 - **Profile:** `Linkedin <https://www.linkedin.com/in/asheesh-tripathi/>`_, `Github <https://github.com/asheeshtripathi/>`_, `Google Scholar <https://scholar.google.com/citations?user=fcRTl7kAAAAJ&hl=en/>`_
+- **Report To:** DR Aloizio P. DaSilva
 
 |
 |
@@ -163,6 +168,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Fahim Bashar  
 - **Role:** Graduate Research Assistant
 - **Focus:** NextG Testbed deployment and development
+- **Report To:** DR Aloizio P. DaSilva
 |
 |
 |
@@ -180,6 +186,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Shubam khantwal  
 - **Role:** Research Intern   
 - **Focus:** Deployment of cloud solutions and support for proof-of-concept development
+- **Report To:** DR Aloizio P. DaSilva
 |
 |
 |
@@ -201,6 +208,7 @@ Admin Team
 - **Name:** Harshit Sai Teja Doddi  
 - **Role:** Master's Researcher / Intern
 - **Focus:** Network Administration and Management
+- **Report To:** DR Aloizio P. DaSilva
 |
 |
 |
