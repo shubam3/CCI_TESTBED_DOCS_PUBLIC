@@ -11,7 +11,7 @@ The CCI xG Testbed collaborates with industry leaders to advance research and de
 Verizon
 ~~~~~~~
 
-.. figure:: _static/verizon.jpg
+.. figure:: _static/Verizon.jpg
    :alt: Verizon Logo
    :align: center
    :width: 200px
@@ -31,7 +31,7 @@ Major wireless carrier contributing to network infrastructure testing and valida
 Samsung
 ~~~~~~~
 
-.. figure:: _static/samsung_logo.avif
+.. figure:: _static/Samsung_Logo.jpg
    :alt: Samsung Logo
    :align: center
    :width: 200px
@@ -41,7 +41,7 @@ Technology leader providing equipment and expertise for 5G and O-RAN testing.
 Keysight Technologies
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: _static/keysight_logo.png
+.. figure:: _static/Keysight_logo.png
    :alt: Keysight Logo
    :align: center
    :width: 200px
