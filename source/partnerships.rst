@@ -11,7 +11,7 @@ The CCI xG Testbed collaborates with industry leaders to advance research and de
 Verizon
 ~~~~~~~
 
-.. figure:: _static/partners/verizon_logo.png
+.. figure:: _static/verizon.jpg
    :alt: Verizon Logo
    :align: center
    :width: 200px
@@ -21,7 +21,7 @@ Leading telecommunications company supporting 5G and beyond research initiatives
 AT&T
 ~~~~
 
-.. figure:: _static/partners/att_logo.png
+.. figure:: _static/ATT-logo.jpg
    :alt: AT&T Logo
    :align: center
    :width: 200px
@@ -31,7 +31,7 @@ Major wireless carrier contributing to network infrastructure testing and valida
 Samsung
 ~~~~~~~
 
-.. figure:: _static/partners/samsung_logo.png
+.. figure:: _static/samsung_logo.avif
    :alt: Samsung Logo
    :align: center
    :width: 200px
@@ -41,7 +41,7 @@ Technology leader providing equipment and expertise for 5G and O-RAN testing.
 Keysight Technologies
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: _static/partners/keysight_logo.png
+.. figure:: _static/keysight_logo.png
    :alt: Keysight Logo
    :align: center
    :width: 200px
@@ -51,7 +51,7 @@ Test and measurement solutions provider supporting comprehensive wireless testin
 Ericsson
 ~~~~~~~~
 
-.. figure:: _static/partners/ericsson_logo.png
+.. figure:: _static/Ercisson_logo.png
    :alt: Ericsson Logo
    :align: center
    :width: 200px
@@ -61,7 +61,7 @@ Telecommunications equipment manufacturer contributing to 5G and network testing
 InterDigital
 ~~~~~~~~~~~~
 
-.. figure:: _static/partners/interdigital_logo.png
+.. figure:: _static/InterDigital_logo.png
    :alt: InterDigital Logo
    :align: center
    :width: 200px
