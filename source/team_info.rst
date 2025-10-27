@@ -156,6 +156,57 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 |
+.. figure:: _static/Mahesha.jpg
+   :alt: Mahesha Vidurange
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Mahesha Vidurange
+- **Role:** Doctoral Student  
+- **Focus:** Exploring O-RAN security and interoperability while building AI/ML solutions for adaptive management in next-gen wireless systems.
+- **Report To:** DR Aloizio P. DaSilva
+|
+|
+|
+|
+|
+|
+|
+.. figure:: _static/Ishtique.jpeg
+   :alt: Ishtiaque Ahmed
+   :align: left
+   :width: 200px
+   :height: 230px
+
+- **Name:** Ishtiaque Ahmed 
+- **Role:** Doctoral Student  
+- **Focus:** Cloud solutions for O-RAN and leading interoperability testing in the ACCoRD project.
+- **Report To:** DR Aloizio P. DaSilva
+|
+|
+|
+|
+|
+|
+|
+.. figure:: _static/Veera.jpeg
+   :alt: Manikantha Rayudu
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Manikantha Rayudu
+- **Role:** Doctoral Student  
+- **Focus:** Focusing on federated learning to enhance reliability and privacy in IoT, extending to O-RAN systems.
+- **Report To:** DR Aloizio P. DaSilva
+|
+|
+|
+|
+|
+|
+|
 
 **Master's Researchers and Interns:**
 
