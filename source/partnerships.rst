@@ -8,68 +8,77 @@ Strategic Partners
 
 The CCI xG Testbed collaborates with industry leaders to advance research and development in next-generation wireless technologies.
 
-Verizon
-~~~~~~~
 
-.. figure:: _static/Verizon.jpg
+.. figure:: _static/Verizon_new.webp
    :alt: Verizon Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Leading telecommunications company supporting 5G and beyond research initiatives.
+.. raw:: html
 
-AT&T
-~~~~
+   <div style="clear: both; height: 24px;"></div>
+
+
 
 .. figure:: _static/ATT-logo.jpg
    :alt: AT&T Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Major wireless carrier contributing to network infrastructure testing and validation.
+.. raw:: html
 
-Samsung
-~~~~~~~
+   <div style="clear: both; height: 24px;"></div>
+
+
+
 
 .. figure:: _static/Samsung_Logo.jpg
    :alt: Samsung Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Technology leader providing equipment and expertise for 5G and O-RAN testing.
+.. raw:: html
 
-Keysight Technologies
-~~~~~~~~~~~~~~~~~~~~~
+   <div style="clear: both; height: 24px;"></div>
+
+
+
 
 .. figure:: _static/Keysight_logo.png
    :alt: Keysight Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Test and measurement solutions provider supporting comprehensive wireless testing.
+.. raw:: html
 
-Ericsson
-~~~~~~~~
+   <div style="clear: both; height: 24px;"></div>
+
+
+
 
 .. figure:: _static/Ercisson_logo.png
    :alt: Ericsson Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Telecommunications equipment manufacturer contributing to 5G and network testing.
+.. raw:: html
 
-InterDigital
-~~~~~~~~~~~~
+   <div style="clear: both; height: 24px;"></div>
+
+
+
 
 .. figure:: _static/InterDigital_logo.png
    :alt: InterDigital Logo
-   :align: center
+   :align: left
    :width: 200px
 
-Wireless research and development company supporting advanced technology validation.
+.. raw:: html
 
-Partnership Benefits
---------------------
+   <div style="clear: both; height: 24px;"></div>
+
+
+
 
 Our partnerships enable:
 
