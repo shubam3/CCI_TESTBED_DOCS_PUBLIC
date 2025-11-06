@@ -356,6 +356,22 @@ Connecting a COTS UE (Phone) to the 4G Network
 
 Troubleshooting Common Issues
 ----------------------------
+.. note::
+   Additional observations from a recent successful setup:
+
+   - Boost library compatibility with UHD 3.15.0:
+     Newer Boost versions may cause UHD 3.15.0 build errors (requiring source edits across multiple files).
+     Consider pinning Boost to a compatible version or upgrading UHD to a version matching your distro’s Boost.
+
+   - FPGA image and UHD version mismatch:
+     Ensure the FPGA images on USRPs match the UHD host version. If mismatched, reflash/downgrade images to a UHD 3.15.x-compatible version using ``uhd_images_downloader`` and the appropriate device tools.
+
+   - Commands requiring elevated privileges:
+     Some steps require ``sudo`` (e.g., installs, kernel/network sysctl changes). If a command fails with permissions, rerun with ``sudo``.
+
+   - iPerf mode mismatch:
+     The server runs TCP by default (``iperf -s``) while the client example used UDP (``-u``). Either start the server in UDP mode (``iperf -s -u``) or run the client in TCP (omit ``-u``) to match modes.
+
 1. **Connection Failures Between ENB and EPC**:
    - Verify IP addresses in configuration files
    - Check network connectivity (ping between VMs)
