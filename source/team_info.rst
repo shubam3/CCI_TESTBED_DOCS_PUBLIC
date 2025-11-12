@@ -72,12 +72,12 @@ Director
 .. _director:
 
 .. figure:: _static/aloizio.jpg
-   :alt: Aloizio P. DaSilva
+   :alt: Aloizio P. Da Silva
    :align: left
    :width: 200px
    :height: 200px
 
-- **Name:** Aloizio P. DaSilva  
+- **Name:** Aloizio Da Silva  
 - **Role:** Director, CCI xG Testbed Team  
 - **Expertise:** Wireless networking, NFV, SDN, and SDR  
 - **Profile:** `Profile <https://cyberinitiative.org/research/researcher-directory/silva-aloizio-pereira-da.html>`_
@@ -94,7 +94,7 @@ Post-Doc Researchers
 ---------------------
 
 
-.. figure:: _static/madhurra.jpg
+.. figure:: _static/Madhurra.png
    :alt: Madhura
    :align: left
    :width: 200px
@@ -104,7 +104,7 @@ Post-Doc Researchers
 - **Role:** Postdoctoral Researcher  
 - **Focus:** Resource-efficient microservice orchestration, edge computing, and serverless systems 
 - **Profile:** `Profile <https://scholar.google.com/citations?user=uvJ9x24AAAAJ&hl=en>`_
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 
 .. clear::
 |
@@ -129,7 +129,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Md. Habibur Rahman  
 - **Role:** Doctoral Student  
 - **Focus:** Machine learning and deep learning in wireless networks and O-RAN
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -148,7 +148,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Role:** Doctoral Student  
 - **Focus:** Spectrum Sharing, Machine learning in wireless systems, O-RAN and experimental cellular research.
 - **Profile:** `Linkedin <https://www.linkedin.com/in/asheesh-tripathi/>`_, `Github <https://github.com/asheeshtripathi/>`_, `Google Scholar <https://scholar.google.com/citations?user=fcRTl7kAAAAJ&hl=en/>`_
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 
 |
 |
@@ -165,8 +165,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Mahesha Vidurange
 - **Role:** Doctoral Student  
 - **Focus:** Exploring O-RAN security and interoperability while building AI/ML solutions for adaptive management in next-gen wireless systems.
-- **Report To:** DR Aloizio P. DaSilva
-|
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -182,7 +181,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Ishtiaque Ahmed 
 - **Role:** Doctoral Student  
 - **Focus:** Cloud solutions for O-RAN and leading interoperability testing in the ACCoRD project.
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -199,7 +198,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Manikantha Rayudu
 - **Role:** Doctoral Student  
 - **Focus:** Focusing on federated learning to enhance reliability and privacy in IoT, extending to O-RAN systems.
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -219,7 +218,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Fahim Bashar  
 - **Role:** Graduate Research Assistant
 - **Focus:** NextG Testbed deployment and development
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -228,7 +227,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 |
 |
 
-.. figure:: _static/Shubam.png
+.. figure:: _static/Shubam_new.png
    :alt: Shubam khantwal
    :align: left
    :width: 200px
@@ -237,7 +236,7 @@ The Technical Team includes doctoral students and a subset of master's researche
 - **Name:** Shubam khantwal  
 - **Role:** Research Intern   
 - **Focus:** Deployment of cloud solutions and support for proof-of-concept development
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -259,7 +258,7 @@ Admin Team
 - **Name:** Harshit Sai Teja Doddi  
 - **Role:** Master's Researcher / Intern
 - **Focus:** Network Administration and Management
-- **Report To:** DR Aloizio P. DaSilva
+- **Report To:** DR Aloizio Da Silva 
 |
 |
 |
@@ -595,7 +594,7 @@ Visiting Researchers
 
 Resident Engineers
 -------------------
-.. figure:: _static/zeeshan-pic.jpg
+.. figure:: _static/Zeeshan.png
    :alt: Zeeshan
    :align: left
    :width: 200px
