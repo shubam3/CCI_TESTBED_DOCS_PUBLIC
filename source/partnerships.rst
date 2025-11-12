@@ -8,74 +8,16 @@ Strategic Partners
 
 The CCI xG Testbed collaborates with industry leaders to advance research and development in next-generation wireless technologies.
 
-
-.. figure:: _static/Verizon_new.webp
-   :alt: Verizon Logo
-   :align: left
-   :width: 200px
-
 .. raw:: html
 
-   <div style="clear: both; height: 24px;"></div>
-
-
-
-.. figure:: _static/ATT-logo.jpg
-   :alt: AT&T Logo
-   :align: left
-   :width: 200px
-
-.. raw:: html
-
-   <div style="clear: both; height: 24px;"></div>
-
-
-
-
-.. figure:: _static/Samsung_Logo.jpg
-   :alt: Samsung Logo
-   :align: left
-   :width: 200px
-
-.. raw:: html
-
-   <div style="clear: both; height: 24px;"></div>
-
-
-
-
-.. figure:: _static/Keysight_logo.png
-   :alt: Keysight Logo
-   :align: left
-   :width: 200px
-
-.. raw:: html
-
-   <div style="clear: both; height: 24px;"></div>
-
-
-
-
-.. figure:: _static/Ercisson_logo.png
-   :alt: Ericsson Logo
-   :align: left
-   :width: 200px
-
-.. raw:: html
-
-   <div style="clear: both; height: 24px;"></div>
-
-
-
-
-.. figure:: _static/InterDigital_logo.png
-   :alt: InterDigital Logo
-   :align: left
-   :width: 200px
-
-.. raw:: html
-
-   <div style="clear: both; height: 24px;"></div>
+   <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 32px; padding: 16px 0;">
+     <img src="_static/Verizon_new.webp" alt="Verizon Logo" style="max-height: 90px; max-width: 220px;">
+     <img src="_static/ATT-logo.jpg" alt="AT&amp;T Logo" style="max-height: 90px; max-width: 220px;">
+     <img src="_static/Samsung_Logo.jpg" alt="Samsung Logo" style="max-height: 90px; max-width: 220px;">
+     <img src="_static/Keysight_logo.png" alt="Keysight Logo" style="max-height: 90px; max-width: 220px;">
+     <img src="_static/Ercisson_logo.png" alt="Ericsson Logo" style="max-height: 90px; max-width: 220px;">
+     <img src="_static/InterDigital_logo.png" alt="InterDigital Logo" style="max-height: 90px; max-width: 220px;">
+   </div>
 
 
 
