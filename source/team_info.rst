@@ -266,6 +266,22 @@ Admin Team
 |
 |
 
+.. figure:: _static/Ahmed.jpeg
+   :alt: Ahmed Malik 
+   :align: left
+   :width: 200px
+   :height: 200px
+
+- **Name:** Ahmed Malik  
+- **Role:** Master's Researcher / Intern
+- **Focus:** Network and Server Management support
+- **Report To:** DR Aloizio Da Silva 
+|
+|
+|
+|
+|
+|
 
 Alumni and Former Students
 ----------------------------
