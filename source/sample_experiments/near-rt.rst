@@ -373,24 +373,6 @@ xApp Implementation
          cd deploy
          dms_cli onboard --config_file_path=config.json --schema_file_path=schema.json
             
-      Expected output showing readiness and liveness probe configuration (from Helm chart template):
-      
-      .. code-block:: yaml
-      
-         
-           httpGet:
-             path: '{{ index .Values "readinessProbe" "httpGet" "path" | toJson }}'
-             port: '{{ index .Values "readinessProbe" "httpGet" "port" | toJson }}'
-           initialDelaySeconds: '{{ index .Values "readinessProbe" "initialDelaySeconds" | toJson }}'
-           periodSeconds: '{{ index .Values "readinessProbe" "periodSeconds" | toJson }}'
-         
-         
-           httpGet:
-             path: '{{ index .Values "livenessProbe" "httpGet" "path" | toJson }}'
-             port: '{{ index .Values "livenessProbe" "httpGet" "port" | toJson }}'
-           initialDelaySeconds: '{{ index .Values "livenessProbe" "initialDelaySeconds" | toJson }}'
-           periodSeconds: '{{ index .Values "livenessProbe" "periodSeconds" | toJson }}'
-      
       Onboarding status response:
       
       .. code-block:: json
@@ -400,12 +382,6 @@ xApp Implementation
          }
       
       Get the version:
-      
-      .. code-block:: bash
-      
-         dms_cli get_xapps_list
-      
-      Get the charts list:
       
       .. code-block:: bash
       
