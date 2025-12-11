@@ -64,7 +64,7 @@ Test Environment Setup
 
 The following diagram illustrates a typical setup used for verifying SSH server/client authentication on the O-RAN M-Plane:
 
-.. figure:: /_static/security.png
+.. figure:: /_static/Security.png
    :alt: Example SSH Security (Server/Client) test setup for O-RAN M-Plane
    :align: center
    :width: 600px
