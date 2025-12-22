@@ -130,57 +130,120 @@ Step-by-Step Access Flow
 Creating Zun Containers
 =======================
 
-Zun is the OpenStack service for running application containers.  
-This section outlines a **high-level workflow**; actual project-specific commands
-can be added as we standardize on images and flavors.
+Zun is the OpenStack service for running application containers. This section provides detailed instructions for creating containers, configuring networking, and enabling SSH access.
 
-Dashboard-Based Workflow (Planned)
-----------------------------------
+1. Creating a Container
+----------------------
 
-1. Log in to the OpenStack dashboard.
-2. Navigate to **Project → Containers** (Zun UI, if enabled).
-3. Click **Create Container**.
-4. Provide:
-   - **Container Name**
-   - **Image** (e.g., ``docker.io/library/ubuntu:22.04``)
-   - **Command** to run.
-5. Attach the container to the appropriate network.
-6. Launch and verify connectivity (e.g., via ``ping`` or HTTP).
+Use the following command to create an Ubuntu container in interactive mode and attach it to a specific network:
 
-CLI-Based Workflow (Planned)
-----------------------------
+.. code-block:: bash
 
-1. Install the Zun client:
+   zun create --name ubuntu-shell --net network=Zun-Network --interactive ubuntu:22.04 bash
 
-   .. code-block:: bash
+**Explanation:**
 
-      pip install python-zunclient
+- ``--name ubuntu-shell``: Container name
+- ``--net network=Zun-Network``: Attach to OpenStack network
+- ``--interactive``: Start an interactive shell
+- ``ubuntu:22.04``: Base image
+- ``bash``: Default shell
 
-2. List available images:
+2. Identifying Container Port
+------------------------------
 
-   .. code-block:: bash
+Find the Neutron port created for your container:
 
-      openstack appcontainer image list
+.. code-block:: bash
 
-3. Run a container:
+   openstack port list --device-id <container-id>
 
-   .. code-block:: bash
+Example output shows the port ID and fixed IP.
 
-      openstack appcontainer run --name test-container \
-        --image docker.io/library/ubuntu:22.04 \
-        --net <network-name>
+3. Creating and Associating a Floating IP
+------------------------------------------
 
-4. Check logs and status:
+**Step 1: Create a Floating IP**
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      openstack appcontainer show test-container
-      openstack appcontainer logs test-container
+   openstack floating ip create Main-Internet-Network
 
-.. note::
+**Step 2: Associate Floating IP with the container port**
 
-   The exact commands and Zun availability depend on the deployment.
-   This section will be updated once the production Zun configuration is finalized.
+.. code-block:: bash
+
+   openstack floating ip set --port <port-id> <floating-ip-id>
+
+4. Configuring Security Groups
+------------------------------
+
+Check attached security group and ensure SSH (22) and ICMP are allowed:
+
+.. code-block:: bash
+
+   openstack port show <port-id>
+   openstack security group show <sg-id>
+   openstack security group rule create --proto icmp <sg-id>
+   openstack security group rule create --proto tcp --dst-port 22 <sg-id>
+
+5. Installing and Enabling SSH Inside the Container
+----------------------------------------------------
+
+Access the container and install SSH:
+
+.. code-block:: bash
+
+   zun exec -it ubuntu-shell bash
+   apt update
+   apt install -y openssh-server
+   service ssh start
+   passwd root
+
+To allow root SSH login:
+
+.. code-block:: bash
+
+   echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
+   service ssh restart
+
+6. Testing External SSH Access
+-------------------------------
+
+From a public machine:
+
+.. code-block:: bash
+
+   ssh root@<floating_ip>
+
+Summary Table
+-------------
+
+.. list-table:: Zun Container Setup Steps
+   :header-rows: 1
+   :widths: 10 30 60
+
+   * - Step
+     - Action
+     - Command
+   * - 1
+     - Create container
+     - ``zun create --name ubuntu-shell --net network=Zun-Network --interactive ubuntu:22.04 bash``
+   * - 2
+     - Get port ID
+     - ``openstack port list --device-id <container-id>``
+   * - 3
+     - Create Floating IP
+     - ``openstack floating ip create Main-Internet-Network``
+   * - 4
+     - Associate Floating IP
+     - ``openstack floating ip set --port <port-id> <fip-id>``
+   * - 5
+     - Install SSH
+     - ``apt install -y openssh-server; service ssh start``
+   * - 6
+     - Connect via SSH
+     - ``ssh root@<floating_ip>``
 
 
 Managing Security Group Protocols
@@ -216,37 +279,67 @@ Best Practices
 Controlling USRPs from OpenStack
 ================================
 
-High-Level Concept
-------------------
+This section explains how to create a radio instance and attach a USRP port to enable communication with USRP devices.
 
-USRP devices are typically mapped to **radio instances** via dedicated networks and ports.  
-While the **power state** is usually managed out-of-band (e.g., lab power controllers),
-certain administrative operations can be driven from within OpenStack workflows.
+Creating a Radio Instance
+-------------------------
 
-Planned Automation Ideas
+Create the instance as usual, but select **radio** in the availability zone when launching the instance through the dashboard or CLI.
+
+Finding the Instance ID
 ------------------------
 
-- **Turn On / Turn Off Access to USRPs From OpenStack:**
+After creating the radio instance, list all instances to find the instance ID:
 
-  - Use a **small control instance** or script that:
-    - Manages the USRP-facing network port (enable/disable).
-    - Optionally triggers power control APIs (if integrated with lab PDUs).
+.. code-block:: bash
 
-  - Example (conceptual) flow:
+   openstack server list
 
-    1. User launches a **radio instance**.
-    2. A script or Heat template:
-       - Attaches the correct USRP network port.
-       - Optionally updates netplan inside the instance.
-    3. When the instance is deleted or shut down:
-       - The script detaches or disables the USRP port.
+Example output:
 
-.. important::
+.. code-block:: text
 
-   The exact mechanism for **physically powering USRPs on/off** depends on
-   the lab’s hardware (PDUs, management interfaces).  
-   Once a standard method is in place, this section will be updated with
-   concrete CLI commands or API calls that can be invoked from OpenStack
-   or from a management VM.
+   +--------------------------------------+---------+--------+------------------------------------------------------------+-----------------+------------+
+   | ID                                   | Name    | Status | Networks                                                    | Image           | Flavor     |
+   +--------------------------------------+---------+--------+------------------------------------------------------------+-----------------+------------+
+   | 80ae757e-11c9-465b-a582-bf6f9c63be84 | Main    | ACTIVE | Internal-Project-Harshit-Network=10.0.0.32, 172.167.0.210 | Main-Harshit    | m1.8xlarge |
+   | a4c38d16-6d56-43c3-b306-fdbd293f885a | Radio-2 | ACTIVE | Internal-Project-Harshit-Network=10.0.0.151, 172.167.0.236 | Radio-2-Harshit | m1.8xlarge |
+   | 39d285c1-ccec-48ee-ab92-7dbe44f2f1bd | Radio-1 | ACTIVE | Internal-Project-Harshit-Network=10.0.0.49, 172.167.2.110  | Radio-1-Harshit | m1.8xlarge |
+   +--------------------------------------+---------+--------+------------------------------------------------------------+-----------------+------------+
+
+Copy the **Instance ID** of the instance created using the "Radio" availability zone. In the example above, it is ``39d285c1-ccec-48ee-ab92-7dbe44f2f1bd`` for Radio-1.
+
+Finding the USRP Port
+---------------------
+
+Next, look for the port assigned to your project:
+
+.. code-block:: bash
+
+   openstack port list
+
+Example output:
+
+.. code-block:: text
+
+   | dbbf0c39-4d5e-4873-aca2-1eb64aadf8ae | USRP-101 subnet_id='c137a67b-de3b-48ec-9842-7ba0bf32403e' | DOWN | fa:16:3e:e9:cc:5d | ip_address='192.168.101.8' |
+
+Copy the **Port ID** (first column) for the USRP port you want to attach.
+
+Attaching the USRP Port to the Instance
+----------------------------------------
+
+Attach the port to your radio instance:
+
+.. code-block:: bash
+
+   openstack server add port <Instance-ID> <PORT-ID>
+
+Replace ``<Instance-ID>`` with your radio instance ID and ``<PORT-ID>`` with the USRP port ID.
+
+Verification
+------------
+
+Check the OpenStack dashboard to verify that the port has been attached to the instance. Navigate to **Project → Compute → Instances**, select your radio instance, and view the **Interfaces** tab to confirm the USRP port is listed.
 
 
