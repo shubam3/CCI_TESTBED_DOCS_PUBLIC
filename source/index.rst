@@ -128,7 +128,7 @@ CCI's xG Testbed documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Certifications
+   :caption: Certifications/Badges
 
    badges
 
