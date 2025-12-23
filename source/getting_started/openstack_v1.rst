@@ -35,7 +35,7 @@ In this V1 guide, we will maintain **separate, clearly labeled blocks** that use
 
 - **GPU Instance (Default AZ: ``gpu``):**
   
-  - Clarify quota and approval requirements for GPU usage.
+  - Clarify quota and approval requirements for GPU usage and make sure you have access to Nvidia GPU.
   - Provide a short checklist for:
     - Selecting a GPU flavor.
     - Verifying CUDA / GPU visibility inside the instance.
